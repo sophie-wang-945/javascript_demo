@@ -44,6 +44,7 @@ var
 	class2type = {},
 
 	// List of deleted data cache ids, so we can reuse them
+	//没用的
 	core_deletedIds = [],
 
 	core_version = "2.0.3",
@@ -60,6 +61,7 @@ var
 	// Define a local copy of jQuery
 	jQuery = function( selector, context ) {
 		// The jQuery object is actually just the init constructor 'enhanced'
+		//返回构造函数返回的对象，jQuery原型的init方法
 		return new jQuery.fn.init( selector, context, rootjQuery );
 	},
 
@@ -131,6 +133,7 @@ jQuery.fn = jQuery.prototype = {
 					) );
 
 					// HANDLE: $(html, props)
+					//第一个参数单标签，第二个参数json对象
 					if ( rsingleTag.test( match[1] ) && jQuery.isPlainObject( context ) ) {
 						for ( match in context ) {
 							// Properties of context are called as methods if possible
