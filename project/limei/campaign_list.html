@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html class="ie8"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Limei Demand Side Platform - 中国第一家专业移动DSP</title>
+		<meta name="keywords" content="移动广告,移动互联网广告,效果营销,精准营销,移动营销,品牌宣传,互动创意,安卓广告,iOS广告,手机广告,展示广告,互动广告,广告平台,需求方平台,DSP,Mobile DSP,力美,力道,Axiom">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="57x57" href="touch-icon-iphone.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone4.png" />
+		<link rel="stylesheet" href="common_assets/css/bootstrap.css" />
+		<link rel="stylesheet" href="common_assets/components/daterangepicker/daterangepicker-bs2.css" />
+		<!-- desktop -->
+		<link rel="stylesheet" href="common_assets/css/base_src.css" />
+		<!-- horizontal tablet -->
+		<link rel="stylesheet" media="only screen and (min-width: 1024px) and (max-width: 1279px)" href="common_assets/css/horizontal_tablet.css" />
+		<!-- vertical tablet -->
+		<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 1023px)" href="common_assets/css/tablet.css" />
+		<!-- iphone -->
+		<link rel="stylesheet" media="only screen and (max-width: 480px)" href="common_assets/css/mobile.css"/>
+		<!--[if lt IE 9]>
+			<script src="common_assets/js/lib/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="header clearfix">
+			<div class="logo left">
+				<a href="#" class="sidebar-opener"><i></i></a>
+				<img src="common_assets/img/logo.png"/>
+			</div>
+			<ul class="top-nav left clearfix">
+				<li class="index"><a href="dashboard.html">首页</a></li>
+				<li class="ads-throw"><a href="campaign_list.html"  class="selected">投放管理</a></li>
+				<li class="report"><a href="create_report.html">统计报表</a></li>
+				<li class="bill"><a href="billing.html">账单信息</a></li>
+			</ul>
+			<div class="action-bar clearfix right">
+				<div class="user-name clearfix left">
+				    <a class="dropdown-toggle text-hidden" data-toggle="dropdown" href="#">曾小贱</a>
+				    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-cog"></i>
+					    		账户信息
+					    	</a>
+					    </li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-lock"></i>
+					    		修改密码
+					    	</a>
+					    </li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-resize-horizontal"></i>
+					    		切换公司
+					    	</a>
+					    </li>
+					    <li class="divider"></li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-off"></i>
+					    		退出系统
+					    	</a>
+					    </li>
+				    </ul>
+			    </div>
+			       <div class="mail clearfix left">
+			    	<i class="num">9+</i>
+				    <a class="dropdown-toggle text-hidden" data-toggle="dropdown" href="#"></a>
+				    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+					    <li  class="clearfix">
+					    	<span class="mail-type">余</span><span>7月1日全天您的广告活动展现广告展现...<a href="#">了解更多</a></span>
+					    </li>
+					    <li  class="clearfix">
+					    	<span class="mail-type">审</span><span>7月1日全天您的广告活动展现1<a href="#">了解更多</a></span>
+					    </li>
+					    <li  class="clearfix">
+					    	<span class="mail-type">审</span><span>7月1日全天您的广告活动展现1<a href="#">了解更多</a></span>
+					    </li>
+					    <li  class="clearfix">
+					    	<span class="mail-type">广</span><span>7月1日全天您的广告活动展现1<a href="#">了解更多</a></span>
+					    </li>
+					    <li class="clearfix">
+					    	<span class="mail-type">广</span><span>7月1日全天您的广告活动展现1<a href="#">了解更多</a></span>
+					    </li>
+					    <li class="more last clearfix">
+					    	<a href="#">查看全部</a>
+					    </li>
+				    </ul>
+			    </div>
+			    <div class="option clearfix left" style="display:none;">
+				    <a class="dropdown-toggle text-hidden" data-toggle="dropdown" href="#"></a>
+				    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+					    <li>
+					    </li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-lock"></i>
+					    		修改密码
+					    	</a>
+					    </li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-resize-horizontal"></i>
+					    		切换公司
+					    	</a>
+					    </li>
+					    <li class="divider"></li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-off"></i>
+					    		退出系统
+					    	</a>
+					    </li>
+				    </ul>
+			    </div>
+			</div>
+		</div>
+		<div class="main-container clearfix">
+          	<div class="main-content">
+          		<div class="content-header">
+          			<h3 class="content-name left">广告系列详情</h3>
+      			    <ul class="breadcrumb left">
+					    <li><a href="#">首页</a> <span class="divider">&gt;</span></li>
+					    <li><a href="#">Library</a> <span class="divider">&gt;</span></li>
+					    <li class="active">Data</li>
+					</ul>
+          		</div>
+          		<div class="content-body">
+          			<div class="campaign-info">
+          				<h5>万科上海</h5>
+          				<div class="clearfix">
+          					<div class="part">状态&nbsp;:&nbsp;<span>开启</span><a href="#" class="on"></a><a href="#" class="off"></a></div>
+          					<div class="part">投放周期&nbsp;:&nbsp;<span>2013/07/03 - 2013/07/15</span></div>
+          				</div>
+          				<div class="clearfix">
+          					<div class="part">总预算&nbsp;:&nbsp;<span>120元</span></div>
+          					<div class="part">每日预算&nbsp;:&nbsp;<span>30元(或者无限制)</span></div>
+          					<div class="part last">竞价策略&nbsp;:&nbsp;<span>固定出价，每千次曝光1.0元</span></div>
+          				</div>
+          			</div>
+          			<!-- <div class="campaign-diagram clearfix">
+          				<div class="diagram">
+          					<div>
+				                  <img alt=""  src="common_assets/img/campaign-icon-price.png">
+					              <div class="diagram-body">
+					                	<h4 class="diagram-heading">消耗</h4>
+					                	&yen;<span>14,475.13</span>
+					              </div>
+      						</div>
+          				</div>
+          				<div class="level-2">
+          					<div class="diagram">
+	          					<div>
+						            <img alt=""  src="common_assets/img/campaign-icon-show.png">
+						            <div class="diagram-body">
+						                <h4 class="diagram-heading">展示数</h4>
+						                <span>1,359.283</span>
+						            </div>
+	      						</div>
+	          				</div>
+	          				<div class="diagram diagram-right">
+				              <div>
+					            <img alt=""  src="common_assets/img/campaign-icon-hits.png">
+					            <div class="diagram-body">
+					                <h4 class="diagram-heading">点击数</h4>
+					                <span>2,310.78</span>
+					            </div>
+				              </div>
+				            </div>
+          				</div>
+          				<div class="diagram diagram-right">
+			              <div>
+			                <img alt=""  src="common_assets/img/campaign-icon-ctr.png">
+			              	<div class="diagram-body">
+				                <h4 class="diagram-heading">点击率</h4>
+				                <span>0.17%</span>
+				            </div>
+			              </div>
+			            </div>
+          			</div> -->
+          			<div class="clearfix">
+          				<div class="reportrange2 right">
+				            <span class="word"></span> 
+				            <span class="caret"></span>
+				        </div>
+          			</div>
+          			
+          			<div class="tabbable campaign"> 
+          				<div class="clearfix">
+          					<ul id="diagram-tab" class="nav nav-tabs left">
+							    <li class="active"><a data-toggle="tab" class="price" href="#tab1">消耗</a></li>
+							    <li><a data-toggle="tab" class="shows" href="#tab2">展示数</a></li>
+							    <li><a data-toggle="tab" class="hits" href="#tab3">点击数</a></li>
+							    <li><a data-toggle="tab" class="ctr" href="#tab4">点击率</a></li>
+						    </ul>
+						    <div class="left diagram-words">
+						    	消耗：<span>&yen;14,475.13</span>
+						    </div>
+          				</div>
+					    
+					    <div class="tab-content">
+						    <div id="tab1" class="tab-pane active">
+						    	
+						    </div>
+					    	<div id="tab2" class="tab-pane">
+					    		<p>Howdy, I'm in Section 2.</p>
+					    	</div>
+					    	<div id="tab3" class="tab-pane">
+					    		<p>Howdy, I'm in Section 4.</p>
+					    	</div>
+					    	<div id="tab4" class="tab-pane">
+					    		<p>Howdy, I'm in Section 3.</p>
+					    	</div>
+					    </div>
+				   	</div>
+          			<div class="campaign-table">
+          				<div class="campaign-table-header">
+          					<button class="btn customrize add-adgroup btn-primary-customize"><i class="icon-plus icon-white"></i>新建广告组</button>
+							
+      					    <!-- <div class="btn-group customrize">
+							    <button class="btn customrize"><i class="icon-play"></i>开启</button>
+							    <button class="btn customrize"><i class="icon-pause"></i>暂停</button>
+							    <button class="btn customrize"><i class="icon-trash"></i>删除</button>
+							</div> -->
+							<div class="select-box btn-group">
+								    <a href="#" data-toggle="dropdown" class="btn dropdown-toggle">
+									           <i class="icon-edit-custom-2"></i>批量修改
+									    <span class="caret"></span>
+								    </a>
+								    <ul class="dropdown-menu" id="table-opt">
+								    	<li><a href="#"><i class="icon-play"></i>开启</a></li>
+					                    <li><a href="#"><i class="icon-pause"></i>暂停</a></li>
+					                    <li><a href="#"><i class="icon-trash"></i>删除</a></li>
+					                     <li class="divider"></li>
+					                    <li><a class="customrize-item" href="#"><i class="icon-copy"></i>复制广告组</a></li>
+					                    <li><a class="customrize-item paste-btn" href="#"><i class="icon-paste"></i>粘贴广告组...</a></li>
+					                    <li><a class="customrize-item" href="#"><i class="icon-copy"></i>复制广告系列</a></li>
+					                    <li><a class="customrize-item paste-btn" href="#"><i class="icon-paste"></i>粘贴广告系列...</a></li>
+					                    <li><a class="customrize-item" href="#"><i class="icon-copy"></i>复制广告创意</a></li>
+					                    <li><a class="customrize-item paste-btn" href="#"><i class="icon-paste"></i>粘贴广告创意...</a></li>
+								    </ul>
+							    </div>
+							    <button class="btn report"><i class="icon-report"></i>生成报表</button>
+							    <button class="btn export"><i class="icon-export"></i>导出</button>
+							    <button class="btn filter-btn right"><i class="icon-filter"></i>筛选</button>
+							    <button class="btn filter-creative-btn right"><i class="icon-filter"></i>创意筛选</button>							
+          				</div>
+          				
+      					<table class="campaign-table-body table table-striped customrize">
+      						<colgroup> 
+	      						<col style="width:30px;text-align: right;"> 
+	      						<col style="width:60px;text-align: right;"> 
+      						</colgroup>
+      						<thead>
+                    			<tr id="th_list">
+                            		<th><input type="checkbox" id="adgroup_all"></th>
+                            		<th><i class="icon-white-circle"></i>
+                            			<i class="icon-arrow-up icon-white" style="display:none;"></i>
+	                                	<i class="icon-arrow-down icon-white" style="display:none;"></i>
+                            		</th>
+	                            	<th>广告系列名称
+	                                <i class="icon-arrow-up icon-white" style="display:none;"></i>
+	                                <i class="icon-arrow-down icon-white" style="display:none;"></i>
+	                            </th>
+	                            <th>状态
+	                            	<i class="icon-arrow-up icon-white" style="display:none;"></i>
+	                                <i class="icon-arrow-down icon-white" style="display:none;"></i>
+	                            </th>
+	                            <th>开始日期
+	                            	<i class="icon-arrow-up icon-white" style="display:none;"></i>
+	                            	<i class="icon-arrow-down icon-white" style="display:none;"></i>
+	                            </th>
+	                            <th>结束日期
+	                                <i class="icon-arrow-up icon-white" style="display:none;"></i>
+	                                <i class="icon-arrow-down icon-white" style="display:none;"></i>
+	                                
+	                            </th>
+	                            <th class="number_row">总预算
+	                                <i class="icon-arrow-up icon-white" style="display:none;"></i>
+	                                <i class="icon-arrow-down icon-white" style="display:none;"></i>   
+	                            </th>
+	                            <th class="number_row">累计消耗
+	                                <i class="icon-arrow-up icon-white" style="display:none;"></i>
+	                                <i class="icon-arrow-down icon-white" style="display:none;"></i>
+	                                
+	                            </th>
+	                            <th class="number_row">展示数
+	                                <i class="icon-arrow-up icon-white" style="display:none;"></i>
+	                                <i class="icon-arrow-down icon-white" style="display:none;"></i>  
+	                            </th>
+	                            <th class="number_row">点击数
+	                                <i class="icon-arrow-up icon-white" style="display:none;"></i>
+	                                <i class="icon-arrow-down icon-white" style="display:none;"></i>
+	                                
+	                            </th>
+	                            <th class="number_row">点击率
+	                                <i class="icon-arrow-up icon-white" style="display:none;"></i>
+	                                <i class="icon-arrow-down icon-white" style="display:none;"></i>
+	                            </th>
+	                            <th class="number_row">eCPM
+	                                <i class="icon-arrow-up icon-white" style="display:none;"></i>
+	                                <i class="icon-arrow-down icon-white" style="display:none;"></i>
+	                            </th>
+	                            <th class="number_row ecpc">eCPC
+	                                <i class="icon-arrow-up icon-white" style="display:none;"></i>
+	                                <i class="icon-arrow-down icon-white" style="display:none;"></i>
+	                            </th>
+	                            <th>操作</th>
+	                    	</tr>
+	                    </thead>
+	                    <tbody>
+	                    	<tr>
+	                    		<td><input type="checkbox" id="adgroup_33" name="adgroup_item" data="33"></td>
+	                    		<td><a href="#"><i class="icon-on"></i></a><a href="#"><i  class="icon-stop"></i></a><a href="#"><i  class="icon-pause-2"></i></a></td>
+	                    		<td><a href="/adgroup/list.html?campaign_id=33">fdasgfdsg</a><i class="icon-edit-custom"></i></td>
+	                    		<td class="status_row"><span>待审</span><a href="#" data-toggle="tooltip"  class="tooltip_qa"><i class="icon-info pending-state"></i></a></td>
+	                    		<td>2013/09/04</td>
+	                    		<td>&mdash;</td>
+	                    		<td class="number_row">112342,233.00</td>
+	                    		<td class="number_row">0.00</td>
+	                    		<td class="number_row">0</td>
+	                    		<td class="number_row">0</td>
+	                    		<td class="number_row">0.00%</td>
+	                    		<td class="number_row">0.00</td>
+	                    		<td class="number_row ecpc">&mdash;</td>
+	                    		<td>
+	                    			<a href="#" title="开启" class="btn btn-info">
+	                    				<i class="icon-play icon-white"></i>
+	                    			</a>
+	                    			&nbsp;
+	                    			<a href="#" title="删除" class="btn btn-danger">
+	                    				<i class="icon-trash icon-white"></i>
+	                    			</a>
+	                    			&nbsp;
+	                    			<a href="#" title="修改" class="btn btn-edit">
+	                    				<i class="icon-edit icon-white"></i>
+	                    			</a>
+	                    		</td>
+	                    	</tr> 
+	                    	<tr>
+	                    		<td><input type="checkbox" id="adgroup_33" name="adgroup_item" data="33"></td>
+	                    		<td><a href="#"><i class="icon-on"></i></a><a href="#"><i  class="icon-stop"></i></a></td>
+	                    		<td><a href="/adgroup/list.html?campaign_id=33">fdasgfdsg</a><i class="icon-edit-custom"></i></td>
+	                    		<td class="status_row"><span>可投放</span><a href="#" data-toggle="tooltip"  class="tooltip_qa"><i class="icon-info avaliable-state"></i></a></td>
+	                    		<td>2013/09/04</td>
+	                    		<td>&mdash;</td>
+	                    		<td class="number_row">112342,233.00</td>
+	                    		<td class="number_row">0.00</td>
+	                    		<td class="number_row">0</td>
+	                    		<td class="number_row">0</td>
+	                    		<td class="number_row">0.00%</td>
+	                    		<td class="number_row">0.00</td>
+	                    		<td class="number_row ecpc">&mdash;</td>
+	                    		<td>
+	                    			<a href="#" title="开启" class="btn btn-info">
+	                    				<i class="icon-play icon-white"></i>
+	                    			</a>
+	                    			&nbsp;
+	                    			<a href="#" title="删除" class="btn btn-danger">
+	                    				<i class="icon-trash icon-white"></i>
+	                    			</a>
+	                    			&nbsp;
+	                    			<a href="#" title="修改" class="btn btn-edit">
+	                    				<i class="icon-edit icon-white"></i>
+	                    			</a>
+	                    		</td>
+	                    	</tr> 
+	                    	<tr>
+	                    		<td><input type="checkbox" id="adgroup_33" name="adgroup_item" data="33"></td>
+	                    		<td><a href="#"><i class="icon-on"></i></a><a href="#"><i  class="icon-stop"></i></a></td>
+	                    		<td><a href="/adgroup/list.html?campaign_id=33">fdasgfdsg</a><i class="icon-edit-custom"></i></td>
+	                    		<td class="status_row"><span>拒绝</span><a href="#" data-toggle="tooltip"  class="tooltip_qa"><i class="icon-info pause-state"></i></a></td>
+	                    		<td>2013/09/04</td>
+	                    		<td>&mdash;</td>
+	                    		<td class="number_row">112342,233.00</td>
+	                    		<td class="number_row">0.00</td>
+	                    		<td class="number_row">0</td>
+	                    		<td class="number_row">0</td>
+	                    		<td class="number_row">0.00%</td>
+	                    		<td class="number_row">0.00</td>
+	                    		<td class="number_row ecpc">&mdash;</td>
+	                    		<td>
+	                    			<a href="#" title="开启" class="btn btn-info">
+	                    				<i class="icon-play icon-white"></i>
+	                    			</a>
+	                    			&nbsp;
+	                    			<a href="#" title="删除" class="btn btn-danger">
+	                    				<i class="icon-trash icon-white"></i>
+	                    			</a>
+	                    			&nbsp;
+	                    			<a href="#" title="修改" class="btn btn-edit">
+	                    				<i class="icon-edit icon-white"></i>
+	                    			</a>
+	                    		</td>
+	                    	</tr> 
+	                    	<tr>
+	                    		<td><input type="checkbox" id="adgroup_33" name="adgroup_item" data="33"></td>
+	                    		<td><a href="#"><i class="icon-on"></i></a><a href="#"><i  class="icon-stop"></i></a></td>
+	                    		<td><a href="/adgroup/list.html?campaign_id=33">fdasgfdsg</a><i class="icon-edit-custom"></i></td>
+	                    		<td class="status_row"><span>部分可投放</span><a href="#" data-toggle="tooltip"  class="tooltip_qa"><i class="icon-info part-avaliable-state"></i></a></td>
+	                    		<td>2013/09/04</td>
+	                    		<td>&mdash;</td>
+	                    		<td class="number_row">112342,233.00</td>
+	                    		<td class="number_row">0.00</td>
+	                    		<td class="number_row">0</td>
+	                    		<td class="number_row">0</td>
+	                    		<td class="number_row">0.00%</td>
+	                    		<td class="number_row">0.00</td>
+	                    		<td class="number_row ecpc">&mdash;</td>
+	                    		<td>
+	                    			<a href="#" title="开启" class="btn btn-info">
+	                    				<i class="icon-play icon-white"></i>
+	                    			</a>
+	                    			&nbsp;
+	                    			<a href="#" title="删除" class="btn btn-danger">
+	                    				<i class="icon-trash icon-white"></i>
+	                    			</a>
+	                    			&nbsp;
+	                    			<a href="#" title="修改" class="btn btn-edit">
+	                    				<i class="icon-edit icon-white"></i>
+	                    			</a>
+	                    		</td>
+	                    	</tr> 
+	                    	<tr>
+	                    		<td><input type="checkbox" id="adgroup_33" name="adgroup_item" data="33"></td>
+	                    		<td><a href="#"><i class="icon-on"></i></a><a href="#"><i  class="icon-stop"></i></a></td>
+	                    		<td><a href="/adgroup/list.html?campaign_id=33">fdasgfdsg</a><i class="icon-edit-custom"></i></td>
+	                    		<td class="status_row"><span>部分可投放</span><a href="#" data-toggle="tooltip"  class="tooltip_qa"><i class="icon-info part-avaliable-state"></i></a></td>
+	                    		<td>2013/09/04</td>
+	                    		<td>&mdash;</td>
+	                    		<td class="number_row">112342,233.00</td>
+	                    		<td class="number_row">0.00</td>
+	                    		<td class="number_row">0</td>
+	                    		<td class="number_row">0</td>
+	                    		<td class="number_row">0.00%</td>
+	                    		<td class="number_row">0.00</td>
+	                    		<td class="number_row ecpc">&mdash;</td>
+	                    		<td>
+	                    			<a href="#" title="开启" class="btn btn-info">
+	                    				<i class="icon-play icon-white"></i>
+	                    			</a>
+	                    			&nbsp;
+	                    			<a href="#" title="删除" class="btn btn-danger">
+	                    				<i class="icon-trash icon-white"></i>
+	                    			</a>
+	                    			&nbsp;
+	                    			<a href="#" title="修改" class="btn btn-edit">
+	                    				<i class="icon-edit icon-white"></i>
+	                    			</a>
+	                    		</td>
+	                    	</tr> 
+	                    	<tr>
+	                    		<td><input type="checkbox" id="adgroup_33" name="adgroup_item" data="33"></td>
+	                    		<td><a href="#"><i class="icon-on"></i></a><a href="#"><i  class="icon-stop"></i></a></td>
+	                    		<td><a href="/adgroup/list.html?campaign_id=33">fdasgfdsg</a><i class="icon-edit-custom"></i></td>
+	                    		<td class="status_row"><span>部分可投放</span><a href="#" data-toggle="tooltip"  class="tooltip_qa"><i class="icon-info part-avaliable-state"></i></a></td>
+	                    		<td>2013/09/04</td>
+	                    		<td>&mdash;</td>
+	                    		<td class="number_row">112342,233.00</td>
+	                    		<td class="number_row">0.00</td>
+	                    		<td class="number_row">0</td>
+	                    		<td class="number_row">0</td>
+	                    		<td class="number_row">0.00%</td>
+	                    		<td class="number_row">0.00</td>
+	                    		<td class="number_row ecpc">&mdash;</td>
+	                    		<td>
+	                    			<a href="#" title="开启" class="btn btn-info">
+	                    				<i class="icon-play icon-white"></i>
+	                    			</a>
+	                    			&nbsp;
+	                    			<a href="#" title="删除" class="btn btn-danger">
+	                    				<i class="icon-trash icon-white"></i>
+	                    			</a>
+	                    			&nbsp;
+	                    			<a href="#" title="修改" class="btn btn-edit">
+	                    				<i class="icon-edit icon-white"></i>
+	                    			</a>
+	                    		</td>
+	                    	</tr> 
+	                    	<tr>
+	                    		<td><input type="checkbox" id="adgroup_33" name="adgroup_item" data="33"></td>
+	                    		<td><a href="#"><i class="icon-on"></i></a><a href="#"><i  class="icon-stop"></i></a></td>
+	                    		<td><a href="/adgroup/list.html?campaign_id=33">fdasgfdsg</a><i class="icon-edit-custom"></i></td>
+	                    		<td class="status_row"><span>部分可投放</span><a href="#" data-toggle="tooltip"  class="tooltip_qa"><i class="icon-info part-avaliable-state"></i></a></td>
+	                    		<td>2013/09/04</td>
+	                    		<td>&mdash;</td>
+	                    		<td class="number_row">112342,233.00</td>
+	                    		<td class="number_row">0.00</td>
+	                    		<td class="number_row">0</td>
+	                    		<td class="number_row">0</td>
+	                    		<td class="number_row">0.00%</td>
+	                    		<td class="number_row">0.00</td>
+	                    		<td class="number_row ecpc">&mdash;</td>
+	                    		<td>
+	                    			<a href="#" title="开启" class="btn btn-info">
+	                    				<i class="icon-play icon-white"></i>
+	                    			</a>
+	                    			&nbsp;
+	                    			<a href="#" title="删除" class="btn btn-danger">
+	                    				<i class="icon-trash icon-white"></i>
+	                    			</a>
+	                    			&nbsp;
+	                    			<a href="#" title="修改" class="btn btn-edit">
+	                    				<i class="icon-edit icon-white"></i>
+	                    			</a>
+	                    		</td>
+	                    	</tr> 
+	                    	<tr>
+	                    		<td><input type="checkbox" id="adgroup_33" name="adgroup_item" data="33"></td>
+	                    		<td><a href="#"><i class="icon-on"></i></a><a href="#"><i  class="icon-stop"></i></a></td>
+	                    		<td><a href="/adgroup/list.html?campaign_id=33">fdasgfdsg</a><i class="icon-edit-custom"></i></td>
+	                    		<td class="status_row"><span>部分可投放</span><a href="#" data-toggle="tooltip"  class="tooltip_qa"><i class="icon-info part-avaliable-state"></i></a></td>
+	                    		<td>2013/09/04</td>
+	                    		<td>&mdash;</td>
+	                    		<td class="number_row">112342,233.00</td>
+	                    		<td class="number_row">0.00</td>
+	                    		<td class="number_row">0</td>
+	                    		<td class="number_row">0</td>
+	                    		<td class="number_row">0.00%</td>
+	                    		<td class="number_row">0.00</td>
+	                    		<td class="number_row ecpc">&mdash;</td>
+	                    		<td>
+	                    			<a href="#" title="开启" class="btn btn-info">
+	                    				<i class="icon-play icon-white"></i>
+	                    			</a>
+	                    			&nbsp;
+	                    			<a href="#" title="删除" class="btn btn-danger">
+	                    				<i class="icon-trash icon-white"></i>
+	                    			</a>
+	                    			&nbsp;
+	                    			<a href="#" title="修改" class="btn btn-edit">
+	                    				<i class="icon-edit icon-white"></i>
+	                    			</a>
+	                    		</td>
+	                    	</tr> 
+	                    	
+	                    </tbody>
+      				</table>
+          				
+          				<div class="campaign-table-footer clearfix">
+          					 <div class="pagination  pagination-right right">
+          					    	
+								    <ul>
+									    <li class="disabled"><a href="#">&laquo;</a></li>
+									    <li><a href="#">1</a></li>
+									    <li class="selected"><a href="#">2</a></li>
+									    <li><a href="#">3</a></li>
+									    <li><a href="#">4</a></li>
+									    <li><a href="#">5</a></li>
+									    <li><a href="#">&raquo;</a></li>
+									   
+								    </ul>
+								</div>
+          					<div class="btn-group  right">
+				                 <button class="btn">10</button>
+								 <button data-toggle="dropdown" class="btn dropdown-toggle">
+									<span class="caret"></span>
+								 </button>
+				                 <ul class="dropdown-menu">
+				                  <li class="csv"><a href="#">10</a></li>
+				                  <li class="excel"><a href="#">20</a></li>
+				                  <li class="excel"><a href="#">50</a></li>
+				                </ul>
+				             </div>
+          					   
+          				</div>
+          			</div>
+          		</div>
+          		<!--粘贴对话框-->
+				 <div class="modal paste-modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				    <div class="modal-header">
+					    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					    <h3>粘贴广告组详情</h3>
+				    </div>
+				    <div class="modal-sub-header">将2 个广告组粘贴到当前广告系列中</div>
+				    <div class="modal-body">
+				    	<label class="checkbox">
+							<input type="checkbox" value="">
+							复制广告系列及其广告组与创意
+						</label>
+						<label class="checkbox">
+							<input type="checkbox" value="">
+							仅复制广告系列设置
+						</label>
+						<label class="checkbox">
+							<input type="checkbox" value="">
+							复制广告组及其创意
+						</label>
+						<label class="checkbox">
+							<input type="checkbox" value="">
+							仅复制广告组设置
+						</label>
+				    </div>
+				    <div class="modal-footer">
+				    	<img src="common_assets/img/list-loading.gif"/>
+					    <a href="#" class="btn btn-primary">确定</a>
+					    <a href="#" class="btn btn-cancel" data-dismiss="modal" aria-hidden="true">取消</a>
+				    </div>
+			    </div>
+			     <!--筛选对话框-->
+				<div class="modal filter-modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				    <div class="modal-header">
+					    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					    <h3>筛选条件</h3>
+				    </div>
+				    <div class="modal-body">
+				    	<form class="form-horizontal">
+				    		<div class="control-group">
+						    	<label class="control-label">广告系列名称</label>
+							    <div class="controls">
+							    	<input type="text" placeholder="广告系列名称…">
+							    </div>
+						    </div>
+						    <div class="control-group">
+						    	<label class="control-label">状态</label>
+							    <div class="controls">
+							    	    <label class="checkbox inline">
+									   		<input type="checkbox" id="inlineCheckbox1" value="option1"  checked="checked"> 暂停
+									    </label>
+									    <label class="checkbox inline">
+									    	<input type="checkbox" id="inlineCheckbox2" value="option2"  checked="checked"> 拒绝
+									    </label>
+									    <label class="checkbox inline">
+									    	<input type="checkbox" id="inlineCheckbox2" value="option2"  checked="checked"> 结束
+									    </label>
+							    </div>
+						    </div>
+						    <div class="control-group">
+						    	<label class="control-label">时间</label>
+							    <div class="controls">
+							    	    <div class="reportrange wider">
+								            <i class="glyphicon glyphicon-calendar icon-calendar icon-large"></i>
+								            <span></span> 
+								        </div>
+							    </div>
+						    </div>
+				    	</form>
+				    </div>
+				    <div class="modal-footer">
+				    	
+					    <a href="#" class="btn btn-primary">确定</a>
+					    <a href="#" class="btn btn-cancel" data-dismiss="modal" aria-hidden="true">取消</a>
+				    </div>
+			    </div>
+			     <!--创意列表筛选对话框-->
+				<div class="modal filter-modal-creative hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				    <div class="modal-header">
+					    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					    <h3>筛选条件</h3>
+				    </div>
+				    <div class="modal-body">
+				    	<form class="form-horizontal">
+				    		<div class="control-group">
+						    	<label class="control-label">创意名称</label>
+							    <div class="controls">
+							    	<input type="text" placeholder="创意名称…">
+							    </div>
+						    </div>
+						    <div class="control-group">
+						    	<label class="control-label">状态</label>
+							    <div class="controls">
+							    	    <label class="checkbox inline">
+									   		<input type="checkbox" id="inlineCheckbox1" value="option1"  checked="checked"> 待审
+									    </label>
+									    <label class="checkbox inline">
+									    	<input type="checkbox" id="inlineCheckbox2" value="option2"  checked="checked"> 拒绝
+									    </label>
+									    <label class="checkbox inline">
+									    	<input type="checkbox" id="inlineCheckbox2" value="option2"  checked="checked"> 部分可投放
+									    </label>
+									    <label class="checkbox inline">
+									    	<input type="checkbox" id="inlineCheckbox2" value="option2"  checked="checked"> 投放
+									    </label>
+							    </div>
+						    </div>
+						     <div class="control-group">
+						    	<label class="control-label">类型</label>
+							    <div class="controls">
+							    	    <label class="checkbox inline">
+									   		<input type="checkbox" id="inlineCheckbox1" value="option1"  checked="checked"> 图片
+									    </label>
+									    <label class="checkbox inline">
+									    	<input type="checkbox" id="inlineCheckbox2" value="option2"  checked="checked"> MRAID
+									    </label>
+							    </div>
+						    </div>
+				    	</form>
+				    </div>
+				    <div class="modal-footer">
+				    	
+					    <a href="#" class="btn btn-primary">确定</a>
+					    <a href="#" class="btn btn-cancel" data-dismiss="modal" aria-hidden="true">取消</a>
+				    </div>
+			    </div>
+          		<div class="footer">
+					© 2013 <a href="http://www.limei.com/about" target="_blank">力美广告</a> | 服务条款 | <a target="_blank" href="http://www.limei.com/about/detail/id/178">隐私保护</a> | 帮助
+				</div>
+          	</div>
+		</div>
+		
+      <div class="sidebar menu">
+      		<div class="sidebar-header">
+				<a href="#" class="close-btn"><i></i></a>
+				<img src="common_assets/img/logo.png"/>
+			</div>
+			<div class="search-bar">
+      			<input type="text" placeholder="搜索"/>
+      			<button class="btn"></button>
+      		</div>
+	  		<div>
+	      		<div class="list-level1">
+	      			<ul class="list-level2">
+	          			<li>
+	          				<a href="#" class="all">全部广告系列</a>
+	          			</li>
+			            <li>
+			                <a class="arrow-btn"></a><a href="#">万科dsfdfdsfds</a>
+			            </li>
+			            <li>
+			                <a class="arrow-btn loading"></a><a href="#">万科深圳</a>
+			                <ul class="ad-group-list">
+			                    <li>
+			                        <a class="arrow-btn opened"></a><a href="#">万科红三期iOS</a>
+			                        <ul class="creative-list">
+					                    <li>
+					                        <a href="#">万科2012</a>
+					                    </li>
+					                    <li>
+					                        <a href="#">万科2012</a>
+					                    </li>
+					                </ul>
+			                    </li>
+			                    <li>
+			                        <a class="arrow-btn"></a><a href="#">万科红三期Android</a>
+			                    </li>
+			                    <li>
+			                        <a class="arrow-btn"></a><a href="#">万科溪之谷通投</a>
+			                    </li>
+			                </ul>
+			            </li>
+			            
+			            <li>
+			                <a class="arrow-btn loading"></a><a href="#">万科深圳</a>
+			                <ul class="ad-group-list">
+			                    <li>
+			                        <a class="arrow-btn opened"></a><a href="#">万科红三期iOS</a>
+			                        <ul class="creative-list">
+					                    <li>
+					                        <a href="#">万科2012</a>
+					                    </li>
+					                    <li>
+					                        <a href="#">万科2012</a>
+					                    </li>
+					                </ul>
+			                    </li>
+			                    <li>
+			                        <a class="arrow-btn"></a><a href="#">万科红三期Android</a>
+			                    </li>
+			                    <li>
+			                        <a class="arrow-btn"></a><a href="#">万科溪之谷通投</a>
+			                    </li>
+			                </ul>
+			            </li>
+			            <li>
+			                <a class="arrow-btn loading"></a><a href="#">万科深圳</a>
+			                <ul class="ad-group-list">
+			                    <li>
+			                        <a class="arrow-btn opened"></a><a href="#">万科红三期iOS</a>
+			                        <ul class="creative-list">
+					                    <li>
+					                        <a href="#">万科2012</a>
+					                    </li>
+					                    <li>
+					                        <a href="#">万科2012</a>
+					                    </li>
+					                </ul>
+			                    </li>
+			                    <li>
+			                        <a class="arrow-btn"></a><a href="#">万科红三期Android</a>
+			                    </li>
+			                    <li>
+			                        <a class="arrow-btn"></a><a href="#">万科溪之谷通投</a>
+			                    </li>
+			                </ul>
+			            </li>
+			           
+			            <li>
+			                <a class="arrow-btn opened"></a><a href="#">万科上海</a>
+			                <ul>
+			                    <li>
+			                        <a class="arrow-btn"></a><a href="#">万科尚源优酷视频</a>
+			                    </li>
+			                </ul>
+			            </li>
+			            <li>
+			                <a class="arrow-btn"></a><a href="#">万科2012</a>
+			            </li>
+			             <li>
+			                <a class="arrow-btn loading"></a><a href="#">万科深圳</a>
+			                <ul class="ad-group-list">
+			                    <li>
+			                        <a class="arrow-btn opened"></a><a href="#">万科红三期iOS</a>
+			                        <ul class="creative-list">
+					                    <li>
+					                        <a href="#">万科2012</a>
+					                    </li>
+					                    <li>
+					                        <a href="#">万科2012</a>
+					                    </li>
+					                </ul>
+			                    </li>
+			                    <li>
+			                        <a class="arrow-btn"></a><a href="#" class="selected">万科红三期Android</a>
+			                    </li>
+			                    <li>
+			                        <a class="arrow-btn"></a><a href="#">万科溪之谷通投</a>
+			                    </li>
+			                </ul>
+			            </li>
+			            
+			        </ul>
+	      		</div>
+	      		
+	  		</div> 
+	  		
+	  	</div>
+	  	<div class="mask"></div>
+		<script src="common_assets/js/lib/jquery.1.10.1.min.js"></script>
+		<script type="text/javascript" src="common_assets/js/lib/bootstrap.js"></script>
+		<script type="text/javascript" src="common_assets/components/daterangepicker/moment.js"></script>
+        <script type="text/javascript" src="common_assets/components/daterangepicker/daterangepicker.js"></script>
+		<script type="text/javascript" src="common_assets/js/index.js"></script>
+	</body>
+</html>

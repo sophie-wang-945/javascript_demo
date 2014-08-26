@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html class="ie8"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Limei Demand Side Platform - 中国第一家专业移动DSP</title>
+		<meta name="keywords" content="移动广告,移动互联网广告,效果营销,精准营销,移动营销,品牌宣传,互动创意,安卓广告,iOS广告,手机广告,展示广告,互动广告,广告平台,需求方平台,DSP,Mobile DSP,力美,力道,Axiom">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="57x57" href="touch-icon-iphone.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone4.png" />
+		<link rel="stylesheet" href="common_assets/css/bootstrap.css" />
+		<link rel="stylesheet" href="common_assets/components/datepicker/css/datepicker.css" />
+		<!-- desktop -->
+		<!-- <link rel="stylesheet" href="common_assets/css/base.css" /> -->
+		<link rel="stylesheet"  href="common_assets/css/base_src.css" />
+		<!-- horizontal tablet -->
+		<link rel="stylesheet" media="only screen and (min-width: 1024px) and (max-width: 1279px)" href="common_assets/css/horizontal_tablet.css" />
+		<!-- vertical tablet -->
+		<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 1023px)" href="common_assets/css/tablet.css" />
+		<!-- iphone -->
+		<link rel="stylesheet" media="only screen and (max-width: 480px)" href="common_assets/css/mobile.css"/>
+		<!--[if lt IE 9]>
+			<script src="common_assets/js/lib/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="header clearfix">
+			<div class="logo left"><img src="common_assets/img/logo.png"/></div>
+			<ul class="top-nav left clearfix">
+				<li class="index"><a href="dashboard.html">首页</a></li>
+				<li class="ads-throw"><a href="campaign_list.html" class="selected">投放管理</a></li>
+				<li class="report"><a href="create_report.html">统计报表</a></li>
+				<li class="bill"><a href="billing.html">账单信息</a></li>
+			</ul>
+			<div class="action-bar right">
+				<div class="user-name">
+				    <a class="dropdown-toggle text-hidden" data-toggle="dropdown" href="#">曾小贱</a>
+				    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-cog"></i>
+					    		账户信息
+					    	</a>
+					    </li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-lock"></i>
+					    		修改密码
+					    	</a>
+					    </li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-resize-horizontal"></i>
+					    		切换公司
+					    	</a>
+					    </li>
+					    <li class="divider"></li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-off"></i>
+					    		退出系统
+					    	</a>
+					    </li>
+				    </ul>
+			    </div>
+			   <!--  <a class="btn-mail"></a>
+				<a class="btn-option"></a> -->
+			</div>
+		</div>
+		<div class="main-container clearfix">
+          	
+          	<div class="main-content full">
+          		<div class="content-header clearfix">
+          			<h3 class="content-name left">新建广告系列</h3>
+          			<ul class="breadcrumb left">
+          				<li><a href="#">全部广告系列</a> <span class="divider">&gt;</span></li>
+					    <li class="active">万科上海</li>
+					</ul>
+          		</div>
+          		<div class="content-body campaign-form  adgroup">
+      			    <form class="form-horizontal">
+      			    	<div class="fieldset-header">
+      			    		基本信息
+      			    	</div>
+					    <div class="control-group">
+					    	<label class="control-label"><span class="required">*</span>广告系列名称</label>
+						    <div class="controls">
+						    	<input type="text" placeholder="广告系列名称…">
+						    </div>
+					    </div>
+					    <div class="fieldset-header">
+      			    		广告排期
+      			    	</div>
+					    <div class="control-group">
+						    <label class="control-label"><span class="required">*</span>开始日期</label>
+						    <div class="controls">	
+						    	<div class="date-picker">
+						    	 	<i class="glyphicon glyphicon-calendar icon-calendar icon-large"></i>	
+						    		<input class="start-date-picker" type="text" data-date-format="yyyy-mm-dd">
+						    	</div>
+						    </div>
+					    </div>
+					    <div class="control-group compare-range">
+						    <label class="control-label">结束日期</label>
+						    <div class="controls">	
+						    	 <div class="date-picker inline">
+						    	 	<i class="glyphicon glyphicon-calendar icon-calendar icon-large"></i>	
+						    	 	<input class="end-date-picker" type="text" data-date-format="yyyy-mm-dd">
+						    	 </div>
+						         <span class="info">不填写则投放时间无上限</span>
+						    </div>
+					    </div>
+					    
+					    <div class="control-group">
+						    <label class="control-label">投放时段</label>
+						    <div class="controls">
+						    	<div class="settings">
+							    	<a  role="button" class="btn btn-link" data-toggle="modal" id="time-period-setting">设置</a>
+							    	<div><i class="icon-time"></i><span>不限</span><span>当前已选时段</span></div>
+							    	
+							    	<table border="0" cellspacing="0" cellpadding="0" class="table">
+							    		<tbody>
+							    			<tr><td>星期一</td><td>0:00 ~ 5:59&nbsp;&nbsp;&nbsp;</td></tr>
+							    			<tr><td>星期二</td><td>0:00 ~ 5:59&nbsp;&nbsp;&nbsp;</td></tr>
+							    			<tr><td>星期三</td><td>0:00 ~ 5:59&nbsp;&nbsp;&nbsp;</td></tr>
+							    			<tr><td>星期四</td><td>0:00 ~ 5:59&nbsp;&nbsp;&nbsp;</td></tr>
+							    			<tr><td>星期五</td><td>0:00 ~ 5:59&nbsp;&nbsp;&nbsp;</td></tr>
+							    			<tr><td>星期六</td><td>0:00 ~ 5:59&nbsp;&nbsp;&nbsp;</td></tr>
+							    			<tr><td>星期日</td><td>0:00 ~ 5:59&nbsp;&nbsp;&nbsp;</td></tr>
+							    		</tbody>
+							    	</table>
+							    	
+						    	</div>
+						    </div>
+					    </div>
+					    <div class="fieldset-header">
+      			    		广告预算
+      			    	</div>
+					    <div class="control-group">
+						    <label class="control-label"><span class="required">*</span>总预算</label>
+						    <div class="controls ">
+						    	<input type="text" placeholder="">&nbsp;元
+						    </div>
+					    </div>
+					    <div class="control-group">
+						    <label class="control-label">每日预算</label>
+						    <div class="controls ">
+						    	<input type="text" placeholder="">&nbsp;元
+						    	<span class="info">不填写则每日投放量无上限</span>
+						    </div>
+					    </div> 
+					    <div class="control-group">
+						    <label class="control-label">消耗速度</label>
+						    <div class="controls ">
+						    	<label class="radio">
+									<input type="radio" name=""  value="option1" checked>
+								           标准：不对消耗速度做控制
+								</label>
+								<label class="radio">
+									<input type="radio" name="" value="option2">
+									匀速：均匀的消耗预算
+								</label>
+						    </div>
+					    </div> 
+					    <div class="fieldset-header">
+      			    		竞价策略<a href="#" data-toggle="tooltip"  class="tooltip_qa"><i class="icon-qa"></i></a>
+      			    	</div>
+					   <div class="control-group bidding-strategy">
+					   	   <label class="control-label"><span class="required">*</span>竞价策略</label>
+						    <div class="controls ">
+						    <div>
+						    	 <label class="radio inline">
+									<input type="radio"   value="option1" checked>
+								           侧重展现
+								</label>
+								<div class="select-box btn-group">
+								    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+									         固定出价
+									    <span class="caret"></span>
+								    </a>
+								    <ul class="dropdown-menu">
+								    	<li><a href="#">固定出价</a></li>
+					                    <li><a href="#">自动出价</a></li>
+								    </ul>
+							    </div>
+							    <div class="price">
+							    	&yen;&nbsp;&nbsp;<input type="text" placeholder="">&nbsp;千次曝光
+							    </div>
+							    <div class="price">
+							    	CPM出价范围&nbsp;&nbsp;&nbsp;&yen;&nbsp;&nbsp;<input type="text" placeholder="">&nbsp;&nbsp;&minus;&nbsp;&nbsp;<input type="text" placeholder="">&nbsp;&nbsp;千次曝光
+							    </div>
+						    </div>
+						    <div>
+						    	<label class="radio  inline">
+									<input type="radio"  value="option2">
+									侧重点击
+								</label>
+								<div class="select-box btn-group">
+								    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+									         固定出价
+									    <span class="caret"></span>
+								    </a>
+								    <ul class="dropdown-menu">
+								    	<li><a href="#">固定出价</a></li>
+					                    <li><a href="#">自动出价</a></li>
+								    </ul>
+							    </div>
+							    <div class="price">
+							    	&yen;&nbsp;&nbsp;<input type="text" placeholder="">&nbsp;点击
+							    </div>
+							    <div class="price">
+							    	CPC出价范围&nbsp;&nbsp;&nbsp;&yen;&nbsp;&nbsp;<input type="text" placeholder="">&nbsp;&nbsp;&minus;&nbsp;&nbsp;<input type="text" placeholder="">&nbsp;&nbsp;点击
+							    </div>
+						    </div>
+							</div>
+					    </div> 
+					    <div class="fieldset-header">
+      			    		广告交易平台
+      			    	</div>
+      			    	<div class="control-group">
+						    <label class="control-label"><span class="required">*</span>广告交易平台</label>
+						    <div class="controls ">
+						    	<label class="checkbox">
+									<input type="checkbox" value="">
+									DoubleClick Ad Exchange
+								</label>
+								<label class="checkbox">
+									<input type="checkbox" value="">
+									91点金智能手机广告平台
+								</label>
+								<label class="checkbox">
+									<input type="checkbox" value="">
+									芒果移动广告优化平台
+								</label>
+						    </div>
+					    </div> 
+					    <div class="fieldset-header">
+      			    		高级选项
+      			    	</div>
+      			    	<div class="control-group creative-carousel">
+						    <label class="control-label">创意轮播</label>
+						    <div class="controls ">
+						    	<div class="select-box btn-group">
+								    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+									           随机
+									    <span class="caret"></span>
+								    </a>
+								    <ul class="dropdown-menu">
+								    	<li><a href="#">随机</a></li>
+					                    <li><a href="#">优化点击</a></li>
+					                    <li><a href="#">均匀</a></li>
+								    </ul>
+							    </div>    
+						    </div>
+					    </div>
+      			    	<div class="control-group rate-limit">
+						    <label class="control-label">频率限次<a href="#" data-toggle="tooltip"  class="tooltip_qa"><i class="icon-qa"></i></a></label>
+						    <div class="controls ">
+						    	<label class="radio">
+									<input type="radio" name="rate-limit" value="option1" checked>
+								           无限制
+								</label>
+								<label class="radio inline">
+									<input type="radio" name="rate-limit" value="option2" disabled/>
+								</label>
+								<input type="text" placeholder=""/>&nbsp;&nbsp;次展示&nbsp;
+									<div class="select-box btn-group narrow">
+									    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+										           每天
+										    <span class="caret"></span>
+									    </a>
+									    <ul class="dropdown-menu">
+									    	<li><a href="#">每天</a></li>
+						                    <li><a href="#">每周</a></li>
+									    </ul>
+								    </div> 
+							    	<div class="select-box btn-group">
+									    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+										           针对这个广告系列
+										    <span class="caret"></span>
+									    </a>
+									    <ul class="dropdown-menu">
+									    	<li><a href="#">针对这个广告系列</a></li>
+						                    <li><a href="#">每个广告组</a></li>
+						                    <li><a href="#">每个创意</a></li>
+									    </ul>
+								    </div> 
+						    </div>
+					    </div> 
+					    <div class="control-group flow-limit">
+						    <label class="control-label">流量控制<a href="#" data-toggle="tooltip"  class="tooltip_qa"><i class="icon-qa"></i></a></label>
+						    <div class="controls ">
+						    	<p style="margin-top:6px;">根据设备是否带有设备标识符进行投放</p>
+						    	<label class="checkbox first-level">
+									<input type="checkbox" value="" checked="checked" class="mac">
+									带有MAC
+								</label>
+								<div class="controls second-level">
+							    	<label class="radio inline">
+										<input type="radio" checked="" value="option1" name="mac" >
+									           带冒号
+									</label>
+									<label class="radio inline">
+										<input type="radio" value="option2" name="mac" checked="checked" class="no">
+											不带冒号
+									</label>
+							    </div>
+								<label class="checkbox first-level">
+									<input type="checkbox" value="" checked="checked" class="idfa">
+									带有IDFA
+								</label>
+								<div class="controls  second-level">
+							    	<label class="checkbox inline">
+										<input type="checkbox" checked="checked" value="option1" name="">
+									           非加密
+									</label>
+									<label class="checkbox inline">
+										<input type="checkbox" value="option2" name="" checked="checked">
+											MD5加密
+									</label>
+							    </div>
+								<label class="checkbox">
+									<input type="checkbox" value="" checked="checked">
+									其他
+								</label>
+						    </div>
+					    </div> 
+					      
+					    <div class="control-group">
+							<div class="controls">
+								<button type="submit" class="btn btn-primary">保存并继续创建广告组</button>
+								<button type="submit" class="btn btn-primary">保存</button>
+								<button type="cancel" class="btn btn-cancel">取消</button>
+							</div>
+						</div>
+				    </form>
+          		</div>
+          	</div>
+		</div>
+		<div class="footer">
+			© 2013 <a href="http://www.limei.com/about" target="_blank">力美广告</a> | 服务条款 | <a target="_blank" href="http://www.limei.com/about/detail/id/178">隐私保护</a> | 帮助
+		</div>
+        <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-header">
+			    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			    <h3>历史创意</h3>
+		    </div>
+		    <div class="modal-body">
+		    	<div class="clearfix">
+		    		<ul class="adgroup-list">
+		                <li class="nav-header">广告组列表</li>
+		                <li class="active"><a href="#">首页</a></li>
+		                <li><a href="#">Library</a></li>
+		                <li><a href="#">Applications</a></li>
+		              </ul>
+		    		<table class="table table-striped">
+		              <thead>
+		                <tr>
+		                  <th><input type="checkbox" name=""/></th>
+		                  <th>创意</th>
+		                  <th>尺寸</th>
+		                </tr>
+		              </thead>
+		              <tbody>
+		                <tr>
+		                  <td><input type="checkbox" name=""/></td>
+		                  <td><img src="tmp-1.png" alt="" /></td>
+		                  <td>640&times;100</td>
+		                </tr>
+		                <tr>
+		                  <td><input type="checkbox" name=""/></td>
+		                  <td><img src="tmp-2.png" alt="" /></td>
+		                  <td>640&times;150</td>
+		                </tr>
+		                <tr>
+		                  <td><input type="checkbox" name=""/></td>
+		                  <td><img src="tmp-3.png" alt="" /></td>
+		                  <td>320&times;50</td>
+		                </tr>
+		                <tr>
+		                  <td><input type="checkbox" name=""/></td>
+		                  <td><img src="tmp-4.png" alt="" /></td>
+		                  <td>320&times;80</td>
+		                </tr>
+		                <tr>
+		                  <td><input type="checkbox" name=""/></td>
+		                  <td><img src="tmp-5.png" alt="" /></td>
+		                  <td>750&times;100</td>
+		                </tr>
+		              </tbody>
+		            </table>
+		    	</div>
+		    	
+		    	    <div class="pagination pagination-right">
+					    <ul>
+						    <li><a href="#">&laquo;</a></li>
+						    <li><a href="#">1</a></li>
+						    <li><a href="#">2</a></li>
+						    <li><a href="#">3</a></li>
+						    <li><a href="#">4</a></li>
+						    <li><a href="#">5</a></li>
+						    <li><a href="#">&raquo;</a></li>
+					    </ul>
+				    </div>
+		    </div>
+		    <div class="modal-footer">
+			    <a href="#" class="btn btn-primary">确定</a>
+			    <a href="#" class="btn btn-cancel" data-dismiss="modal" aria-hidden="true">取消</a>
+		    </div>
+	    </div>
+		<script src="common_assets/js/lib/jquery.1.10.1.min.js"></script>
+		<script type="text/javascript" src="common_assets/js/lib/bootstrap.js"></script>
+        <script type="text/javascript" src="common_assets/components/datepicker/js/bootstrap-datepicker.js"></script>
+		<script type="text/javascript" src="common_assets/js/index.js"></script>
+		
+	</body>
+</html>

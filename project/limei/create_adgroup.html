@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html class="ie8"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Limei Demand Side Platform - 中国第一家专业移动DSP</title>
+		<meta name="keywords" content="移动广告,移动互联网广告,效果营销,精准营销,移动营销,品牌宣传,互动创意,安卓广告,iOS广告,手机广告,展示广告,互动广告,广告平台,需求方平台,DSP,Mobile DSP,力美,力道,Axiom">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="57x57" href="touch-icon-iphone.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone4.png" />
+		<link rel="stylesheet" type="text/css" href="http://api.amap.com/Public/css/demo.Default.css" /> 
+		<link rel="stylesheet" href="common_assets/css/bootstrap.css" />
+	  
+		<link rel="stylesheet" href="common_assets/css/jquery-ui-1.10.3.custom.min.css" />
+		<link rel="stylesheet" href="common_assets/components/slider/css/slider.css" />
+		<!-- desktop -->
+		<!-- <link rel="stylesheet" href="common_assets/css/base.css" /> -->
+		<link rel="stylesheet"  href="common_assets/css/base_src.css" />
+		<!-- horizontal tablet -->
+		<link rel="stylesheet" media="only screen and (min-width: 1024px) and (max-width: 1279px)" href="common_assets/css/horizontal_tablet.css" />
+		<!-- horizontal tablet -->
+		<link rel="stylesheet" media="only screen and (max-height: 800px)" href="common_assets/css/short_screen.css" />
+		<!-- vertical tablet -->
+		<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 1023px)" href="common_assets/css/tablet.css" />
+		<!-- iphone -->
+		<link rel="stylesheet" media="only screen and (max-width: 480px)" href="common_assets/css/mobile.css"/>
+		<!--[if lt IE 9]>
+			<script src="common_assets/js/lib/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="header clearfix">
+			<div class="logo left"><img src="common_assets/img/logo.png"/></div>
+			<ul class="top-nav left clearfix">
+				<li class="index"><a href="dashboard.html">首页</a></li>
+				<li class="ads-throw"><a href="campaign_list.html"  class="selected">投放管理</a></li>
+				<li class="report"><a href="create_report.html">统计报表</a></li>
+				<li class="bill"><a href="billing.html">账单信息</a></li>
+			</ul>
+			<div class="action-bar right">
+				<div class="user-name">
+				    <a class="dropdown-toggle text-hidden" data-toggle="dropdown" href="#">曾小贱</a>
+				    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-cog"></i>
+					    		账户信息
+					    	</a>
+					    </li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-lock"></i>
+					    		修改密码
+					    	</a>
+					    </li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-resize-horizontal"></i>
+					    		切换公司
+					    	</a>
+					    </li>
+					    <li class="divider"></li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-off"></i>
+					    		退出系统
+					    	</a>
+					    </li>
+				    </ul>
+			    </div>
+			   <!--  <a class="btn-mail"></a>
+				<a class="btn-option"></a> -->
+			</div>
+		</div>
+		<div class="main-container clearfix">
+          	
+          	<div class="main-content full">
+          		<div class="content-header clearfix">
+          			<h3 class="content-name left">新建广告组</h3>
+          			<ul class="breadcrumb left">
+          				<li><a href="#">全部广告系列</a> <span class="divider">&gt;</span></li>
+					    <li><a href="#">万科上海</a> <span class="divider">&gt;</span></li>
+					    <li class="active">万科优酷视频</li>
+					</ul>
+          		</div>
+          		
+          		<div class="content-body campaign-form adgroup">
+      			    <form class="form-horizontal">
+      			    	<div class="fieldset-header">
+      			    		基本信息
+      			    	</div>
+					    <div class="control-group">
+					    	<label class="control-label"><span class="required">*</span>广告活动名称</label>
+						    <div class="controls">
+						    	<input type="text" placeholder="广告活动名称…">
+						    </div>
+					    </div>
+					    
+					     <div class="fieldset-header">
+      			    		广告预算
+      			    	</div>
+      			    	<div class="control-group">
+						    <label class="control-label"></label>
+						    <div class="controls ">
+						    	<label class="checkbox">
+									<input type="checkbox" value="">
+									采用广告系列的预算设定
+								</label>
+						    </div>
+					    </div> 
+					    <div class="control-group">
+						    <label class="control-label">总预算</label>
+						    <div class="controls ">
+						    	<input type="text" placeholder="">&nbsp;元
+						    </div>
+					    </div>
+					    <div class="control-group">
+						    <label class="control-label">每日预算</label>
+						    <div class="controls ">
+						    	<input type="text" placeholder="">&nbsp;元
+						    	<span class="info">不填写则每日投放量无上限</span>
+						    </div>
+					    </div> 
+					    <div class="fieldset-header">
+      			    		竞价策略<a href="#" data-toggle="tooltip"  class="tooltip_qa"><i class="icon-qa"></i></a>
+      			    	</div>
+      			    	<div class="control-group">
+						    <label class="control-label"><span class="required">*</span>竞价策略</label>
+						    <div class="controls ">
+						    	<label class="checkbox">
+									<input type="checkbox" value="">
+									采用广告系列的竞价策略
+								</label>
+						    </div>
+					    </div> 
+      			    	
+					   <div class="control-group bidding-strategy">
+					   	<label class="control-label"></label>
+						    <div class="controls ">
+						    <div>
+						    	 <label class="radio inline">
+									<input type="radio" name="compare-date" id="year-on-year" value="option1" checked>
+								           侧重展现
+								</label>
+								<div class="select-box btn-group">
+								    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+									         固定出价
+									    <span class="caret"></span>
+								    </a>
+								    <ul class="dropdown-menu">
+								    	<li><a href="#">固定出价</a></li>
+					                    <li><a href="#">自动出价</a></li>
+								    </ul>
+							    </div>
+							    <div class="price">
+							    	&yen;&nbsp;&nbsp;<input type="text" placeholder="">&nbsp;千次曝光
+							    </div>
+							    <div class="price">
+							    	CPM出价范围&nbsp;&nbsp;&nbsp;&yen;&nbsp;&nbsp;<input type="text" placeholder="">&nbsp;&nbsp;&minus;&nbsp;&nbsp;<input type="text" placeholder="">&nbsp;&nbsp;千次曝光
+							    </div>
+						    </div>
+						    <div>
+						    	<label class="radio  inline">
+									<input type="radio" name="compare-date" id="chain-relative" value="option2">
+									侧重点击
+								</label>
+								<div class="select-box btn-group">
+								    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+									         固定出价
+									    <span class="caret"></span>
+								    </a>
+								    <ul class="dropdown-menu">
+								    	<li><a href="#">固定出价</a></li>
+					                    <li><a href="#">自动出价</a></li>
+								    </ul>
+							    </div>
+							    <div class="price">
+							    	&yen;&nbsp;&nbsp;<input type="text" placeholder="">&nbsp;点击
+							    </div>
+							    <div class="price">
+							    	CPC出价范围&nbsp;&nbsp;&nbsp;&yen;&nbsp;&nbsp;<input type="text" placeholder="">&nbsp;&nbsp;&minus;&nbsp;&nbsp;<input type="text" placeholder="">&nbsp;&nbsp;点击
+							    </div>
+						    </div>
+							</div>
+					    </div> 
+					    <div class="fieldset-header">
+      			    		投放设备与操作系统
+      			    	</div>
+      			    	<div class="control-group">
+						    <label class="control-label">操作系统</label>
+						    <div class="controls ">
+						    	<div class="settings">
+							    	<a  role="button" class="btn btn-link" data-toggle="modal">设置</a>
+							    	<div><i class="icon-tag"></i><span>全平台</span><span>您已经选择了<span>0</span>个操作系统</span><span>您已经排除了<span>0</span>个操作系统</span></div>
+						    	</div>
+						    </div>
+					    </div> 
+      			    	<div class="control-group">
+						    <label class="control-label">设备类型</label>
+						    <div class="controls ">
+						    	<label class="checkbox  inline">
+									<input type="checkbox" value="">
+									智能手机
+								</label>
+								<label class="checkbox  inline">
+									<input type="checkbox" value="">
+									平板电脑
+								</label>
+								<label class="checkbox  inline">
+									<input type="checkbox" value="">
+									其他设备
+								</label>
+						    </div>
+					    </div> 
+					    <div class="control-group">
+						    <label class="control-label">设备型号</label>
+						    <div class="controls ">
+						    	<div class="settings">
+							    	<a  role="button" class="btn btn-link" data-toggle="modal">设置</a><a  role="button" class="btn btn-link" data-toggle="modal">读取设置</a>
+							    	<div><i class="icon-phone"></i><span>全部</span><span>您已经选择了<span>0</span>个设备</span><span>您已经排除了<span>0</span>个设备</span></div>
+						    	</div>
+						    </div>
+					    </div> 
+					  <div class="control-group">
+						    <label class="control-label">定投设备</label>
+						    <div class="controls ">
+						    	<div class="settings">
+							    	<a  role="button" class="btn btn-link" data-toggle="modal">读取设置</a>
+							    	<div><span>您已经选择了<span>0</span>个设备</span></div>
+						    	</div>
+						    </div>
+					    </div> 
+					    <div class="control-group">
+						    <label class="control-label">排除设备</label>
+						    <div class="controls ">
+						    	<div class="settings">
+							    	<a  role="button" class="btn btn-link" data-toggle="modal">读取设置</a>
+							    	<div><span>您已经选择了<span>0</span>个设备</span></div>
+						    	</div>
+						    </div>
+					    </div> 
+					    <div class="fieldset-header">
+      			    		网络环境
+      			    	</div>
+      			    	<div class="control-group">
+						    <label class="control-label">连接速度</label>
+						    <div class="controls ">
+						    	<label class="checkbox inline">
+									<input type="checkbox" value="">
+									本地-wifi
+								</label>
+								<label class="checkbox inline">
+									<input type="checkbox" value="">
+									高速(3G/4G)
+								</label>
+								<label class="checkbox inline">
+									<input type="checkbox" value="">
+									低速(2G/2.75G)
+								</label>
+						    </div>
+					    </div> 
+					      <div class="control-group">
+						    <label class="control-label">运营商定向</label>
+						    <div class="controls ">
+						    	<label class="checkbox  inline">
+									<input type="checkbox" value="">
+									中国电信
+								</label>
+								<label class="checkbox  inline">
+									<input type="checkbox" value="">
+									中国移动
+								</label>
+								<label class="checkbox  inline">
+									<input type="checkbox" value="">
+									中国联通
+								</label>
+						    </div>
+					    </div> 
+					    <div class="fieldset-header">
+      			    		地理位置
+      			    	</div>
+      			    	<div class="control-group">
+						    <label class="control-label">地域设定</label>
+						    <div class="controls ">
+						    	<div class="settings">
+							    	<a  role="button" class="btn btn-link" data-toggle="modal">设置</a>
+							    	<div><i class="icon-map-marker"></i><span>全部</span><span>您已经选择了<span>0</span>个地域</span><span>您已经排除了<span>0</span>个地域</span></div>
+						    	</div>
+						    </div>
+					    </div> 
+					    <div class="control-group">
+						    <label class="control-label">商圈设定</label>
+						    <div class="controls ">
+						    	<div class="settings">
+							    	<a  role="button" class="btn btn-link" data-toggle="modal" id="business_circle_setting">设置</a>
+							    	<div><i class="icon-map-marker"></i><span>全部</span><span>您已经选择了<span>0</span>个地域</span><span>您已经排除了<span>0</span>个地域</span></div>
+						    	</div>
+						    </div>
+					    </div> 
+					    <div class="fieldset-header">
+      			    		媒体定向
+      			    	</div>
+					    <div class="control-group">
+						    <label class="control-label">媒体分类</label>
+						    <div class="controls ">
+						    	<div class="settings">
+							    	<a  role="button" class="btn btn-link" data-toggle="modal">设置</a>
+							    	<div><i class="icon-film"></i><span>全部</span><span>您已经选择了<span>0</span>个媒体</span><span>您已经排除了<span>0</span>个媒体</span></div>
+						    	</div>
+						    </div>
+					    </div> 
+					    <div class="control-group">
+						    <label class="control-label">媒体设定<a href="#" data-toggle="tooltip"  class="tooltip_qa"><i class="icon-qa"></i></a></label>
+						    <div class="controls ">
+						    	<div class="settings">
+							    	<a  role="button" class="btn btn-link" data-toggle="modal">设置</a><a  role="button" class="btn btn-link" data-toggle="modal">读取设置</a>
+							    	<div>您已经选择了<span>0</span>个媒体</div><div>您已经排除了<span>0</span>个媒体</div>
+						    	</div>
+						    </div>
+					    </div> 
+					    <div class="fieldset-header">
+      			    		人群定向
+      			    	</div>
+					    <div class="control-group">
+						    <label class="control-label">人群设定</label>
+						    <div class="controls ">
+						    	<div class="settings">
+							    	<a id="audience_targeting_setting" role="button" class="btn btn-link" data-toggle="modal">设置</a>
+							    	<div><i class="icon-user"></i>当前已设定人群</div>
+							    	<div class="selected-audience-targeting-list clearfix">
+							    		<div class="clearfix">
+							    			<div class="clearfix">
+								    			<div>或</div>
+								    			<ul>
+													<li>人口属性／性别／女性</li>
+													<li>人口属性／年龄／25-29岁</li>
+													<li>人口属性／收入／10000－20000元</li>
+												</ul>
+								    		</div>
+								    		<i></i>
+								    		<div class="clearfix">
+								    			<div>或</div>
+								    			<ul>
+													<li>人口属性／性别／女性</li>
+													<li>人口属性／年龄／25-29岁</li>
+													<li>人口属性／收入／10000－20000元</li>
+													<li>人口属性／收入／10000－20000元</li>
+												</ul>
+								    		</div>
+								    		<i></i>
+								    		<div class="clearfix">
+								    			<div>或</div>
+								    			<ul>
+													<li>人口属性／性别／女性</li>
+													<li>人口属性／年龄／25-29岁</li>
+													<li>人口属性／收入／10000－20000元</li>
+												</ul>
+								    		</div>
+								    		<i></i>
+							    		</div>
+							    		<div class="clearfix">
+								    		<div class="clearfix">
+								    			<div>或</div>
+								    			<ul>
+													<li>人口属性／性别／女性</li>
+													<li>人口属性／年龄／25-29岁</li>
+													<li>人口属性／收入／10000－20000元</li>
+												</ul>
+								    		</div>
+								    		<i></i>
+								    		<div class="clearfix">
+								    			<div>或</div>
+								    			<ul>
+													<li>人口属性／性别／女性</li>
+													<li>人口属性／年龄／25-29岁</li>
+													<li>人口属性／收入／10000－20000元</li>
+												</ul>
+								    		</div>
+							    		</div>
+							    	</div>
+							    </div>
+						    </div>
+					    </div> 
+					    
+					      
+					    <div class="control-group">
+							<div class="controls">
+								<button type="submit" class="btn btn-primary">保存并继续创建广告创意</button>
+								<button type="submit" class="btn btn-primary">保存</button>
+								<button type="cancel" class="btn btn-cancel">取消</button>
+							</div>
+						</div>
+				    </form>
+          		</div>
+          	</div>
+		</div>
+		<a id="os_setting" role="button" class="btn" data-toggle="modal">操作系统</a>
+		
+		<!----------------------------------------------------------操作系统---------------------------------------------------------------------->
+		<div id="os_modal" class="two-column modal hide fade media" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-header">
+			    <h3>操作系统定向设定</h3>
+		    </div>
+		    <div class="modal-sub-header clearfix radiobox-header">
+		    	<div class="control-group type">
+		    		<label class="radio">
+									<input type="radio" checked="" value="标准" id="standard" name="report-type">
+								           仅投放以下设备
+								</label>
+								<label class="radio">
+									<input type="radio" checked="" value="标准" id="standard" name="report-type">
+								            不投放以下设备
+								</label>
+		    	</div>
+		    	<div><a href="#">清空</a>已选择的</div>
+		    </div>
+		    <div class="modal-body">
+				<div>
+					<div class="clearfix">
+						<div class="search">
+							<i class="icon-search"></i>
+							<input type="text" placeholder="搜索至少输入两个字以上..." />
+						</div>
+						<div class="select-all">
+							<a href="#">全选</a>
+						</div>
+					</div>
+					
+					
+					<ul class="list-level2">
+				            <li class="media">
+				                <input type="checkbox" /><a href="#"><span class="text-hidden">万科dsfdfdsfds</span><i class="icon-ios"></i></a>
+				            </li>
+				             <li class="media">
+				                <input type="checkbox" /><a href="#"><span class="text-hidden">万科dsfdfdsfds</span><i class="icon-android"></i></a>
+				            </li>
+				            <li>
+				                <a class="arrow-btn loading"></a><input type="checkbox" /><a href="#">万科深圳</a>
+				                <ul class="ad-group-list">
+				                    <li>
+				                        <a class="arrow-btn opened"></a><input type="checkbox" checked/><a class="selected" href="#">万科红三期iOS</a>
+				                        <ul class="creative-list">
+						                    <li>
+						                        <input type="checkbox" /><a href="#">万科2012</a>
+						                    </li>
+						                    <li>
+						                        <input type="checkbox" /><a href="#">万科2012</a>
+						                    </li>
+						                </ul>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><input type="checkbox" /><a href="#">万科红三期Android</a>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><input type="checkbox" /><a href="#">万科溪之谷通投</a>
+				                    </li>
+				                </ul>
+				            </li>
+				            
+				            <li>
+				                <a class="arrow-btn loading"></a><input type="checkbox" /><a href="#">万科深圳</a>
+				                <ul class="ad-group-list">
+				                    <li>
+				                        <a class="arrow-btn opened"></a><input type="checkbox" /><a href="#">万科红三期iOS</a>
+				                        <ul class="creative-list">
+						                    <li>
+						                        <input type="checkbox" /><a href="#">万科2012</a>
+						                    </li>
+						                    <li>
+						                        <input type="checkbox" /><a href="#">万科2012</a>
+						                    </li>
+						                </ul>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><input type="checkbox" /><a href="#">万科红三期Android</a>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><input type="checkbox" /><a href="#">万科溪之谷通投</a>
+				                    </li>
+				                </ul>
+				            </li>
+				            <li>
+				                <a class="arrow-btn loading"></a><input type="checkbox" /><a href="#">万科深圳</a>
+				                <ul class="ad-group-list">
+				                    <li>
+				                        <a class="arrow-btn opened"></a><input type="checkbox" /><a href="#">万科红三期iOS</a>
+				                        <ul class="creative-list">
+						                    <li>
+						                        <input type="checkbox" /><a href="#">万科2012</a>
+						                    </li>
+						                    <li>
+						                        <input type="checkbox" /><a href="#">万科2012</a>
+						                    </li>
+						                </ul>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><input type="checkbox" /><a href="#">万科红三期Android</a>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><input type="checkbox" /><a href="#">万科溪之谷通投</a>
+				                    </li>
+				                </ul>
+				            </li>
+				           
+				            <li>
+				                <a class="arrow-btn opened"></a><input type="checkbox" /><a href="#">万科上海</a>
+				                <ul>
+				                    <li>
+				                        <a class="arrow-btn"></a><input type="checkbox" /><a href="#">万科尚源优酷视频</a>
+				                    </li>
+				                </ul>
+				            </li>
+				            <li>
+				                <a class="arrow-btn"></a><input type="checkbox" /><a href="#">万科2012</a>
+				            </li>
+				             <li>
+				                <a class="arrow-btn loading"></a><input type="checkbox" /><a href="#">万科深圳</a>
+				                <ul class="ad-group-list">
+				                    <li>
+				                        <a class="arrow-btn opened"></a><input type="checkbox" /><a href="#">万科红三期iOS</a>
+				                        <ul class="creative-list">
+						                    <li>
+						                        <input type="checkbox" /><a href="#">万科2012</a>
+						                    </li>
+						                    <li>
+						                        <input type="checkbox" /><a href="#">万科2012</a>
+						                    </li>
+						                </ul>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><input type="checkbox" /><a href="#">万科红三期Android</a>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><input type="checkbox" /><a href="#">万科溪之谷通投</a>
+				                    </li>
+				                </ul>
+				            </li>
+				            
+				        </ul>
+				</div>
+				<div>
+					<ul class="selected-creative-list">
+						<li class="media"><span class="text-hidden">素材1</span><i class="icon-ios"></i><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></li>
+						<li class="media"><span class="text-hidden">素材1</span><i class="icon-android"></i><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></li>
+						<li>素材1<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></li>
+						<li>素材1<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></li>
+						
+					</ul>
+				</div>
+		    </div>
+		    <div class="modal-footer">
+		    	<div class="error-msg"><i class="icon-error"></i>文件大小超出限制</div>
+			    <a href="#" class="btn btn-primary">确定</a>
+			    <a href="#" class="btn btn-cancel" data-dismiss="modal" aria-hidden="true">取消</a>
+		    </div>
+	    </div>
+		<!----------------------------------------------------------人群定向---------------------------------------------------------------------->
+			 <div id="audience_targeting_modal"  class="two-column-relations modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-header">
+			    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			    <h3>人群定向设定</h3>
+		    </div>
+		    <div class="modal-sub-header">操作提示：拖拽至蓝色区域表示属性与属性之间为“或”的关系；拖拽至绿色区域为“且”的关系。</div>
+		    <div class="modal-body">
+				<div>
+					<div class="tabbable"> <!-- Only required for left/right tabs -->
+					    <ul class="nav nav-tabs">
+						    <li class="active"><a href="#tab1"  class="people" data-toggle="tab">人口属性</a></li>
+						    <li><a href="#tab2" class="follow" data-toggle="tab">个人关注</a></li>
+						    <li><a href="#tab3"  class="purchase" data-toggle="tab">购买倾向</a></li>
+					    </ul>
+					    <div class="tab-content">
+						    <div class="tab-pane active" id="tab1">
+						    	<ul class="list-level2">
+						            <li>
+						            	<a class="arrow-btn opened"></a><a href="#">性别</a>
+						                <ul class="item-list">
+						                    <li>
+						                        <a href="#">男性</a>
+						                    </li>
+						                    <li>
+						                        <a href="#">女性</a>
+						                    </li>
+						                </ul>
+						            </li>
+						            <li>
+						            	<a class="arrow-btn opened"></a><a href="#">性别</a>
+						                <ul class="item-list">
+						                    <li>
+						                        <a href="#">男性</a>
+						                    </li>
+						                    <li>
+						                        <a href="#">女性</a>
+						                    </li>
+						                </ul>
+						            </li>
+						            <li>
+						                <a class="arrow-btn"></a><a href="#">年龄</a>
+						                <ul class="item-list">
+						                    <li>
+						                        <a href="#">18岁以下</a>
+						                    </li>
+						                    <li>
+						                        <a href="#">18~24岁</a>
+						                    </li>
+						                    <li>
+						                        <a href="#">25~29岁</a>
+						                    </li>
+						                </ul>
+						            </li>
+						             
+						        </ul>
+						    </div>
+					    	<div class="tab-pane" id="tab2">
+					    		<ul class="list-level2">
+						            <li>
+						            	<a class="arrow-btn opened"></a><a href="#">性别</a>
+						                <ul class="item-list">
+						                    <li>
+						                        <a href="#">男性</a>
+						                    </li>
+						                    <li>
+						                        <a href="#">女性</a>
+						                    </li>
+						                </ul>
+						            </li>
+						            <li>
+						            	<a class="arrow-btn opened"></a><a href="#">性别</a>
+						                <ul class="item-list">
+						                    <li>
+						                        <a href="#">男性</a>
+						                    </li>
+						                    <li>
+						                        <a href="#">女性</a>
+						                    </li>
+						                </ul>
+						            </li>
+						            <li>
+						                <a class="arrow-btn"></a><a href="#">年龄</a>
+						                <ul class="item-list">
+						                    <li>
+						                        <a href="#">18岁以下</a>
+						                    </li>
+						                    <li>
+						                        <a href="#">18~24岁</a>
+						                    </li>
+						                    <li>
+						                        <a href="#">25~29岁</a>
+						                    </li>
+						                </ul>
+						            </li>
+						             
+						        </ul>
+					    	</div>
+					    	<div class="tab-pane" id="tab3">
+					    		<p>Howdy, I'm in Section 4.</p>
+					    	</div>
+					    	<div class="tab-pane" id="tab4">
+					    		<p>Howdy, I'm in Section 3.</p>
+					    	</div>
+					    </div>
+				   	</div>
+				</div>
+				<!--right part-->
+				<div class="right-part">
+					<div class="sum-num">符合以下条件的约有<span>34,119,048</span>人</div>
+					<ul>
+				<!-- 	<li class="condition clearfix">
+							<ul>
+								<li>人口属性/性别/男性<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></li>
+								<li>人口属性/性别/男性<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></li>
+								<li>人口属性/性别/男性<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></li>
+								<li>人口属性/性别/男性<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></li>
+								<li>人口属性/性别/男性<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></li>
+								<li>人口属性/性别/男性<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></li>
+							</ul>
+							<div>或</div>
+						</li> -->
+					</ul>
+				</div>
+		    </div>
+		    <div class="modal-footer">
+			    <a href="#" class="btn btn-primary">确定</a>
+			    <a href="#" class="btn btn-cancel" data-dismiss="modal" aria-hidden="true">取消</a>
+		    </div>
+	    </div>
+        <!----------------------------------------------------------商圈设定---------------------------------------------------------------------->
+         <div  id="business_area_modal" class="modal hide fade  business_area_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-header">
+			    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			    <h3>商圈定向</h3>
+		    </div>
+		    <div class="modal-body">
+		    	<div class="slider-container">
+		    		<div class="slider-inner-container">
+		    			<span>半径选择</span><input type="text" id="circle-slider" data-slider-step="0.1" data-slider-max="5" data-slider-min="1" />
+		    		</div>
+		    		<div class="scaleplate">
+		    			1km
+		    			<span class="space"></span>
+		    			<span>1.5km</span>
+		    			<span class="space"></span>
+		    			2km
+		    			<span class="space"></span>
+		    			<span>2.5km</span>
+		    			<span class="space"></span>
+		    			3km
+		    			<span class="space"></span>
+		    			<span>3.5km</span>
+		    			<span class="space"></span>
+		    			4km
+		    			<span class="space"></span>
+		    			<span>4.5km</span>
+		    			<span class="space"></span>
+		    			5km
+		    		</div>
+		    	</div>
+		    	<div class="clearfix">
+		    		<div class="left hot_circle_list" >
+		    			<h5>热门商圈</h5>
+						<ul class="list-level2">
+					            <li>
+					                <a class="arrow-btn opened"></a><a href="#" class="text-hidden">浙江省</a>
+					                <ul class="ad-group-list">
+					                    <li>
+					                        <a class="arrow-btn opened"></a><a href="#" class="text-hidden">杭州市</a>
+					                        <ul class="creative-list">
+							                    <li>
+							                        <a class="arrow-btn opened"></a><a href="#" class="text-hidden">下城区</a>
+							                        <ul class="creative-list">
+									                    <li>
+									                        <input type="checkbox" class="hot_circle last" checked="" ><a href="#" class="text-hidden">武林广场</a>
+									                    </li>
+									                    <li>
+									                        <input type="checkbox" class="hot_circle last" checked="" ><a href="#" class="text-hidden">湖墅南路</a>
+									                    </li>
+									                </ul>
+							                    </li>
+							                </ul>
+					                    </li>
+					                    <li>
+					                        <a class="arrow-btn loading"></a><a href="#" class="text-hidden">宁波市</a>
+					                    </li>
+					                    <li>
+					                        <a class="arrow-btn"></a><a href="#" class="text-hidden">义务市</a>
+					                    </li>
+					                </ul>
+					            </li>
+					            
+					             <li>
+					                <a class="arrow-btn opened"></a><a href="#" class="text-hidden">上海市</a>
+					                <ul class="ad-group-list">
+					                    <li>
+					                        <a class="arrow-btn opened"></a><a href="#" class="text-hidden">虹口区</a>
+					                        <ul class="creative-list">
+							                    <li>
+							                        <input type="checkbox" class="hot_circle"><a href="#" class="text-hidden">虹口龙之梦</a>
+							                    </li>
+							                </ul>
+					                    </li>
+					                    <li>
+					                        <a class="arrow-btn loading"></a><a href="#" class="text-hidden">黄浦区</a>
+					                    </li>
+					                    <li>
+					                        <a class="arrow-btn"></a><a href="#" class="text-hidden">静安区</a>
+					                    </li>
+					                </ul>
+					            </li>
+					        </ul>
+		    		</div>
+					<div id="iCenter" class="left" style="width: 498px;height:300px;"></div>  
+		    		
+		    	</div>
+		    	<div class="selected-circles">
+		    		<div class="title clearfix">已选择的定向中心<a href="#" class="right">清空</a></div>
+		    		<div class="selected-circles-list-container">
+		    			<ul class="clearfix">
+							<li>虹口龙之梦/北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+							<li>北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+							<li>北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+							<li>虹口龙之梦/北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+							<li>虹口龙之梦/北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+							<li>虹口/北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+							<li>虹口龙之梦/北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+							<li>北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+							<li>北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+							<li>虹口龙之梦/北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+							<li>虹口龙之梦/北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+							<li>虹口/北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+						</ul>
+		    		</div>
+		    	</div>
+		    </div>
+		    <div class="modal-footer">
+			    <a href="#" class="btn btn-primary">确定</a>
+			    <a href="#" class="btn btn-cancel" data-dismiss="modal" aria-hidden="true">取消</a>
+		    </div>
+	    </div>
+	    	    
+		<div class="footer">
+			© 2013 <a href="http://www.limei.com/about" target="_blank">力美广告</a> | 服务条款 | <a target="_blank" href="http://www.limei.com/about/detail/id/178">隐私保护</a> | 帮助
+		</div>
+        
+		<script src="common_assets/js/lib/jquery.1.10.1.min.js"></script>
+		<script src="common_assets/js/lib/jquery-ui-1.10.3.custom.min.js"></script>
+		<script type="text/javascript" src="common_assets/js/lib/bootstrap.js"></script>
+		<script type="text/javascript" src="common_assets/components/slider/js/bootstrap-slider.js"></script>
+		<script type="text/javascript" src="common_assets/js/map.js"></script>
+		<script type="text/javascript" src="common_assets/js/index.js"></script>
+	    <!--  <script type="text/javascript"
+                src="http://union.mapbar.com/apis/maps/free?f=mapi&v=31.3&k=aCW9cItqL7sqT7AxaB0zdHZoZSWmbBsuT7JhMHTsMeD6ZIl9NzFsZHT=@JBL979@Iu7lJJZWWq0IDu9xZMzMxq7I9AhH7LAAA6hqzZHZZLTbZZauxlDz7C7DD9ZCFGT=">
+                </script> -->
+                
+        <script language="javascript" src="http://webapi.amap.com/maps?v=1.2&key=4b356e99ebdecb582e771549d0b0de58"></script>
+	</body>
+</html>

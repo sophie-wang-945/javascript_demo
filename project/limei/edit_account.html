@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html class="ie8"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Limei Demand Side Platform - 中国第一家专业移动DSP</title>
+		<meta name="keywords" content="移动广告,移动互联网广告,效果营销,精准营销,移动营销,品牌宣传,互动创意,安卓广告,iOS广告,手机广告,展示广告,互动广告,广告平台,需求方平台,DSP,Mobile DSP,力美,力道,Axiom">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="57x57" href="touch-icon-iphone.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone4.png" />
+		<link rel="stylesheet" href="common_assets/css/bootstrap.css" />
+		<link rel="stylesheet" href="common_assets/css/jquery.fileupload-ui.css" />
+		<!-- desktop -->
+		<!-- <link rel="stylesheet" href="common_assets/css/base.css" /> -->
+		<link rel="stylesheet"  href="common_assets/css/base_src.css" />
+		<!-- horizontal tablet -->
+		<link rel="stylesheet" media="only screen and (min-width: 1024px) and (max-width: 1279px)" href="common_assets/css/horizontal_tablet.css" />
+		<!-- vertical tablet -->
+		<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 1023px)" href="common_assets/css/tablet.css" />
+		<!-- iphone -->
+		<link rel="stylesheet" media="only screen and (max-width: 480px)" href="common_assets/css/mobile.css"/>
+		<!--[if lt IE 9]>
+			<script src="common_assets/js/lib/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="header clearfix">
+			<div class="logo left"><img src="common_assets/img/logo.png"/></div>
+			<ul class="top-nav left clearfix">
+				<li class="index"><a href="dashboard.html">首页</a></li>
+				<li class="ads-throw"><a href="campaign_list.html" class="selected">投放管理</a></li>
+				<li class="report"><a href="create_report.html">统计报表</a></li>
+				<li class="bill"><a href="billing.html">账单信息</a></li>
+			</ul>
+			<div class="action-bar right">
+				<div class="user-name">
+				    <a class="dropdown-toggle text-hidden" data-toggle="dropdown" href="#">曾小贱</a>
+				    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-cog"></i>
+					    		账户信息
+					    	</a>
+					    </li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-lock"></i>
+					    		修改密码
+					    	</a>
+					    </li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-resize-horizontal"></i>
+					    		切换公司
+					    	</a>
+					    </li>
+					    <li class="divider"></li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-off"></i>
+					    		退出系统
+					    	</a>
+					    </li>
+				    </ul>
+			    </div>
+			   <!--  <a class="btn-mail"></a>
+				<a class="btn-option"></a> -->
+			</div>
+		</div>
+		<div class="main-container clearfix">
+          	
+          	<div class="main-content full">
+          		<div class="content-header clearfix">
+          			<h3 class="content-name left">帐户信息</h3>
+          		</div>
+          		<div class="content-body edit-account">
+          			    <div class="tabbable"> <!-- Only required for left/right tabs -->
+						    <ul class="nav nav-tabs">
+							    <li class="active"><a href="#tab1" data-toggle="tab">个人信息</a></li>
+							    <li><a href="#tab2" data-toggle="tab">公司信息</a></li>
+							     <li><a href="#tab3" data-toggle="tab">邀请注册</a></li>
+							      <li><a href="#tab4" data-toggle="tab">提醒设置</a></li>
+						    </ul>
+						    <div class="tab-content">
+							    <div class="tab-pane active" id="tab1">
+							    	<form class="form-horizontal">
+				      			    	<div class="fieldset-header">
+				      			    		基本信息
+				      			    	</div>
+				      			    	 <div class="control-group">
+									    	<label class="control-label">用户名</label>
+										    <div class="controls">
+										    	<span>188299301@qq.com</span>
+										    </div>
+									    </div>
+									    <div class="control-group">
+									    	<label class="control-label"><span class="required">*</span>姓</label>
+										    <div class="controls">
+										    	<input type="text" placeholder="姓…" value="曾" />
+										    </div>
+									    </div>
+									    <div class="control-group">
+									    	<label class="control-label"><span class="required">*</span>名</label>
+										    <div class="controls">
+										    	<input type="text" placeholder="名…" value="大宝" >
+										    </div>
+									    </div>
+									   <div class="control-group">
+									    	<label class="control-label"><span class="required">*</span>移动电话</label>
+										    <div class="controls">
+										    	<input type="text" placeholder="移动电话…" value="13912345678" >
+										    </div>
+									    </div>
+									    <div class="control-group">
+									    	<label class="control-label">登录密码</label>
+										    <div class="controls">
+										    	<a href="#" id="change-pwd-btn">更改</a>
+										    </div>
+									    </div>
+									     <div class="control-group type">
+									    	<label class="control-label"><span class="required">*</span>语言设置</label>
+										    <div class="controls">
+										    	<label class="radio inline">
+													<input type="radio" value="">
+													简体中文
+												</label>
+												<label class="radio inline">
+													<input type="radio" value="">
+													English
+												</label>
+												
+										    </div>
+									    </div>
+									   <div class="control-group">
+											<div class="controls">
+												<button class="btn btn-primary" type="submit">保存</button>
+												<button class="btn btn-cancel" type="cancel">取消</button>
+											</div>
+										</div>
+									   
+								    </form>
+							    </div>
+							    <div class="tab-pane" id="tab2">
+							    	<form class="form-horizontal">
+							    		<div class="fieldset-header">
+				      			    		 基本信息
+				      			    	</div>
+				      			    	<div class="control-group">
+									    	<label class="control-label"><span class="required">*</span>公司名称</label>
+										    <div class="controls">
+										    	<input type="text" placeholder="公司名称…" value="" >
+										    </div>
+									    </div>
+									    <div class="control-group">
+									    	<label class="control-label"><span class="required">*</span>公司网址</label>
+										    <div class="controls">
+										    	<input type="text" placeholder="公司网址…" value="" >
+										    </div>
+									    </div>
+									    <div class="control-group">
+										    <label class="control-label">营业执照</label>
+										    <div class="controls">	
+										    	 <span class="btn btn-success fileinput-button btn-primary-customize">
+														<i class="icon-plus icon-white"></i>
+														<span>上传执照图片</span>
+														<input type="file" name="files" multiple="" id="fileupload">
+													</span>
+													<span class="info"><i class="icon-info part-avaliable-state"></i>支持JPG/PNG/PDF格式文件，文件不超过3MB)</span>
+										    	 <img class="uploaded_img" src="common_assets/img/tmp.png" data-pinit="registered">
+										    	 
+										    </div>
+									    </div>
+									     <div class="control-group compare-range">
+										    <label class="control-label">企业法人身份证</label>
+										    <div class="controls">	
+										    	 <span class="btn btn-success fileinput-button btn-primary-customize">
+														<i class="icon-plus icon-white"></i>
+														<span>上传身份证正面图片</span>
+														<input type="file" name="files" multiple="" id="fileupload">
+													</span>
+													<span class="info"><i class="icon-info part-avaliable-state"></i>支持JPG/PNG/PDF格式文件，文件不超过3MB)</span>
+										    	 <img class="uploaded_img" src="common_assets/img/tmp.png" data-pinit="registered">
+										    	 <span class="btn btn-success fileinput-button btn-primary-customize" style="margin-top:10px;">
+														<i class="icon-plus icon-white"></i>
+														<span>上传身份证背面图片</span>
+														<input type="file" name="files" multiple="" id="fileupload">
+													</span>
+													<span class="info"><i class="icon-info part-avaliable-state"></i>支持JPG/PNG/PDF格式文件，文件不超过3MB)</span>
+										    	 <img class="uploaded_img" src="common_assets/img/tmp.png" data-pinit="registered">
+										    	 
+										    </div>
+									    </div>
+									    <div class="control-group compare-range">
+										    <label class="control-label">ICP证</label>
+										    <div class="controls">	
+										    	 <span class="btn btn-success fileinput-button btn-primary-customize">
+														<i class="icon-plus icon-white"></i>
+														<span>上传ICP证图片</span>
+														<input type="file" name="files" multiple="" id="fileupload">
+													</span>
+													<span class="info"><i class="icon-info part-avaliable-state"></i>支持JPG/PNG/PDF格式文件，文件不超过3MB)</span>
+										    	 <img class="uploaded_img" src="common_assets/img/tmp.png" data-pinit="registered">
+										    	 <a href="">http://mraid网址</a>
+										    </div>
+									    </div>
+									    <div class="control-group">
+									    	<label class="control-label">所属时区</label>
+										    <div class="controls">
+										    	<span>(GMT+8:00中国时间-北京)</span>
+										    </div>
+									    </div>
+									     <div class="control-group">
+									    	<label class="control-label">审核状态</label>
+										    <div class="controls">
+										    	<span>资质待完善</span>
+										    </div>
+									    </div>
+				      			    	<div class="fieldset-header">
+				      			    		 发票信息
+				      			    	</div>
+				      			    	<div class="control-group">
+									    	<label class="control-label"><span class="required">*</span>发票抬头</label>
+										    <div class="controls">
+										    	<input type="text" placeholder="发票抬头…" value="" >
+										    </div>
+									    </div>
+									    <div class="control-group">
+									    	<label class="control-label"><span class="required">*</span>联系人</label>
+										    <div class="controls">
+										    	<input type="text" placeholder="联系人…" value="" >
+										    </div>
+									    </div>
+									    <div class="control-group">
+									    	<label class="control-label"><span class="required">*</span>移动电话</label>
+										    <div class="controls">
+										    	<input type="text" placeholder="移动电话…" value="" >
+										    </div>
+									    </div>
+									    <div class="control-group">
+									    	<label class="control-label"><span class="required">*</span>地区</label>
+										    <div class="controls">
+										    	<div class="select-box btn-group narrow">
+												    <a href="#" data-toggle="dropdown" class="btn dropdown-toggle">
+													           上海市
+													    <span class="caret"></span>
+												    </a>
+												    <ul class="dropdown-menu">
+												    	<li><a href="#">北京市</a></li>
+									                    <li><a href="#">上海市</a></li>
+									                    <li><a href="#">四川省</a></li>
+												    </ul>
+											    </div>
+											    <div class="select-box btn-group narrow">
+												    <a href="#" data-toggle="dropdown" class="btn dropdown-toggle">
+													           虹口区
+													    <span class="caret"></span>
+												    </a>
+												    <ul class="dropdown-menu">
+												    	<li><a href="#">虹口区</a></li>
+									                    <li><a href="#">长宁区</a></li>
+									                    <li><a href="#">黄浦区</a></li>
+												    </ul>
+											    </div>
+										    </div>
+									    </div>
+									    <div class="control-group">
+									    	<label class="control-label"><span class="required">*</span>地址</label>
+										    <div class="controls">
+										    	<input type="text" placeholder="地址…" value="" >
+										    </div>
+									    </div>
+									    <div class="control-group">
+									    	<label class="control-label"><span class="required">*</span>邮编</label>
+										    <div class="controls">
+										    	<input type="text" placeholder="邮编…" value="200081" >
+										    </div>
+									    </div>
+									    <div class="control-group">
+											<div class="controls">
+												<button class="btn btn-primary" type="submit">保存</button>
+												<button class="btn btn-cancel" type="cancel">取消</button>
+											</div>
+										</div>
+							    	</form>
+							    </div>
+							    <div class="tab-pane" id="tab3">
+							    	<form class="form-horizontal">
+				      			    	<div class="fieldset-header">
+				      			    		 邀请设置
+				      			    	</div>
+								    	 <div class="control-group">
+									    	<label class="control-label"><span class="required">*</span>电子邮箱</label>
+										    <div class="controls">
+										    	<input type="text" placeholder="电子邮箱…" value="zengxiaojian@limei.com" >
+										    </div>
+									    </div>
+									    <div class="control-group type">
+									    	<label class="control-label">权限设置</label>
+										    <div class="controls">
+										    	<label class="radio">
+													<input type="radio" checked="" value="管理员"  name="role-type">
+												           管理员
+												</label>
+												<label class="radio">
+													<input type="radio" value="标准"  name="role-type">
+													标准
+												</label>
+												<label class="radio">
+													<input type="radio" value="报表查询" name="role-type">
+													报表查询
+												</label>
+										    </div>
+									    </div>
+							    		<div class="control-group">
+											<div class="controls">
+												<button type="submit" class="btn btn-primary">发送邀请</button>
+												<button type="cancel" class="btn btn-cancel">取消</button>
+											</div>
+										</div>
+							    	</form>
+							    	<div class="fieldset-header">
+				      			    		 最近登录
+				      			    	</div>
+							    	<table class="campaign-table-body table table-striped  customrize-2">
+			      						<colgroup> 
+				      						<col style="width:33%;"> 
+				      						<col style="width:33%;">   
+			      						</colgroup>
+			      						<thead>
+			                    			<tr id="th_list" class="odd">
+				                            	<th>用户名</th>
+				                            	<th>权限</th>
+				                                <th>最近登录</th>
+				                    	</tr>
+				                    </thead>
+				                    <tbody>
+				                    	<tr class="odd">
+				                    		<td>zengxiaojian@limei.com</td>
+				                    		<td>管理员</td>
+				                    		<td>2013-10-21 16:20:25</td>
+				                    	</tr> 
+				                    	<tr class="even">
+				                    		<td>zengxiaojian@limei.com</td>
+				                    		<td>标准</td>
+				                    		<td>2013-10-21 16:20:25</td>
+				                    	</tr> 
+				                    	<tr class="odd">
+				                    		<td>chenxuewei@limei.com</td>
+				                    		<td>标准</td>
+				                    		<td>2013-10-19 16:20:25</td>
+				                    	</tr> 
+				                    	<tr class="even">
+				                    		<td>zengxiaojian@limei.com</td>
+				                    		<td>标准</td>
+				                    		<td>2013-10-18 16:20:25</td>
+				                    	</tr> 
+				                    	<tr class="odd">
+				                    		<td>zhaoshuangxi@limei.com</td>
+				                    		<td>报表查询</td>
+				                    		<td>2013-10-17 16:20:25</td>
+				                    	</tr> 
+				                    	
+				                    </tbody>
+			      				</table>
+			      				<div class="campaign-table-footer clearfix">
+          					 <div class="pagination  pagination-right right">
+          					    	
+								    <ul>
+									    <li class="disabled"><a href="#">«</a></li>
+									    <li><a href="#">1</a></li>
+									    <li class="selected"><a href="#">2</a></li>
+									    <li><a href="#">3</a></li>
+									    <li><a href="#">4</a></li>
+									    <li><a href="#">5</a></li>
+									    <li><a href="#">»</a></li>
+								    </ul>
+								</div>
+		          					<div class="btn-group  right">
+						                 <button class="btn">10</button>
+										 <button class="btn dropdown-toggle" data-toggle="dropdown">
+											<span class="caret"></span>
+										 </button>
+						                 <ul class="dropdown-menu">
+						                  <li class="csv"><a href="#">10</a></li>
+						                  <li class="excel"><a href="#">20</a></li>
+						                  <li class="excel"><a href="#">50</a></li>
+						                </ul>
+						             </div>
+		          					   
+		          				</div>
+							    </div>
+							    <div class="tab-pane" id="tab4">
+							    	<form class="form-horizontal">
+				      			    	<div class="fieldset-header">
+				      			    		 提醒信息
+				      			    	</div>
+				      			    	<div class="control-group">
+									    	<label class="control-label">设置明细</label>
+										    <div class="controls">
+										    	<label class="checkbox">
+													<input type="checkbox" value="" checked="checked">
+													创意被拒绝
+												</label>
+												
+												<div>
+											    	 <label class="checkbox">
+														<input type="checkbox" value="">
+														账户余额少于
+													</label>
+													&nbsp;<input type="text" placeholder="" class="small">&nbsp;元
+											    </div>
+											    <div>
+											    	 <label class="checkbox">
+														<input type="checkbox" value="">
+														广告系列（组）消耗达到总（日）预算的
+													</label>
+													&nbsp;<input type="text" placeholder="" class="small">&nbsp;元
+											    </div>
+												<label class="checkbox">
+													<input type="checkbox" value="" checked="checked">
+													充值到账
+												</label>
+												<label class="checkbox">
+													<input type="checkbox" value="" checked="checked">
+													账户每日投放表现（早上8点发送）
+												</label>
+										    </div>
+									    </div>
+									     <div class="control-group type">
+									    	<label class="control-label">邮箱提醒</label>
+										    <div class="controls">
+										    	<label class="checkbox">
+													<input type="checkbox" value="">
+													是否同时发送提醒至邮箱
+												</label>
+												
+										    </div>
+									    </div>
+									   <div class="control-group">
+											<div class="controls">
+												<button class="btn btn-primary" type="submit">保存</button>
+												<button class="btn btn-cancel" type="cancel">取消</button>
+											</div>
+										</div>
+								    </form>
+							    </div>
+						    </div>
+					    </div>
+      			    
+          		</div>
+          	</div>
+		</div>
+		<!--筛选对话框-->
+		<div class="modal change-pwd-modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-header">
+			    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			    <h3>修改密码</h3>
+		    </div>
+		    <div class="modal-body">
+		    	<form class="form-horizontal">
+		    		<div class="control-group">
+				    	<label class="control-label">当前密码</label>
+					    <div class="controls">
+					    	<input type="password" placeholder="当前密码…" >
+					    </div>
+				    </div>
+				    <div class="control-group">
+				    	<label class="control-label">新密码</label>
+					    <div class="controls">
+					    	<input type="password" placeholder="新密码…" >
+					    </div>
+				    </div>
+				    <div class="control-group">
+				    	<label class="control-label">确认密码</label>
+					    <div class="controls">
+					    	<input type="password" placeholder="确认密码…" >
+					    </div>
+				    </div>
+				    <div class="notice">建议密码由6位以上数字、字母和特殊字符组成。</div>
+		    	</form>
+		    </div>
+		    <div class="modal-footer">
+			    <a href="#" class="btn btn-primary">确定</a>
+			    <a href="#" class="btn btn-cancel" data-dismiss="modal" aria-hidden="true">取消</a>
+		    </div>
+	    </div>
+		<div class="footer">
+			© 2013 <a href="http://www.limei.com/about" target="_blank">力美广告</a> | 服务条款 | <a target="_blank" href="http://www.limei.com/about/detail/id/178">隐私保护</a> | 帮助
+		</div>
+   
+		<script src="common_assets/js/lib/jquery.1.10.1.min.js"></script>
+		<script type="text/javascript" src="common_assets/js/lib/bootstrap.js"></script>
+		<script type="text/javascript" src="common_assets/js/index.js"></script>
+		
+	</body>
+</html>

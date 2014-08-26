@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html class="ie8"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Limei Demand Side Platform - 中国第一家专业移动DSP</title>
+		<meta name="keywords" content="移动广告,移动互联网广告,效果营销,精准营销,移动营销,品牌宣传,互动创意,安卓广告,iOS广告,手机广告,展示广告,互动广告,广告平台,需求方平台,DSP,Mobile DSP,力美,力道,Axiom">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="57x57" href="touch-icon-iphone.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone4.png" />
+		<link rel="stylesheet" href="common_assets/css/bootstrap.css" />
+		<link rel="stylesheet" href="common_assets/components/jquery.tzCheckbox/jquery.tzCheckbox.css" />
+		<link rel="stylesheet" href="common_assets/components/daterangepicker/daterangepicker-bs2.css" />
+		<!-- desktop -->
+		<!-- <link rel="stylesheet" href="common_assets/css/base.css" /> -->
+		<link rel="stylesheet"  href="common_assets/css/base_src.css" />
+		<!-- horizontal tablet -->
+		<link rel="stylesheet" media="only screen and (min-width: 1024px) and (max-width: 1279px)" href="common_assets/css/horizontal_tablet.css" />
+		<!-- vertical tablet -->
+		<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 1023px)" href="common_assets/css/tablet.css" />
+		<!-- iphone -->
+		<link rel="stylesheet" media="only screen and (max-width: 480px)" href="common_assets/css/mobile.css"/>
+		<!--[if lt IE 9]>
+			<script src="common_assets/js/lib/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="header clearfix">
+			<div class="logo left"><img src="common_assets/img/logo.png"/></div>
+			<ul class="top-nav left clearfix">
+				<li class="index"><a href="dashboard.html" class="selected">首页</a></li>
+				<li class="ads-throw"><a href="campaign_list.html">投放管理</a></li>
+				<li class="report"><a href="create_report.html">统计报表</a></li>
+				<li class="share"><a href="share_library.html">共享库</a></li>
+			</ul>
+			<div class="action-bar right clearfix">
+				<div class="user-name clearfix left desktop">
+				    <a class="dropdown-toggle text-hidden" data-toggle="dropdown" href="#">曾小贱</a>
+				    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-cog"></i>
+					    		账户信息
+					    	</a>
+					    </li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-lock"></i>
+					    		修改密码
+					    	</a>
+					    </li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-resize-horizontal"></i>
+					    		切换公司
+					    	</a>
+					    </li>
+					    <li class="divider"></li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-off"></i>
+					    		退出系统
+					    	</a>
+					    </li>
+				    </ul>
+			    </div>
+			    <div class="user-name clearfix left tablet">
+			    	<a id="username" class="text-hidden" data-placement="bottom" href="#" ></a>
+			    </div>
+			    <div class="mail clearfix left">
+				    <a class="dropdown-toggle text-hidden" data-toggle="dropdown" href="#"></a>
+				    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+					    <li>
+					    	<span class="mail-type">余</span><span>7月1日全天您的广告活动展现广告展现...<a href="#">了解更多</a></span>
+					    </li>
+					    <li>
+					    	<span class="mail-type">审</span><span>7月1日全天您的广告活动展现1<a href="#">了解更多</a></span>
+					    </li>
+					    <li>
+					    	<span class="mail-type">审</span><span>7月1日全天您的广告活动展现1<a href="#">了解更多</a></span>
+					    </li>
+					    <li>
+					    	<span class="mail-type">广</span><span>7月1日全天您的广告活动展现1<a href="#">了解更多</a></span>
+					    </li>
+					    <li>
+					    	<span class="mail-type">广</span><span>7月1日全天您的广告活动展现1<a href="#">了解更多</a></span>
+					    </li>
+					    <li class="more last" id="more">
+					    	<a href="#">查看全部</a><a href="#">忽略全部</a>
+					    </li>
+				    </ul>
+			    </div>
+			    <div class="option clearfix left" style="display:none;">
+				    <a class="dropdown-toggle text-hidden" data-toggle="dropdown" href="#"></a>
+				    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+					    <li>
+					    </li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-lock"></i>
+					    		修改密码
+					    	</a>
+					    </li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-resize-horizontal"></i>
+					    		切换公司
+					    	</a>
+					    </li>
+					    <li class="divider"></li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-off"></i>
+					    		退出系统
+					    	</a>
+					    </li>
+				    </ul>
+			    </div>
+				
+			</div>
+		</div>
+		<div class="main-container clearfix">
+          	
+          	<div class="infobar right" style="width: 15%;height:100px;display:none;">
+          		
+          		
+          	</div>
+          	<div class="main-content full">
+          		<div class="content-header">
+          			<h3 class="content-name left">首页</h3>
+      			    
+					<!-- <div class="alert alert-success left text-hidden">
+              
+		              	<strong>Well done!</strong> You successfully read this important alert message.
+		            </div> -->
+		            <!-- <div class="alert alert-error left">
+             
+              			<strong>Oh snap!</strong> Change a few things up and try submitting again.
+            		</div> -->
+					
+          		</div>
+          		<div class="content-body dashboard">
+          			<div class="clearfix company-info-container">
+          				<div class="company-info left">
+          					<h4>上海移告传媒有限公司</h4>
+          					<div><a href="#">管理中心</a><a href="#">消息中心</a><a href="#">账单信息</a><a href="#">运营管理系统</a></div>
+          				</div>
+          				<div class="company-account info-box left">
+          					<div class="info balance">
+                                  <h4>当前账户余额</h4>
+                                  &yen;<span>14,475.13</span>    
+	                          </div>
+	                          <div class="info expense">
+	                              <h4>当日已消费</h4>
+	                              &yen;<span>14,475.13</span>     
+	                          </div>
+          				</div>
+          				<button class="btn add-adgroup btn-primary-customize right"><i class="icon-plus icon-white"></i>新建广告组</button>
+          			</div>
+          			<div class="search-bar">
+          				<div class="clearfix">
+          					<div class="title left">
+          						选择范围
+          					</div>
+          					<!-- <div class="select-box left">
+					    		<input type="text" value="全部广告系列" readonly="readonly">
+					            <div class="btn-group">
+					                <button tabindex="-1" data-toggle="dropdown" class="btn dropdown-toggle">
+					                  <span class="caret"></span>
+					                </button>
+					                <ul class="dropdown-menu">
+					                  <li><a href="#">全部广告系列</a></li>
+					                  <li><a href="#">全部在投广告系列</a></li>
+					                  <li><a href="#" id="customrize-item">自定义</a></li>
+					                </ul>
+					            </div> 
+					    	</div> -->
+				    	    <div class="select-box btn-group left ">
+							    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+								           全部广告系列
+								    <span class="caret"></span>
+							    </a>
+							    <ul class="dropdown-menu">
+							    	<li><a href="#">全部广告系列</a></li>
+				                    <li><a href="#">全部在投广告系列</a></li>
+				                    <li><a href="#" id="customrize-item">自定义</a></li>
+							    </ul>
+						    </div>
+					    	<div class="selected-ad left">
+					    		万科上海&gt;万科尚源优酷视频&gt;<span>素材D</span>
+					    	</div>	
+					    	<div class="right clearfix" >
+					    		<div class="btn-group">
+					    			<button class="btn diagram-type selected"><i class="icon-diagram"></i>图表</button>
+					    			<button class="btn table-type"><i class="icon-table"></i>表格</button>
+					    		</div>
+					    		
+					    		<button class="btn export"><i class="icon-export"></i>导出</button>
+					    	</div>
+          				</div>
+          				<div class="start-date clearfix">
+          					<div class="title left">
+          						起始日期
+          					</div>
+          					<div class="reportrange left">
+					            <span></span> 
+					            <i class="glyphicon glyphicon-calendar icon-calendar icon-large"></i>
+					        </div>
+					        
+					        <div class="title left">
+					        	数据比较
+					        	<input type="checkbox" id="ch_effects" name="ch_effects" data-on="开" data-off="关"/>
+					        </div>
+          				</div>
+          				<div class="compare-date clearfix">
+          					<div class="title left">
+          					比较日期
+          					</div>
+          					<div class="reportrange left">
+					            <span></span> 
+					            <i class="glyphicon glyphicon-calendar icon-calendar icon-large"></i>
+					        </div>
+					        <ul class="left">
+					        	<li class="selected"><a href="#">同比</a></li>
+					        	<li><a href="#">环比</a></li>
+					        </ul>
+          				</div>
+          			</div>
+          			<div class="diagram-container">
+          				<div class="info-box four-column clearfix">
+          					<div class="center">
+				          		<div class="info price selected">
+					          	  	<h4>消耗</h4>
+					              	&yen;<span>14,475.13</span>
+				          	  	</div>
+				          	</div>     
+				          	<div class="center">         
+								<div class="info show selected">
+									<div class="left">
+										<h4 class="diagram-heading">展示数</h4>
+						        		<span>1,359.283</span>
+									</div>
+						        	<div class="right">
+					                	<i class="up" style="display: none"></i>
+					                	<i class="down"></i>
+					                	<span>-14%</span>
+					                </div>
+								</div>
+							</div>
+							<div class="center">
+								<div class="info hits selected">
+									<div class="left">
+						                <h4 class="diagram-heading">点击数</h4>
+						                <span>2,310.78</span>
+					                </div>
+						        	<div class="right">
+					                	<i class="up"></i>
+					                	<i class="down" style="display: none"></i>
+					                	<span>-14%</span>
+					                </div>
+				                </div>
+				            </div>
+				            <div class="center">
+				             	<div class="info ctr selected">
+						             <h4>点击率</h4>
+						             <span>0.17%</span>
+					             </div>
+				           	  </div>
+				         </div>
+          				<div style="height:600px;"></div>
+          			</div>
+          		</div>
+          		<div class="footer">
+					© 2013 <a href="http://www.limei.com/about" target="_blank">力美广告</a> | 服务条款 | <a target="_blank" href="http://www.limei.com/about/detail/id/178">隐私保护</a> | 帮助
+				</div>
+          	</div>
+		</div>
+		<!--------------------------------------自定义范围--------------------------------------->
+	    <div id="customrize-modal" class="customrize-modal modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-header">
+			    <h3>自定义范围</h3>
+		    </div>
+		    <div class="modal-sub-header">请在下面选择广告系列、广告组或创意</div>
+		    <div class="modal-body">
+		    	
+				<div>
+					<ul class="list-level2">
+				            <li>
+				                <a class="arrow-btn"></a><a href="#">万科dsfdfdsfds</a>
+				            </li>
+				            <li>
+				                <a class="arrow-btn loading"></a><a href="#">万科深圳</a>
+				                <ul class="ad-group-list">
+				                    <li>
+				                        <a class="arrow-btn opened"></a><a href="#">万科红三期iOS</a>
+				                        <ul class="creative-list">
+						                    <li>
+						                        <a class="selected" href="#">万科2012</a>
+						                    </li>
+						                    <li>
+						                        <a href="#">万科2012</a>
+						                    </li>
+						                </ul>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><a href="#">万科红三期Android</a>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><a href="#">万科溪之谷通投</a>
+				                    </li>
+				                </ul>
+				            </li>
+				            
+				            <li>
+				                <a class="arrow-btn loading"></a><a href="#">万科深圳</a>
+				                <ul class="ad-group-list">
+				                    <li>
+				                        <a class="arrow-btn opened"></a><a href="#">万科红三期iOS</a>
+				                        <ul class="creative-list">
+						                    <li>
+						                        <a href="#">万科2012</a>
+						                    </li>
+						                    <li>
+						                        <a href="#">万科2012</a>
+						                    </li>
+						                </ul>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><a href="#">万科红三期Android</a>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><a href="#">万科溪之谷通投</a>
+				                    </li>
+				                </ul>
+				            </li>
+				            <li>
+				                <a class="arrow-btn loading"></a><a href="#">万科深圳</a>
+				                <ul class="ad-group-list">
+				                    <li>
+				                        <a class="arrow-btn opened"></a><a href="#">万科红三期iOS</a>
+				                        <ul class="creative-list">
+						                    <li>
+						                        <a href="#">万科2012</a>
+						                    </li>
+						                    <li>
+						                        <a href="#">万科2012</a>
+						                    </li>
+						                </ul>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><a href="#">万科红三期Android</a>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><a href="#">万科溪之谷通投</a>
+				                    </li>
+				                </ul>
+				            </li>
+				           
+				            <li>
+				                <a class="arrow-btn opened"></a><a href="#">万科上海</a>
+				                <ul>
+				                    <li>
+				                        <a class="arrow-btn"></a><a href="#">万科尚源优酷视频</a>
+				                    </li>
+				                </ul>
+				            </li>
+				            <li>
+				                <a class="arrow-btn"></a><a href="#">万科2012</a>
+				            </li>
+				             <li>
+				                <a class="arrow-btn loading"></a><a href="#">万科深圳</a>
+				                <ul class="ad-group-list">
+				                    <li>
+				                        <a class="arrow-btn opened"></a><a href="#">万科红三期iOS</a>
+				                        <ul class="creative-list">
+						                    <li>
+						                        <a href="#">万科2012</a>
+						                    </li>
+						                    <li>
+						                        <a href="#">万科2012</a>
+						                    </li>
+						                </ul>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><a href="#">万科红三期Android</a>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><a href="#">万科溪之谷通投</a>
+				                    </li>
+				                </ul>
+				            </li>
+				            
+				        </ul>
+				</div>
+				
+		    </div>
+		    
+		     
+		    <div class="modal-footer">
+			    <a href="#" class="btn btn-primary">确定</a>
+			    <a href="#" class="btn btn-cancel" data-dismiss="modal" aria-hidden="true">取消</a>
+		    </div>
+	    </div>
+        
+		<script src="common_assets/js/lib/jquery.1.10.1.min.js"></script>
+		<script type="text/javascript" src="common_assets/js/lib/bootstrap.js"></script>
+		<script type="text/javascript" src="common_assets/components/daterangepicker/moment.js"></script>
+		<script type="text/javascript" src="common_assets/components/daterangepicker/daterangepicker.js"></script>
+		<script type="text/javascript" src="common_assets/components/jquery.tzCheckbox/jquery.tzCheckbox.js"></script>
+		<script type="text/javascript" src="common_assets/js/index.js"></script>
+		<script>
+			$('input[type=checkbox]').tzCheckbox({labels:['Enable','Disable']});
+		</script>
+	</body>
+</html>

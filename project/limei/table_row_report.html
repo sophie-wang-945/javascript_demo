@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html class="ie8"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Limei Demand Side Platform - 中国第一家专业移动DSP</title>
+		<meta name="keywords" content="移动广告,移动互联网广告,效果营销,精准营销,移动营销,品牌宣传,互动创意,安卓广告,iOS广告,手机广告,展示广告,互动广告,广告平台,需求方平台,DSP,Mobile DSP,力美,力道,Axiom">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="57x57" href="touch-icon-iphone.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone4.png" />
+		<link rel="stylesheet" href="common_assets/css/bootstrap.css" />
+		<!-- desktop -->
+		<!-- <link rel="stylesheet" href="common_assets/css/base.css" /> -->
+		<link rel="stylesheet"  href="common_assets/css/base_src.css" />
+		<!-- horizontal tablet -->
+		<link rel="stylesheet" media="only screen and (min-width: 1024px) and (max-width: 1279px)" href="common_assets/css/horizontal_tablet.css" />
+		<!-- vertical tablet -->
+		<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 1023px)" href="common_assets/css/tablet.css" />
+		<!-- iphone -->
+		<link rel="stylesheet" media="only screen and (max-width: 480px)" href="common_assets/css/mobile.css"/>
+		<!--[if lt IE 9]>
+			<script src="common_assets/js/lib/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="header clearfix">
+			<div class="logo left">
+				<a href="#" class="sidebar-opener"><i></i></a>
+				<img src="common_assets/img/logo.png"/>
+			</div>
+			<ul class="top-nav left clearfix">
+				<li class="index"><a href="dashboard.html">首页</a></li>
+				<li class="ads-throw"><a href="campaign_list.html">投放管理</a></li>
+				<li class="report"><a href="create_report.html" class="selected">统计报表</a></li>
+				<li class="bill"><a href="billing.html">账单信息</a></li>
+			</ul>
+			<div class="action-bar right">
+				<div class="user-name">
+				    <a class="dropdown-toggle text-hidden" data-toggle="dropdown" href="#">曾小贱</a>
+				    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-cog"></i>
+					    		账户信息
+					    	</a>
+					    </li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-lock"></i>
+					    		修改密码
+					    	</a>
+					    </li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-resize-horizontal"></i>
+					    		切换公司
+					    	</a>
+					    </li>
+					    <li class="divider"></li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-off"></i>
+					    		退出系统
+					    	</a>
+					    </li>
+				    </ul>
+			    </div>
+			    <!-- <a class="btn-mail"></a>
+				<a class="btn-option"></a> -->
+			</div>
+		</div>
+		<div class="main-container clearfix">
+          	<!-- <div class="sidebar report">
+          		<div class="sidebar-arrow"></div>
+          		<div>
+	          		<div class="list-level1">
+	          			<ul class="list-level2">
+		          			<li class="adthrows">
+		          				<a href="#">投放表现</a>
+		          			</li>
+				            <li class="device selected">
+				                <a href="#">设备属性</a>
+				            </li>
+				            <li  class="network">
+				                <a href="#">网络环境</a>
+				            </li>
+				            <li  class="flow-source">
+				                <a href="#">流量来源</a>
+				            </li>
+				            <li  class="geo">
+				                <a href="#">地理位置</a>
+				            </li>  
+				            <li  class="people">
+				                <a href="#">人口属性</a>
+				            </li> 
+				        </ul>
+	          		</div>
+          		</div> 
+          	</div> -->
+          	<div class="main-content">
+          		<div class="content-header">
+          			<h3 class="content-name left">统计报表</h3>
+      			    <ul class="breadcrumb left">
+					    <li><a href="#">查看报表</a> <span class="divider">&gt;</span></li>
+					    <li class="active">报表1</li>
+					</ul>
+          		</div>
+          		<div class="content-body report">
+          			<div class="diagram-title">
+          				<div>起止日期:&nbsp;&nbsp;<span>2013/06/01 - 2013/12/30</span></div>
+          				<div><span>万科2013</span><i></i><span>万科2012</span></div> 
+          			</div>
+			        <div class="tabbable"> <!-- Only required for left/right tabs -->
+					    <ul class="nav nav-tabs" id="diagram-tab">
+						    <li class="active"><a href="#tab1"  class="price" data-toggle="tab">消耗</a></li>
+						    <li><a href="#tab2" class="shows" data-toggle="tab">展示数</a></li>
+						    <li><a href="#tab3"  class="hits" data-toggle="tab">点击数</a></li>
+						    <li><a href="#tab4"  class="ctr" data-toggle="tab">点击率</a></li>
+					    </ul>
+					    <div class="tab-content">
+						    <div class="tab-pane active" id="tab1">
+						    	
+						    	<div class="diagram">
+									<div class="diagram-bar">
+										<h5>设备类型</h5>
+										<a class="table-type selected"></a>
+										<span>|</span>
+										<a class="diagram-type"></a>
+										<a class="download-report"><i class="icon-export"></i>导出</a>
+									</div>
+									<div>
+										
+									</div>
+									<div class="diagram-container clearfix">
+										<div class="small-diagram-container">
+											<div class="small-diagram-container nodata">
+												<div>暂无数据</div>
+											</div>
+											<div class="small-diagram-container nodata">
+												 <div>暂无数据</div>
+											</div>
+										</div>
+										<div class="small-diagram-container">
+											<div class="small-diagram-container"></div>
+											<div class="small-diagram-container"></div>
+										</div>
+									</div>
+								</div>
+								<div class="diagram">
+									<div class="diagram-bar">
+										<h5>操作系统</h5>
+										<a class="table-type selected"></a>
+										<span>|</span>
+										<a class="diagram-type"></a>
+										<a class="download-report"><i class="icon-export"></i>导出</a>
+									</div>
+									
+									<div class="diagram-container clearfix">
+										<div class="small-diagram-container">
+											<table class="table table-striped">
+								              <thead>
+								                <tr>
+								                  <th>排名</th>
+								                  <th>系统</th>
+								                  <th>版本</th>
+								                  <th>所占比例</th>
+								                </tr>
+								              </thead>
+								              <tbody>
+								                <tr>
+								                  <td>1</td>
+								                  <td>Andriod</td>
+								                  <td>4.1</td>
+								                  <td>18.54%</td>
+								                </tr>
+								                <tr>
+								                  <td>2</td>
+								                  <td>Andriod</td>
+								                  <td>4.0</td>
+								                  <td>17.45%</td>
+								                </tr>
+								                <tr>
+								                  <td>3</td>
+								                  <td>Andriod</td>
+								                  <td>2.3</td>
+								                  <td>15.06%</td>
+								                </tr>
+								                <tr>
+								                  <td>4</td>
+								                  <td>Andriod</td>
+								                  <td>4.2</td>
+								                  <td>4.34%</td>
+								                </tr>
+								                <tr>
+								                  <td>5</td>
+								                  <td>Andriod</td>
+								                  <td>2.2</td>
+								                  <td>1.06%</td>
+								                </tr>
+								              </tbody>
+								            </table>
+								            <a class="show_more">显示更多</a>
+								            <table class="table table-striped">
+								              <thead>
+								                <tr>
+								                  <th>排名</th>
+								                  <th>系统</th>
+								                  <th>版本</th>
+								                  <th>所占比例</th>
+								                </tr>
+								              </thead>
+								              <tbody>
+								                <tr>
+								                  <td>1</td>
+								                  <td>Andriod</td>
+								                  <td>4.1</td>
+								                  <td>18.54%</td>
+								                </tr>
+								                <tr>
+								                  <td>2</td>
+								                  <td>Andriod</td>
+								                  <td>4.0</td>
+								                  <td>17.45%</td>
+								                </tr>
+								                <tr>
+								                  <td>3</td>
+								                  <td>Andriod</td>
+								                  <td>2.3</td>
+								                  <td>15.06%</td>
+								                </tr>
+								                <tr>
+								                  <td>4</td>
+								                  <td>Andriod</td>
+								                  <td>4.2</td>
+								                  <td>4.34%</td>
+								                </tr>
+								                <tr>
+								                  <td>5</td>
+								                  <td>Andriod</td>
+								                  <td>2.2</td>
+								                  <td>1.06%</td>
+								                </tr>
+								              </tbody>
+								            </table>
+								            <a class="show_more">显示更多</a>
+										</div>
+										<div class="small-diagram-container">
+											<table class="table table-striped">
+								              <thead>
+								                <tr>
+								                  <th>排名</th>
+								                  <th>系统</th>
+								                  <th>版本</th>
+								                  <th>所占比例</th>
+								                </tr>
+								              </thead>
+								              <tbody>
+								                <tr>
+								                  <td>1</td>
+								                  <td>Andriod</td>
+								                  <td>4.1</td>
+								                  <td>18.54%</td>
+								                </tr>
+								                <tr>
+								                  <td>2</td>
+								                  <td>Andriod</td>
+								                  <td>4.0</td>
+								                  <td>17.45%</td>
+								                </tr>
+								                <tr>
+								                  <td>3</td>
+								                  <td>Andriod</td>
+								                  <td>2.3</td>
+								                  <td>15.06%</td>
+								                </tr>
+								                <tr>
+								                  <td>4</td>
+								                  <td>Andriod</td>
+								                  <td>4.2</td>
+								                  <td>4.34%</td>
+								                </tr>
+								                <tr>
+								                  <td>5</td>
+								                  <td>Andriod</td>
+								                  <td>2.2</td>
+								                  <td>1.06%</td>
+								                </tr>
+								              </tbody>
+								            </table>
+								            <a class="show_more">显示更多</a>
+								            <table class="table table-striped">
+								              <thead>
+								                <tr>
+								                  <th>排名</th>
+								                  <th>系统</th>
+								                  <th>版本</th>
+								                  <th>所占比例</th>
+								                </tr>
+								              </thead>
+								              <tbody>
+								                <tr>
+								                  <td>1</td>
+								                  <td>Andriod</td>
+								                  <td>4.1</td>
+								                  <td>18.54%</td>
+								                </tr>
+								                <tr>
+								                  <td>2</td>
+								                  <td>Andriod</td>
+								                  <td>4.0</td>
+								                  <td>17.45%</td>
+								                </tr>
+								                <tr>
+								                  <td>3</td>
+								                  <td>Andriod</td>
+								                  <td>2.3</td>
+								                  <td>15.06%</td>
+								                </tr>
+								                <tr>
+								                  <td>4</td>
+								                  <td>Andriod</td>
+								                  <td>4.2</td>
+								                  <td>4.34%</td>
+								                </tr>
+								                <tr>
+								                  <td>5</td>
+								                  <td>Andriod</td>
+								                  <td>2.2</td>
+								                  <td>1.06%</td>
+								                </tr>
+								              </tbody>
+								            </table>
+								            <a class="show_more">显示更多</a>
+										</div>
+									</div>
+								</div>
+								<div class="diagram">
+									<div class="diagram-bar">
+										<h5>屏幕分辨率</h5>
+										<a class="table-type selected"></a>
+										<span>|</span>
+										<a class="diagram-type"></a>
+										<a class="download-report"><i class="icon-export"></i>导出</a>
+									</div>
+									
+									<div class="diagram-container clearfix">
+										<div class="small-diagram-container nodata">
+											<div>暂无数据</div>
+										</div>
+										<div class="small-diagram-container nodata">
+											 <div>暂无数据</div>
+										</div>
+									</div>
+								</div>
+								<div class="diagram">
+									<div class="diagram-bar">
+										<h5>设备品牌及型号</h5>
+										<a class="table-type selected"></a>
+										<span>|</span>
+										<a class="diagram-type"></a>
+										<a class="download-report"><i class="icon-export"></i>导出</a>
+									</div>
+									
+									<div class="diagram-container clearfix">
+										<div class="small-diagram-container">
+											 <table class="table table-striped">
+								              <thead>
+								                <tr>
+								                  <th>排名</th>
+								                  <th>系统</th>
+								                  <th>版本</th>
+								                  <th>所占比例</th>
+								                </tr>
+								              </thead>
+								              <tbody>
+								                <tr>
+								                  <td>1</td>
+								                  <td>Andriod</td>
+								                  <td>4.1</td>
+								                  <td>18.54%</td>
+								                </tr>
+								                <tr>
+								                  <td>2</td>
+								                  <td>Andriod</td>
+								                  <td>4.0</td>
+								                  <td>17.45%</td>
+								                </tr>
+								                <tr>
+								                  <td>3</td>
+								                  <td>Andriod</td>
+								                  <td>2.3</td>
+								                  <td>15.06%</td>
+								                </tr>
+								                <tr>
+								                  <td>4</td>
+								                  <td>Andriod</td>
+								                  <td>4.2</td>
+								                  <td>4.34%</td>
+								                </tr>
+								                <tr>
+								                  <td>5</td>
+								                  <td>Andriod</td>
+								                  <td>2.2</td>
+								                  <td>1.06%</td>
+								                </tr>
+								              </tbody>
+								            </table>
+								            <a class="show_more">显示更多</a>
+										</div>
+										<div class="small-diagram-container">
+											 <table class="table table-striped">
+								              <thead>
+								                <tr>
+								                  <th>排名</th>
+								                  <th>系统</th>
+								                  <th>版本</th>
+								                  <th>所占比例</th>
+								                </tr>
+								              </thead>
+								              <tbody>
+								                <tr>
+								                  <td>1</td>
+								                  <td>Andriod</td>
+								                  <td>4.1</td>
+								                  <td>18.54%</td>
+								                </tr>
+								                <tr>
+								                  <td>2</td>
+								                  <td>Andriod</td>
+								                  <td>4.0</td>
+								                  <td>17.45%</td>
+								                </tr>
+								                <tr>
+								                  <td>3</td>
+								                  <td>Andriod</td>
+								                  <td>2.3</td>
+								                  <td>15.06%</td>
+								                </tr>
+								                <tr>
+								                  <td>4</td>
+								                  <td>Andriod</td>
+								                  <td>4.2</td>
+								                  <td>4.34%</td>
+								                </tr>
+								                <tr>
+								                  <td>5</td>
+								                  <td>Andriod</td>
+								                  <td>2.2</td>
+								                  <td>1.06%</td>
+								                </tr>
+								              </tbody>
+								            </table>
+								            <a class="show_more">显示更多</a>
+										</div>
+									</div>
+								</div>
+								
+						    </div>
+					    	<div class="tab-pane" id="tab2">
+					    		<p>Howdy, I'm in Section 2.</p>
+					    	</div>
+					    	<div class="tab-pane" id="tab3">
+					    		<p>Howdy, I'm in Section 4.</p>
+					    	</div>
+					    	<div class="tab-pane" id="tab4">
+					    		<p>Howdy, I'm in Section 3.</p>
+					    	</div>
+					    </div>
+				   	</div>
+          		</div>
+          		<div class="footer">
+					© 2013 <a href="http://www.limei.com/about" target="_blank">力美广告</a> | 服务条款 | <a target="_blank" href="http://www.limei.com/about/detail/id/178">隐私保护</a> | 帮助
+				</div>
+          	</div>
+		</div>
+		<div class="sidebar menu report">
+      		<div class="sidebar-header">
+				<a href="#" class="close-btn"><i></i></a>
+				<img src="common_assets/img/logo.png"/>
+			</div>
+			<div>
+	          		<div class="list-level1">
+	          			<ul class="list-level2">
+		          			<li class="adthrows">
+		          				<a href="#">投放表现</a>
+		          			</li>
+				            <li class="device selected">
+				                <a href="#">设备属性</a>
+				            </li>
+				            <li  class="network">
+				                <a href="#">网络环境</a>
+				            </li>
+				            <li  class="flow-source">
+				                <a href="#">流量来源</a>
+				            </li>
+				            <li  class="geo">
+				                <a href="#">地理位置</a>
+				            </li>  
+				             <li  class="time">
+				                <a href="#">时间分布</a>
+				            </li>  
+				            <li  class="people">
+				                <a href="#">人口属性</a>
+				            </li> 
+				        </ul>
+	          		</div>
+          		</div> 
+		</div>
+        <div class="mask"></div>
+       
+		<script src="common_assets/js/lib/jquery.1.10.1.min.js"></script>
+		<script type="text/javascript" src="common_assets/js/lib/bootstrap.js"></script>
+		<script type="text/javascript" src="common_assets/js/index.js"></script>
+		
+	</body>
+</html>

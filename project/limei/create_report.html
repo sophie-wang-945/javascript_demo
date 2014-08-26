@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html class="ie8"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Limei Demand Side Platform - 中国第一家专业移动DSP</title>
+		<meta name="keywords" content="移动广告,移动互联网广告,效果营销,精准营销,移动营销,品牌宣传,互动创意,安卓广告,iOS广告,手机广告,展示广告,互动广告,广告平台,需求方平台,DSP,Mobile DSP,力美,力道,Axiom">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="57x57" href="touch-icon-iphone.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone4.png" />
+		<link rel="stylesheet" href="common_assets/css/bootstrap.css" />
+		<link rel="stylesheet" href="common_assets/components/daterangepicker/daterangepicker-bs2.css" />
+		<!-- desktop -->
+		<!-- <link rel="stylesheet" href="common_assets/css/base.css" /> -->
+		<link rel="stylesheet"  href="common_assets/css/base_src.css" />
+		<!-- horizontal tablet -->
+		<link rel="stylesheet" media="only screen and (min-width: 1024px) and (max-width: 1279px)" href="common_assets/css/horizontal_tablet.css" />
+		<!-- vertical tablet -->
+		<link rel="stylesheet" media="only screen and (min-width: 4b81px) and (max-width: 1023px)" href="common_assets/css/tablet.css" />
+		<!-- iphone -->
+		<link rel="stylesheet" media="only screen and (max-width: 480px)" href="common_assets/css/mobile.css"/>
+		<!--[if lt IE 9]>
+			<script src="common_assets/js/lib/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="header clearfix">
+			<div class="logo left"><img src="common_assets/img/logo.png"/></div>
+			<ul class="top-nav left clearfix">
+				<li class="index"><a href="dashboard.html">首页</a></li>
+				<li class="ads-throw"><a href="campaign_list.html">投放管理</a></li>
+				<li class="report"><a href="create_report.html"  class="selected">统计报表</a></li>
+				<li class="bill"><a href="billing.html">账单信息</a></li>
+			</ul>
+			<div class="action-bar right">
+				<div class="user-name">
+				    <a class="dropdown-toggle text-hidden" data-toggle="dropdown" href="#">曾小贱</a>
+				    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-cog"></i>
+					    		账户信息
+					    	</a>
+					    </li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-lock"></i>
+					    		修改密码
+					    	</a>
+					    </li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-resize-horizontal"></i>
+					    		切换公司
+					    	</a>
+					    </li>
+					    <li class="divider"></li>
+					    <li>
+					    	<a href="#">
+					    		<i class="icon-off"></i>
+					    		退出系统
+					    	</a>
+					    </li>
+				    </ul>
+			    </div>
+			   <!--  <a class="btn-mail"></a>
+				<a class="btn-option"></a> -->
+			</div>
+		</div>
+		<div class="main-container clearfix">
+          	<div class="main-content full create_report">
+          		<div class="content-header clearfix">
+          			<h3 class="content-name left">统计报表</h3>
+      			    <ul class="breadcrumb left">
+					    <li><a href="#">统计报表</a> <span class="divider">&gt;</span></li>
+					    <li class="active">报表查询</li>
+					</ul>
+          		</div>
+          		<div class="content-body">
+      			    <form class="form-horizontal">
+					    <div class="control-group type">
+					    	<label class="control-label">类型</label>
+						    <div class="controls">
+						    	<label class="radio">
+									<input type="radio" name="report-type" id="standard" value="标准" checked>
+								           标准
+								</label>
+								<label class="radio">
+									<input type="radio" name="report-type" id="period-compare" value="时间比较">
+									时间比较
+								</label>
+								<label class="radio">
+									<input type="radio" name="report-type" id="same-level-compare" value="同级比较">
+									同级比较
+								</label>
+						    </div>
+					    </div>
+					    <div class="control-group choice-range">
+						    <label class="control-label">选择范围</label>
+						    <div class="controls">	
+						    	<!-- <div class="select-box">
+						    		<input type="text" value="全部广告系列" readonly="readonly">
+						            <div class="btn-group">
+						                <button tabindex="-1" data-toggle="dropdown" class="btn dropdown-toggle">
+						                  <span class="caret"></span>
+						                </button>
+						                <ul class="dropdown-menu">
+						                  <li><a href="#">全部广告系列</a></li>
+						                  <li><a href="#">全部在投广告系列</a></li>
+						                  <li><a href="#" id="customrize-item">自定义</a></li>
+						                </ul>
+						            </div> 
+						    	</div>	 -->				    	 
+				                 <div class="select-box btn-group">
+								    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+									           全部广告系列
+									    <span class="caret"></span>
+								    </a>
+								    <ul class="dropdown-menu">
+								    	<li><a href="#">全部广告系列</a></li>
+					                    <li><a href="#">全部在投广告系列</a></li>
+					                    <li><a href="#" id="customrize-item">自定义</a></li>
+								    </ul>
+							    </div>        
+						    </div>
+					    </div>
+					    <div class="control-group compare-range">
+						    <label class="control-label">面向范围</label>
+						    <div class="controls">	
+						    	<!-- <div class="select-box">
+						    		<input type="text" value="广告系列比较" readonly="readonly">
+						            <div class="btn-group">
+						                <button tabindex="-1" data-toggle="dropdown" class="btn dropdown-toggle">
+						                  <span class="caret"></span>
+						                </button>
+						                <ul class="dropdown-menu">
+						                  <li><a href="#">广告系列比较</a></li>
+						                  <li><a href="#">广告组比较</a></li>
+						                  <li><a href="#" id="creative-item">创意比较</a></li>
+						                </ul>
+						            </div> 
+						    	</div>	 -->
+						    	 <div class="select-box btn-group">
+								    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+									           广告系列比较
+									    <span class="caret"></span>
+								    </a>
+								    <ul class="dropdown-menu">
+								    	<li><a href="#">广告系列比较</a></li>
+						                <li><a href="#">广告组比较</a></li>
+						                <li><a href="#" id="creative-item">创意比较</a></li>
+								    </ul>
+							    </div>				    	 
+				                        
+						    </div>
+					    </div>
+					    <div class="current-selected-creative">
+					    	<h5>当前已选创意</h5>
+					    	<ul>
+					    		<li><span>万科上海&gt;万科尚源优酷视频&gt;</span>素材D<a class="icon-trash"></a></li>
+					    	</ul>
+					    </div>
+					    <div class="control-group start-end-date">
+						    <label class="control-label">起止日期</label>
+   					    	<div class="controls">
+   					    		<label class="radio">
+									<input type="radio" name="compare-date" id="year-on-year" value="option1" checked>
+								           整个投放周期
+								</label>
+						    	<label class="radio customrize">
+									<input type="radio" name="compare-date" id="customrize" value="option3">
+									自定义
+									<div class="reportrange">
+							            <i class="glyphicon glyphicon-calendar icon-calendar icon-large"></i>
+							            <span></span> 
+							        </div>
+								</label>
+								
+						    </div>
+					    </div>
+					    <div class="control-group compare-date">
+						    <label class="control-label">比较日期</label>
+						    <div class="controls ">
+						    	<label class="radio">
+									<input type="radio" name="compare-date" id="year-on-year" value="option1" checked>
+								           同比<span>2012/07/22&nbsp;至&nbsp;2013/07/22</span>
+								</label>
+								<label class="radio">
+									<input type="radio" name="compare-date" id="chain-relative" value="option2">
+									环比<span>2012/07/22&nbsp;至&nbsp;2013/07/22</span>
+								</label>
+								<label class="radio customrize">
+									<input type="radio" name="compare-date" id="customrize" value="option3">
+									自定义
+									<div class="reportrange">
+							            <i class="glyphicon glyphicon-calendar icon-calendar icon-large"></i>
+							            <span></span> 
+							        </div>
+								</label>
+						    </div>
+					    </div>
+					     
+					   
+					    <div class="control-group">
+							<div class="controls">
+								<button type="submit" class="btn btn-primary">查询</button>
+								<button type="cancel" class="btn btn-cancel">重置</button>
+								
+							</div>
+						</div>
+				    </form>
+          		</div>
+          	</div>
+		</div>
+		<!-------------------------------------creative modal--------------------------------------->
+	    <div id="creative-modal" class="two-column modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-header">
+			    <h3>请在下面选择创意</h3>
+		    </div>
+		    <div class="modal-body">
+				<div>
+					<ul class="list-level2">
+				            <li>
+				                <a class="arrow-btn"></a><input type="checkbox" /><a href="#">万科dsfdfdsfds</a>
+				            </li>
+				            <li>
+				                <a class="arrow-btn loading"></a><input type="checkbox" /><a href="#">万科深圳</a>
+				                <ul class="ad-group-list">
+				                    <li>
+				                        <a class="arrow-btn opened"></a><input type="checkbox" checked/><a class="selected" href="#">万科红三期iOS</a>
+				                        <ul class="creative-list">
+						                    <li>
+						                        <input type="checkbox" /><a href="#">万科2012</a>
+						                    </li>
+						                    <li>
+						                        <input type="checkbox" /><a href="#">万科2012</a>
+						                    </li>
+						                </ul>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><input type="checkbox" /><a href="#">万科红三期Android</a>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><input type="checkbox" /><a href="#">万科溪之谷通投</a>
+				                    </li>
+				                </ul>
+				            </li>
+				            
+				            <li>
+				                <a class="arrow-btn loading"></a><input type="checkbox" /><a href="#">万科深圳</a>
+				                <ul class="ad-group-list">
+				                    <li>
+				                        <a class="arrow-btn opened"></a><input type="checkbox" /><a href="#">万科红三期iOS</a>
+				                        <ul class="creative-list">
+						                    <li>
+						                        <input type="checkbox" /><a href="#">万科2012</a>
+						                    </li>
+						                    <li>
+						                        <input type="checkbox" /><a href="#">万科2012</a>
+						                    </li>
+						                </ul>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><input type="checkbox" /><a href="#">万科红三期Android</a>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><input type="checkbo  x" /><a href="#">万科溪之谷通投</a>
+				                    </li>
+				                </ul>
+				            </li>
+				            <li>
+				                <a class="arrow-btn loading"></a><input type="checkbox" /><a href="#">万科深圳</a>
+				                <ul class="ad-group-list">
+				                    <li>
+				                        <a class="arrow-btn opened"></a><input type="checkbox" /><a href="#">万科红三期iOS</a>
+				                        <ul class="creative-list">
+						                    <li>
+						                        <input type="checkbox" /><a href="#">万科2012</a>
+						                    </li>
+						                    <li>
+						                        <input type="checkbox" /><a href="#">万科2012</a>
+						                    </li>
+						                </ul>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><input type="checkbox" /><a href="#">万科红三期Android</a>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><input type="checkbox" /><a href="#">万科溪之谷通投</a>
+				                    </li>
+				                </ul>
+				            </li>
+				           
+				            <li>
+				                <a class="arrow-btn opened"></a><input type="checkbox" /><a href="#">万科上海</a>
+				                <ul>
+				                    <li>
+				                        <a class="arrow-btn"></a><input type="checkbox" /><a href="#">万科尚源优酷视频</a>
+				                    </li>
+				                </ul>
+				            </li>
+				            <li>
+				                <a class="arrow-btn"></a><input type="checkbox" /><a href="#">万科2012</a>
+				            </li>
+				             <li>
+				                <a class="arrow-btn loading"></a><input type="checkbox" /><a href="#">万科深圳</a>
+				                <ul class="ad-group-list">
+				                    <li>
+				                        <a class="arrow-btn opened"></a><input type="checkbox" /><a href="#">万科红三期iOS</a>
+				                        <ul class="creative-list">
+						                    <li>
+						                        <input type="checkbox" /><a href="#">万科2012</a>
+						                    </li>
+						                    <li>
+						                        <input type="checkbox" /><a href="#">万科2012</a>
+						                    </li>
+						                </ul>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><input type="checkbox" /><a href="#">万科红三期Android</a>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><input type="checkbox" /><a href="#">万科溪之谷通投</a>
+				                    </li>
+				                </ul>
+				            </li>
+				            
+				        </ul>
+				</div>
+				<div>
+					<ul class="selected-creative-list">
+						<li>素材1<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></li>
+						<li>素材1<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></li>
+						<li>素材1<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></li>
+						<li>素材1<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></li>
+						
+					</ul>
+				</div>
+		    </div>
+		    <div class="modal-footer">
+			    <a href="#" class="btn btn-primary">确定</a>
+			    <a href="#" class="btn btn-cancel" data-dismiss="modal" aria-hidden="true">取消</a>
+		    </div>
+	    </div>
+	    <!--------------------------------------自定义范围--------------------------------------->
+	    <div id="customrize-modal" class="customrize-modal modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-header">
+			    <h3>自定义范围</h3>
+		    </div>
+		    <div class="modal-sub-header">请在下面选择广告系列、广告组或创意</div>
+		    <div class="modal-body">
+		    	<div class="search">
+					<i class="icon-search"></i>
+					<input type="text" placeholder="搜索...">
+				</div>
+				<div>
+					<ul class="list-level2">
+				            <li>
+				                <a class="arrow-btn"></a><a href="#">万科dsfdfdsfds</a>
+				            </li>
+				            <li>
+				                <a class="arrow-btn loading"></a><a href="#">万科深圳</a>
+				                <ul class="ad-group-list">
+				                    <li>
+				                        <a class="arrow-btn opened"></a><a href="#">万科红三期iOS</a>
+				                        <ul class="creative-list">
+						                    <li>
+						                        <a class="selected" href="#">万科2012</a>
+						                    </li>
+						                    <li>
+						                        <a href="#">万科2012</a>
+						                    </li>
+						                </ul>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><a href="#">万科红三期Android</a>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><a href="#">万科溪之谷通投</a>
+				                    </li>
+				                </ul>
+				            </li>
+				            
+				            <li>
+				                <a class="arrow-btn loading"></a><a href="#">万科深圳</a>
+				                <ul class="ad-group-list">
+				                    <li>
+				                        <a class="arrow-btn opened"></a><a href="#">万科红三期iOS</a>
+				                        <ul class="creative-list">
+						                    <li>
+						                        <a href="#">万科2012</a>
+						                    </li>
+						                    <li>
+						                        <a href="#">万科2012</a>
+						                    </li>
+						                </ul>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><a href="#">万科红三期Android</a>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><a href="#">万科溪之谷通投</a>
+				                    </li>
+				                </ul>
+				            </li>
+				            <li>
+				                <a class="arrow-btn loading"></a><a href="#">万科深圳</a>
+				                <ul class="ad-group-list">
+				                    <li>
+				                        <a class="arrow-btn opened"></a><a href="#">万科红三期iOS</a>
+				                        <ul class="creative-list">
+						                    <li>
+						                        <a href="#">万科2012</a>
+						                    </li>
+						                    <li>
+						                        <a href="#">万科2012</a>
+						                    </li>
+						                </ul>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><a href="#">万科红三期Android</a>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><a href="#">万科溪之谷通投</a>
+				                    </li>
+				                </ul>
+				            </li>
+				           
+				            <li>
+				                <a class="arrow-btn opened"></a><a href="#">万科上海</a>
+				                <ul>
+				                    <li>
+				                        <a class="arrow-btn"></a><a href="#">万科尚源优酷视频</a>
+				                    </li>
+				                </ul>
+				            </li>
+				            <li>
+				                <a class="arrow-btn"></a><a href="#">万科2012</a>
+				            </li>
+				             <li>
+				                <a class="arrow-btn loading"></a><a href="#">万科深圳</a>
+				                <ul class="ad-group-list">
+				                    <li>
+				                        <a class="arrow-btn opened"></a><a href="#">万科红三期iOS</a>
+				                        <ul class="creative-list">
+						                    <li>
+						                        <a href="#">万科2012</a>
+						                    </li>
+						                    <li>
+						                        <a href="#">万科2012</a>
+						                    </li>
+						                </ul>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><a href="#">万科红三期Android</a>
+				                    </li>
+				                    <li>
+				                        <a class="arrow-btn"></a><a href="#">万科溪之谷通投</a>
+				                    </li>
+				                </ul>
+				            </li>
+				            
+				        </ul>
+				</div>
+				
+		    </div>
+		    
+		     
+		    <div class="modal-footer">
+			    <a href="#" class="btn btn-primary">确定</a>
+			    <a href="#" class="btn btn-cancel" data-dismiss="modal" aria-hidden="true">取消</a>
+			   
+		    </div>
+	    </div>
+	    
+		<div class="footer">
+			© 2013 <a href="http://www.limei.com/about" target="_blank">力美广告</a> | 服务条款 | <a target="_blank" href="http://www.limei.com/about/detail/id/178">隐私保护</a> | 帮助
+		</div>
+        
+		<script src="common_assets/js/lib/jquery.1.10.1.min.js"></script>
+		<script type="text/javascript" src="common_assets/js/lib/bootstrap.js"></script>
+		<script type="text/javascript" src="common_assets/components/daterangepicker/moment.js"></script>
+        <script type="text/javascript" src="common_assets/components/daterangepicker/daterangepicker.js"></script>
+		<script type="text/javascript" src="common_assets/js/index.js"></script>
+		
+	</body>
+</html>
