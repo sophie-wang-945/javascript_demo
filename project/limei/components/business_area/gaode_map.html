@@ -1,0 +1,57 @@
+    <!DOCTYPE HTML>  
+    <html>  
+    <head>  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">  
+    <title>地图显示</title>  
+    <link rel="stylesheet" type="text/css" href="http://api.amap.com/Public/css/demo.Default.css" />   
+    <script language="javascript" src="http://webapi.amap.com/maps?v=1.2&key=4b356e99ebdecb582e771549d0b0de58"></script>  
+    <script language="javascript">  
+	    var mapObj,toolBar,contextMenu;  
+	    //初始化地图对象，加载地图  
+	    function mapInit(){  
+	    	//初始化地图
+	        mapObj = new AMap.Map("iCenter",{  
+		        center:new AMap.LngLat(121.4753,31.22541), //地图中心点  
+		        level:11  //地图显示的缩放级别  
+	        });   
+	        mapObj.plugin(["AMap.ToolBar"],function(){        
+		        toolBar = new AMap.ToolBar();  
+		        mapObj.addControl(toolBar);       
+		    }); 
+		    //创建右键菜单  
+		    contextMenu = new AMap.ContextMenu(); 
+		    //右键添加Marker标记  
+		    contextMenu.addItem("设置为定向中心",function(e){  
+		        var marker = new AMap.Marker({  
+		        map:mapObj,  
+		        position:contextMenuPositon, //基点位置  
+		        icon:"http://webapi.amap.com/images/marker_sprite.png", //marker图标，直接传递地址url  
+		        offset:{x:-8,y:-34} //相对于基点的位置  
+		        });  
+		        addCircle(contextMenuPositon);
+		    },3);  
+		     AMap.event.addListener(mapObj,'rightclick',function(e){  
+		        contextMenu.open(mapObj,e.lnglat);  
+		        contextMenuPositon = e.lnglat;  
+		    });  
+	    }  
+	    
+	    //添加圆覆盖物  
+		function addCircle(contextMenuPositon) {  
+		   circle = new AMap.Circle({   
+		   center:new AMap.LngLat(contextMenuPositon.lng,contextMenuPositon.lat),// 圆心位置  
+		   radius:1000, //半径  
+		   strokeColor: "#F33", //线颜色  
+		   strokeOpacity: 1, //线透明度  
+		   strokeWeight: 3, //线粗细度  
+		   fillColor: "#ee2200", //填充颜色  
+		   fillOpacity: 0.35//填充透明度  
+		   });   
+		   circle.setMap(mapObj);  
+		}  
+    </script>  
+    </head>  
+    <body onLoad="mapInit()">  
+        <div id="iCenter" style="width:500px"></div>      
+    </body>  
+    </html>  

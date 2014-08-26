@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+   <head>
+      <meta charset="UTF-8" />
+      <title>A date range picker for Twitter Bootstrap</title>
+      <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" media="all" href="daterangepicker-bs2.css" />
+      <style>
+      .reportrange{
+      	width: 263px;
+		background: #fff;
+		cursor: pointer;
+		padding: 5px 10px;
+		border: 1px solid #ccc;
+      }
+      	
+      </style>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+      <script type="text/javascript" src="moment.js"></script>
+      <script type="text/javascript" src="daterangepicker.js"></script>
+   </head>
+   <body>
+
+      <div class="container">
+         <div class="span12">
+            
+<!-------------------------------------时间控件--------------------------------------->
+	    <div class="reportrange" id="reportrange">
+            <i class="glyphicon glyphicon-calendar icon-calendar icon-large"></i>
+            <span></span> 
+        </div>
+               
+
+               <script type="text/javascript">
+               $(document).ready(function() {
+                  $('.reportrange').each(function(index,element){
+					var control=$(this);
+					control.daterangepicker({
+					    startDate: moment().subtract('days', 29),
+					    endDate: moment(),
+					    showDropdowns: true,
+					    ranges: {
+					       '今天': [moment(), moment()],
+					       '昨天': [moment().subtract('days', 1), moment().subtract('days', 1)],
+					       '最近7天': [moment().subtract('days', 6), moment()],
+					       '最近30天': [moment().subtract('days', 29), moment()],
+					       '本月': [moment().startOf('month'), moment().endOf('month')],
+					       '上月': [moment().subtract('month', 1).startOf('month'), moment().subtract('month', 1).endOf('month')],
+					       '最近一年': [moment().subtract('year', 1), moment()],
+					    },
+					    opens: 'left',
+					    buttonClasses: ['btn btn-default'],
+					    applyClass: 'btn-small btn-primary',
+					    cancelClass: 'btn-small btn-cancel',
+					    format: 'MM/DD/YYYY',
+					    separator: ' to ',
+					    locale: {
+					        applyLabel: '提交',
+					        cancelLabel:'取消',
+					        daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr','Sa'],
+					        monthNames: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+					        firstDay: 1
+					    }
+					 },
+					 	function(start, end) {
+					  		$('span',control).html(start.format('YYYY/MM/D') + ' 至  ' + end.format('YYYY/MM/D'));
+					     }
+					);
+					//Set the initial state of the picker label
+				  	$('span',control).html(moment().subtract('days', 29).format('YYYY/MM/D') + ' 至  ' + moment().format('YYYY/MM/D'));
+				})
+               });
+               </script>
+
+            </div>
+
+         </div>
+     
+
+   </body>
+</html>

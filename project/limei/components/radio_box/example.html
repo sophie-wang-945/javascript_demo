@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Limei Demand Side Platform - 中国第一家专业移动DSP</title>
+		<!-- desktop -->
+		<link rel="stylesheet" href="../../common_assets/css/bootstrap.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		
+		<ul class="radio-box">
+			<li>国家<i></i></li>
+			<li>中国省份<i></i></li>
+			<li>中国一级城市<i></i></li>
+			<li class="pointer"><i></i></li>
+		</ul>
+	    <script type="text/javascript" src="../../common_assets/js/lib/jquery.1.10.1.min.js"></script>
+	   <script type="text/javascript">
+	   		$(function(){
+	   			$(".radio-box li i").click(function(){
+	   				console.log($(this).position().left)
+	   				$(this).parent().siblings(".pointer").children().css("left",Math.floor($(this).position().left));
+	   			})
+	   		})
+	   </script>
+	</body>
+</html>

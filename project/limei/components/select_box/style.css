@@ -1,0 +1,72 @@
+/**********modal****************/
+.modal-header h3{
+	color: #666666;
+    font-size: 14px;
+}
+.modal-body{
+	font-size:13px;
+}
+.creative-modal .modal-body>div{
+	width: 365px;
+	height:400px;
+	overflow-y: auto;
+	float:left;
+}
+.btn-cancel{
+	background: none;
+	border:none;
+	box-shadow:none;
+	color: #0055CC;
+	font-size: 12px;
+}
+.btn-cancel:hover{
+	background: none;
+}
+
+
+
+/****creative modal*********/
+.creative-modal.modal{
+	width:760px;
+	margin-left: -320px;
+}
+.creative-modal .modal-body>div{
+	width: 365px;
+	height:400px;
+	overflow-y: auto;
+	float:left;
+}
+.customrize-modal .list-level2 a,.creative-modal .list-level2 a{
+	color:#333;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.customrize-modal .list-level2>li,.creative-modal .list-level2>li{
+	margin-bottom: 6px;
+}
+.creative-modal .list-level2 input{
+	display:inline-block;
+	vertical-align: 8px;
+}
+.creative-modal .creative-list{
+	margin-left: 45px;
+}
+.creative-modal .selected-creative-list{
+	margin-left:10px;
+}
+.creative-modal .selected-creative-list li{
+	background-color: #FBFBFB;
+    border: 1px solid #CCCCCC;
+    margin: 2px 0;
+    overflow: hidden;
+    padding: 0 5px;
+}
+/**customrize-modal
+ * 
+ */
+.customrize-modal{
+	width:360px;
+}
+.customrize-modal .modal-sub-header{
+	background-color: #F5F5F5;
+	padding:10px 15px;
+}

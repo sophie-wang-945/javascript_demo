@@ -1,0 +1,48 @@
+/**不需要加入的**/
+ul li{
+	list-style: none;
+}
+body{
+	padding:200px;
+	background-color: #005580;
+}
+.radio-box li{
+	color:#333;
+	font-family: Microsoft YaHei,Arial,Helvetica,sans-serif;
+}
+/**/
+.radio-box{
+	height: 10px;
+    width: 417px;
+    position: relative;
+	background:url(radio-box-bg.png) left top no-repeat;
+}
+.radio-box li{
+	float:left;
+	width:33.3%;
+	text-align:center;
+	margin-top: -26px;
+}
+.radio-box li i{
+	background:url(radio-box-icon.png) 50% top no-repeat;
+	width: 19px;
+	height:19px;
+	display:block;
+	margin: 0px 60px;
+}
+.radio-box li i:hover{
+	cursor: pointer;
+}
+.radio-box .pointer i{
+	position: absolute;
+	width:19px;
+	height:19px;
+	background-position:0px  -27px;
+	left:0;
+	margin-top: 7px;
+	-webkit-transition:left .2s ease-in;
+    -moz-transition:left .2s ease-in;
+    -ms-transition:left .2s ease-in; 
+    -o-transition:left .2s ease-in;
+    transition:left .2s ease-in;
+}

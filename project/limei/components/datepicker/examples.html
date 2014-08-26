@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+   <head>
+      <meta charset="UTF-8" />
+      <title>A date picker for Twitter Bootstrap</title>
+      <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" media="all" href="css/datepicker.css" />
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+      <style>
+      	.date-picker{
+	  		 background: none repeat scroll 0 0 #FFFFFF;
+		    border: 1px solid #CCCCCC;
+		    cursor: pointer;
+		    padding: 5px 10px;
+		    width:210px;
+		}
+		.date-picker input{
+			border:none;
+			box-shadow:none;
+			width: 170px;
+		}
+		.date-picker.inline{
+			display:inline-block;
+		}
+		.date-picker input:focus{
+			box-shadow:none;
+		}
+      </style>
+   </head>
+   <body>
+
+      <div class="container">
+         <div class="span12">
+            
+		<!-------------------------------------时间控件--------------------------------------->
+		开始日期：
+		<div class="date-picker">
+		 	<i class="glyphicon glyphicon-calendar icon-calendar icon-large"></i>	
+			<input class="start-date-picker" type="text" data-date-format="yyyy-mm-dd">
+		</div>
+		结束日期:
+		<div class="date-picker">
+		 	<i class="glyphicon glyphicon-calendar icon-calendar icon-large"></i>	
+			<input class="end-date-picker" type="text" data-date-format="yyyy-mm-dd">
+		</div>
+         <script type="text/javascript">
+               $(document).ready(function() {
+	                    var nowTemp = new Date();
+						var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+						//开始日期控件
+						var checkin = $('.start-date-picker').datepicker({
+							onRender: function(date) {
+								return date.valueOf() < now.valueOf() ? 'disabled' : '';
+							}
+						}).on('changeDate', function(ev) {
+							//当选择的日期大于结束日期时，改变结束日期的值，使结束日期等于开始日期
+							if (ev.date.valueOf() > checkout.date.valueOf()) {
+								var newDate = new Date(ev.date)
+								//newDate.setDate(newDate.getDate());
+								checkout.setValue(newDate);
+							}//当选择的日期小于结束日期时，改变结束日期选择范围，使范围上限等于开始日期
+							else if(ev.date.valueOf() < checkout.date.valueOf()){
+								console.log(checkout.picker)
+								checkout.update();								
+							}
+							checkin.hide();
+							$('.end-date-picker')[0].focus();
+						}).data('datepicker');
+						
+						//结束日期控件
+						var checkout = $('.end-date-picker').datepicker({
+							onRender: function(date) {
+								return date.valueOf() < checkin.date.valueOf() ? 'disabled' : '';
+							}
+						}).on('changeDate', function(ev) {
+							checkout.hide();
+						}).data('datepicker');
+	               });
+               </script>
+
+            </div>
+
+         </div>
+     
+
+   </body>
+</html>

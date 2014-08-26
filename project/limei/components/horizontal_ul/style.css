@@ -1,0 +1,64 @@
+.info-box{
+    position: relative;
+    border:1px solid #CBCBCB;
+}
+.info-box .info{
+	height:53px;
+	width: 24%;
+	background: url(../img/dashboard-icon.png) top left no-repeat;
+	float:left;
+	font-size:24px;
+}
+.info-box .level-2{
+	left: 32.4%;
+    position: absolute;
+    width: 44%;
+}
+.info-box .info-right{
+	float:right;
+}
+.info-box .info h4{
+	font-size:14px;
+	color:#656565;
+	margin:2px 0 7px;
+}
+.info-box .info.price{
+	background-position: 10px 10px;
+}
+.info-box .info.ctr{
+	background-position: 10px -174px;
+}
+.info-box .info.show{
+	background-position: 10px -50px;
+}
+.info-box .info.hits{
+	background-position: 10px -112px;
+}
+.info-box .info.selected{
+	/*border:1px solid #85deff;
+	-webkit-box-shadow: 0px 0px 17px rgba(133, 222, 255, 0.71);
+	-moz-box-shadow:    0px 0px 17px rgba(153, 172, 255, 0.71);
+	box-shadow:         0px 0px 17px rgba(133, 222, 255, 0.71);*/
+}
+.info-box .info.price.selected{
+	background-position: 10px -236px;
+}
+.info-box .info.ctr.selected{
+	background-position: 10px -300px;
+}
+.info-box .info.show.selected{
+	background-position: 10px -356px;
+}
+.info-box .info.hits.selected{
+	background-position: 10px -414px;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.center{
+	width:200px;
+	margin:0 auto;
+}

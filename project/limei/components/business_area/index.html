@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Limei Demand Side Platform - 中国第一家专业移动DSP</title>
+		<!-- desktop -->
+		<link rel="stylesheet" href="../../common_assets/css/bootstrap.css" />
+		 <link rel="stylesheet" type="text/css" href="http://api.amap.com/Public/css/demo.Default.css" />   
+		 <script language="javascript" src="http://webapi.amap.com/maps?v=1.2&key=4b356e99ebdecb582e771549d0b0de58"></script>  
+		<!-- <link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="slider/css/slider.css" /> -->
+		<script>
+	    	var mapObj,toolBar,contextMenu;  
+		    //初始化地图对象，加载地图  
+		    function mapInit(){  
+		    	//初始化地图
+		        mapObj = new AMap.Map("iCenter",{  
+			        center:new AMap.LngLat(121.4753,31.22541), //地图中心点  
+			        level:11  //地图显示的缩放级别  
+		        });   
+		        mapObj.plugin(["AMap.ToolBar"],function(){        
+			        toolBar = new AMap.ToolBar();  
+			        mapObj.addControl(toolBar);       
+			    }); 
+			    //创建右键菜单  
+			    contextMenu = new AMap.ContextMenu(); 
+			    //右键添加Marker标记  
+			    contextMenu.addItem("设置为定向中心",function(e){  
+			        var marker = new AMap.Marker({  
+			        map:mapObj,  
+			        position:contextMenuPositon, //基点位置  
+			        icon:"http://webapi.amap.com/images/marker_sprite.png", //marker图标，直接传递地址url  
+			        offset:{x:-8,y:-34} //相对于基点的位置  
+			        });  
+			        addCircle(contextMenuPositon);
+			    },3);  
+			     AMap.event.addListener(mapObj,'rightclick',function(e){  
+			        contextMenu.open(mapObj,e.lnglat);  
+			        contextMenuPositon = e.lnglat;  
+			    });  
+		    }  
+	    
+	    //添加圆覆盖物  
+		function addCircle(contextMenuPositon) {  
+		   circle = new AMap.Circle({   
+			   center:new AMap.LngLat(contextMenuPositon.lng,contextMenuPositon.lat),// 圆心位置  
+			   radius:1000, //半径  
+			   strokeColor: "#F33", //线颜色  
+			   strokeOpacity: 1, //线透明度  
+			   strokeWeight: 3, //线粗细度  
+			   fillColor: "#ee2200", //填充颜色  
+			   fillOpacity: 0.35//填充透明度  
+		   });   
+		   circle.setMap(mapObj);  
+		}  
+	    </script>
+	</head>
+
+	<body onLoad="mapInit()">
+		<!-- <a href="#myModal" role="button" class="btn" data-toggle="modal">弹出窗口</a>
+	    <div id="myModal" class="modal hide fade  business_area_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-header">
+			    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			    <h3>商圈定向</h3>
+		    </div>
+		    <div class="modal-body">
+		    	<div class="slider-container">
+		    		<div>
+		    			半径选择<input type="text" id="slider" data-slider-step="0.1" data-slider-max="5" data-slider-min="1" class="span2" />
+		    		</div>
+		    		<div>
+		    			1km&nbsp;<span>1.5km&nbsp;</span>2km&nbsp;<span>2.5km&nbsp;</span>3km&nbsp;<span>3.5km&nbsp;</span>4km&nbsp;<span>4.5km&nbsp;</span>5km
+		    		</div>
+		    	</div>
+		    	<div class="clearfix">
+		    		<div class="left hot_circle_list" >
+						<ul class="list-level2">
+					            <li class="media">
+					                <input type="checkbox"><a href="#"><span class="text-hidden">万科dsfdfdsfds</span><i class="icon-ios"></i></a>
+					            </li>
+					             <li class="media">
+					                <input type="checkbox"><a href="#"><span class="text-hidden">万科dsfdfdsfds</span><i class="icon-android"></i></a>
+					            </li>
+					            <li>
+					                <a class="arrow-btn loading"></a><input type="checkbox"><a href="#">万科深圳</a>
+					                <ul class="ad-group-list">
+					                    <li>
+					                        <a class="arrow-btn opened"></a><input type="checkbox" checked=""><a href="#" class="selected">万科红三期iOS</a>
+					                        <ul class="creative-list">
+							                    <li>
+							                        <input type="checkbox"><a href="#">万科2012</a>
+							                    </li>
+							                    <li>
+							                        <input type="checkbox"><a href="#">万科2012</a>
+							                    </li>
+							                </ul>
+					                    </li>
+					                    <li>
+					                        <a class="arrow-btn"></a><input type="checkbox"><a href="#">万科红三期Android</a>
+					                    </li>
+					                    <li>
+					                        <a class="arrow-btn"></a><input type="checkbox"><a href="#">万科溪之谷通投</a>
+					                    </li>
+					                </ul>
+					            </li>
+					            
+					            <li>
+					                <a class="arrow-btn loading"></a><input type="checkbox"><a href="#">万科深圳</a>
+					                <ul class="ad-group-list">
+					                    <li>
+					                        <a class="arrow-btn opened"></a><input type="checkbox"><a href="#">万科红三期iOS</a>
+					                        <ul class="creative-list">
+							                    <li>
+							                        <input type="checkbox"><a href="#">万科2012</a>
+							                    </li>
+							                    <li>
+							                        <input type="checkbox"><a href="#">万科2012</a>
+							                    </li>
+							                </ul>
+					                    </li>
+					                    <li>
+					                        <a class="arrow-btn"></a><input type="checkbox"><a href="#">万科红三期Android</a>
+					                    </li>
+					                    <li>
+					                        <a class="arrow-btn"></a><input type="checkbox"><a href="#">万科溪之谷通投</a>
+					                    </li>
+					                </ul>
+					            </li>
+					            <li>
+					                <a class="arrow-btn loading"></a><input type="checkbox"><a href="#">万科深圳</a>
+					                <ul class="ad-group-list">
+					                    <li>
+					                        <a class="arrow-btn opened"></a><input type="checkbox"><a href="#">万科红三期iOS</a>
+					                        <ul class="creative-list">
+							                    <li>
+							                        <input type="checkbox"><a href="#">万科2012</a>
+							                    </li>
+							                    <li>
+							                        <input type="checkbox"><a href="#">万科2012</a>
+							                    </li>
+							                </ul>
+					                    </li>
+					                    <li>
+					                        <a class="arrow-btn"></a><input type="checkbox"><a href="#">万科红三期Android</a>
+					                    </li>
+					                    <li>
+					                        <a class="arrow-btn"></a><input type="checkbox"><a href="#">万科溪之谷通投</a>
+					                    </li>
+					                </ul>
+					            </li>
+					           
+					            <li>
+					                <a class="arrow-btn opened"></a><input type="checkbox"><a href="#">万科上海</a>
+					                <ul>
+					                    <li>
+					                        <a class="arrow-btn"></a><input type="checkbox"><a href="#">万科尚源优酷视频</a>
+					                    </li>
+					                </ul>
+					            </li>
+					            <li>
+					                <a class="arrow-btn"></a><input type="checkbox"><a href="#">万科2012</a>
+					            </li>
+					             <li>
+					                <a class="arrow-btn loading"></a><input type="checkbox"><a href="#">万科深圳</a>
+					                <ul class="ad-group-list">
+					                    <li>
+					                        <a class="arrow-btn opened"></a><input type="checkbox"><a href="#">万科红三期iOS</a>
+					                        <ul class="creative-list">
+							                    <li>
+							                        <input type="checkbox"><a href="#">万科2012</a>
+							                    </li>
+							                    <li>
+							                        <input type="checkbox"><a href="#">万科2012</a>
+							                    </li>
+							                </ul>
+					                    </li>
+					                    <li>
+					                        <a class="arrow-btn"></a><input type="checkbox"><a href="#">万科红三期Android</a>
+					                    </li>
+					                    <li>
+					                        <a class="arrow-btn"></a><input type="checkbox"><a href="#">万科溪之谷通投</a>
+					                    </li>
+					                </ul>
+					            </li>
+					            
+					        </ul>
+		    		</div>
+					<!-- <div id="iCenter" class="left" style="width: 500px;height:300px;"></div>   -->
+		    		
+		    	<!--</div>
+		    	<div class="selected-circles">
+		    		<div class="title">已选择的定向中心<a href="">清空</a></div>
+		    		<div class="selected-circles-list-container">
+		    			<ul class="clearfix">
+							<li>虹口龙之梦/北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+							<li>北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+							<li>北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+							<li>虹口龙之梦/北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+							<li>虹口龙之梦/北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+							<li>虹口/北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+							<li>虹口龙之梦/北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+							<li>北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+							<li>北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+							<li>虹口龙之梦/北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+							<li>虹口龙之梦/北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+							<li>虹口/北纬N31°15′59.78″ 东经E121°30′2.56″<button  class="close" type="button">×</button></li>
+						</ul>
+		    		</div>
+		    	</div>
+		    </div>
+		    <div class="modal-footer">
+			    <a href="#" class="btn btn-primary">确定</a>
+			    <a href="#" class="btn btn-cancel" data-dismiss="modal" aria-hidden="true">取消</a>
+		    </div>
+	    </div> -->
+	    <div id="iCenter" class="left" style="width: 500px;"></div>  
+	    <script type="text/javascript" src="../../common_assets/js/lib/jquery.1.10.1.min.js"></script>
+	    <script type="text/javascript" src="../../common_assets/js/lib/bootstrap.js"></script>
+	    <script type="text/javascript" src="slider/js/bootstrap-slider.js"></script>
+	    <!--  <script type="text/javascript"
+                src="http://union.mapbar.com/apis/maps/free?f=mapi&v=31.3&k=aCW9cItqL7sqT7AxaB0zdHZoZSWmbBsuT7JhMHTsMeD6ZIl9NzFsZHT=@JBL979@Iu7lJJZWWq0IDu9xZMzMxq7I9AhH7LAAA6hqzZHZZLTbZZauxlDz7C7DD9ZCFGT=">
+                </script> -->
+       <!-- <script type="text/javascript">
+            var maplet = null;
+            var marker = null;
+             var ellipse = null;  
+            function initMap() {
+                maplet = new Maplet("mapbar");
+                maplet.centerAndZoom(new MPoint(121.4753,31.22541), 8);
+                maplet.addControl(new MStandardControl());  
+                maplet.showOverview(false);
+                //新建menu并绑定click事件
+                var menu = new MContextMenu();
+                var set_point_menu_item=new MContextMenuItem("设置为定向中心",function(){
+                	maplet.setMode("bookmark");  
+                });
+                menu.addItem(set_point_menu_item);
+                maplet.setContextMenu(menu);
+                MEvent.addListener(maplet, "click", function() { 
+				    maplet.getContextMenu();
+				}); 
+				//为标记事件添加处理函数
+				MEvent.addListener(maplet,"bookmark",bookmark_done);  
+            }
+           function bookmark_done(data) {  
+	            // alert("经度：" + data.point.lon + "\n纬度：" + data.point.lat);   
+	            addMarker(data);
+	            maplet.setMode("pan");  
+	        }  
+          //画圈
+            function addMEllipse(){  
+	            if(ellipse!=null){  
+	                maplet.hideBubble();  
+	                maplet.removeOverlay(ellipse);  
+	            }  
+	            var sax = document.getElementById("sax").value;  
+	            if(sax == "") sax = 3000;  
+	            sax = parseInt(sax);  
+	            if(isNaN(sax)){  
+	                alert("x轴数值不正确。");  
+	                return;  
+	            }  
+	            var say = document.getElementById("say").value;  
+	  
+	            if(say == ""){  
+	                say = sax;  
+	            }else{  
+	                say = parseInt(say);  
+	                if(isNaN(say)){  
+	                    alert("y轴数值不正确。");  
+	                    return;  
+	                }  
+	            }  
+	  
+	            var ctr = marker.pt;  
+	  
+	            var brush = new MBrush();  
+	            brush.color = "#B7D3E9";  
+	            brush.bgcolor = "grey";  
+	            brush.fill = true;  
+	            brush.transparency = 80;  
+	            brush.bgtransparency = 30;  
+	            ellipse = new MEllipse(ctr, sax, say, brush, new MInfoWindow("Ellipse","test"));  
+	            maplet.addOverlay(ellipse);  
+	        } 
+
+			//添加标记
+            function addMarker(data) {
+                if (marker != null)return;
+                if(data==null){
+                	data.point.lon=121.4753;
+                	data.point.lat=31.22541;
+                }
+                marker = new MMarker(
+                        new MPoint(data.point.lon,data.point.lat),
+                        new MIcon("http://img.mapbar.com/maplite/mapbank/ditu/image/icon/maplite/gif1/tb1.gif", 32, 32),
+                        null,
+                       null
+
+                        );
+
+                var menu = new MContextMenu();
+
+                marker.setContextMenu(menu);
+
+                maplet.addOverlay(marker);
+
+                addMenuItems();
+
+                marker.setEditable(true);
+                addMEllipse();
+            }
+
+            function addMenuItems() {
+                var menu = marker.contextmenu;
+                menu.addItem(new MContextMenuItem("设置为定向中心"));
+            }
+            function clearContextMenu() {
+                marker.contextmenu.clear();
+            }
+            function removeItem() {
+                marker.contextmenu.removeItem(1);
+            }
+            function removeContextMenu() {
+                marker.contextmenu.remove();
+            }
+            function removeMarker() {
+                maplet.removeOverlay(marker);
+                maplet.removeOverlay(ellipse);
+                ellipse=null;
+                marker = null;
+            }
+        </script> -->
+	    <!-- <script>
+	    $(function(){
+	    	$(".btn").click(function(){
+	    		$("#mymodal").modal("show"); 
+	    		mapInit();
+	    	})
+	    	$('#slider').slider();
+	    }) 
+	    </script> -->
+	    
+	    
+	</body>
+</html>

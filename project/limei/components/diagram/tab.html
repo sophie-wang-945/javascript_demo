@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Limei Demand Side Platform - 中国第一家专业移动DSP</title>
+		<meta name="keywords" content="移动广告,移动互联网广告,效果营销,精准营销,移动营销,品牌宣传,互动创意,安卓广告,iOS广告,手机广告,展示广告,互动广告,广告平台,需求方平台,DSP,Mobile DSP,力美,力道,Axiom">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="57x57" href="touch-icon-iphone.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone4.png" />
+		<link rel="stylesheet" href="../../common_assets/css/bootstrap.css" />
+		<!-- desktop -->
+		<link rel="stylesheet" href="style.css" />
+		<!-- tablet -->
+		<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 1023px)" href="common_assets/css/tablet.css" />
+		<!-- iphone -->
+		<link rel="stylesheet" media="only screen and (max-width: 480px)" href="common_assets/css/mobile.css"/>
+		<!--[if lt IE 9]>
+			<script src="common_assets/js/lib/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div>起止日期:<span>2013/06/01 - 2013/12/30</span></div>
+        <div class="tabbable"> <!-- Only required for left/right tabs -->
+		    <ul class="nav nav-tabs" id="diagram-tab">
+			    <li class="active"><a href="#tab1"  class="price" data-toggle="tab">消耗</a></li>
+			    <li><a href="#tab2" class="shows" data-toggle="tab">展示数</a></li>
+			    <li><a href="#tab3"  class="hits" data-toggle="tab">点击数</a></li>
+			    <li><a href="#tab4"  class="ctr" data-toggle="tab">点击率</a></li>
+		    </ul>
+		    <div class="tab-content">
+			    <div class="tab-pane active" id="tab1">
+			    	<p>I'm in Section 1.</p>
+			    </div>
+		    	<div class="tab-pane" id="tab2">
+		    		<p>Howdy, I'm in Section 2.</p>
+		    	</div>
+		    	<div class="tab-pane" id="tab3">
+		    		<p>Howdy, I'm in Section 4.</p>
+		    	</div>
+		    	<div class="tab-pane" id="tab4">
+		    		<p>Howdy, I'm in Section 3.</p>
+		    	</div>
+		    </div>
+	   	</div>
+	   	<script type="text/javascript" src="../../common_assets/js/lib/jquery.1.10.1.min.js"></script>
+	    <script type="text/javascript" src="../../common_assets/js/lib/bootstrap.js"></script>
+	    <script>
+    	    $('#diagram-tab a').click(function (e) {
+				e.preventDefault();
+				$(this).tab('show');
+			})
+	    </script>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Limei Demand Side Platform - 中国第一家专业移动DSP</title>
+		<!-- desktop -->
+		
+		<link rel="stylesheet" href="jquery.tzCheckbox.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<input type="checkbox" id="ch_effects" name="ch_effects" data-on="开" data-off="关" />
+	    <script type="text/javascript" src="../../common_assets/js/lib/jquery.1.10.1.min.js"></script>
+	    <script type="text/javascript" src="jquery.tzCheckbox.js"></script>
+	    <script>
+	    $(function(){
+	    	$('input[type=checkbox]').tzCheckbox({
+			    labels: [ 'Enable', 'Disable' ]
+			});
+	    }) 
+	    </script>
+	</body>
+</html>

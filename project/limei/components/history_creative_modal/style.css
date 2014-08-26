@@ -1,0 +1,61 @@
+.modal-header h3{
+	color: #666666;
+    font-size: 14px;
+}
+.modal-body{
+	font-size:13px;
+}
+.btn-cancel{
+	background: none;
+	border:none;
+	box-shadow:none;
+	color: #0055CC;
+	font-size: 12px;
+}
+.btn-cancel:hover{
+	background: none;
+}
+.pagination{
+	margin-bottom:0px;
+}
+.adgroup-list{
+	width: 36%;
+	height:271px;
+	margin:0;
+	float:left;
+	border:1px solid #d4d4d4;
+	list-style: none;
+}
+.adgroup-list li{
+	height:36px;
+	text-align:center;
+	line-height: 36px;
+	font-size:13px;
+}
+.adgroup-list li a{
+	text-decoration: none;
+	color:#656565;
+	
+}
+.adgroup-list li:hover{
+	background-color:#d8e7ee;
+}
+.adgroup-list .nav-header{
+	height:40px;
+	line-height: 40px;
+	color:#fff;
+	background-color: #66cbff;
+}
+.adgroup-list .nav-header:hover{
+	background-color: #66cbff;
+}
+.table{
+	width:60%;
+	margin-left: 3%;
+	float:left;
+	border:1px solid #d4d4d4;
+}
+.table thead tr{
+	background-color: #0099cb;
+	color:#fff;
+}

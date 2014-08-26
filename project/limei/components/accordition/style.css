@@ -1,0 +1,87 @@
+/*accordion*/
+.sidebar.accordion > div{
+	text-align: center;
+	margin:20px 0;
+	width:15%;
+	min-width:192px;
+	position: fixed;
+}
+.sidebar.accordion>div>div{
+	text-align: center;
+	margin:20px 0;
+}
+.sidebar.accordion .nav>li{
+	text-align:left;
+}
+.sidebar.accordion .nav>li>a i{
+	vertical-align: -9px;
+	margin-right:10px;
+}
+.sidebar.accordion .nav>li>a{
+	height:55px;
+	line-height:55px;
+	display:block;
+	max-width:100%;
+	font-size:16px;
+	background-color:#f1f1f1;
+	border-style:solid;
+	border-color:transparent transparent #CBCBCB #f1f1f1;
+	border-width:0 0 1px 4px ;
+}
+.sidebar.accordion .nav>li>a span{
+	display: block;
+    margin: 0 auto;
+    width: 140px;
+}
+.sidebar.accordion .nav>li:first-child>a{
+	border-width:1px 0 1px 4px ;
+	border-top-color:#CBCBCB;
+}
+.sidebar.accordion .nav>li>a:hover,.sidebar.accordion .nav>li>a.open{
+	background-color: #45B1E7;
+	border-left:4px solid #014D71;
+	color:#fff;
+}
+.sidebar.accordion .nav>li>a:hover .icon-company,.sidebar.accordion .nav>li>a.open .icon-company{
+	background-position: -35px -40px;
+} 
+.sidebar.accordion .nav>li>a:hover .icon-throw,.sidebar.accordion .nav>li>a.open .icon-throw{
+	background-position: -35px -80px;
+}
+.sidebar.accordion .nav>li>a:hover .icon-trade,.sidebar.accordion .nav>li>a.open .icon-trade{
+	background-position: -35px top;
+} 
+.sidebar.accordion .nav>li>a:hover .icon-audit,.sidebar.accordion .nav>li>a.open .icon-audit{
+	background-position: -35px -122px;
+} 
+.sidebar.accordion .nav>li>ul{
+	background-color:#FBFBFB;
+}
+.sidebar.accordion ul {
+	margin-left:0;
+}
+.sidebar.accordion .nav .nav-item li{
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	font-size: 14px;
+	color:#999;
+	padding-left: 10px;
+	border-bottom:1px solid #E5E5E5;
+}
+.sidebar.accordion .nav .nav-item li:hover,.sidebar.accordion .nav .nav-item li.selected{
+	background-color:#FDFDFD;
+	color:#333;
+}
+.sidebar.accordion .nav .nav-item li:first-child{
+	border-top:1px solid #fff;
+}
+.sidebar.accordion .nav .nav-item li:last-child{
+	border-bottom:1px solid #CBCBCB;
+}
+.sidebar.accordion .nav li:last-child .nav-item li:last-child{
+	border-bottom:none;
+}
+.sidebar.accordion .nav .nav-item{
+	display:none;
+}

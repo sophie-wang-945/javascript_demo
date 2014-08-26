@@ -1,0 +1,34 @@
+body{
+	background-color: #333;
+}
+.tzCheckBox{
+	height: 18px ;
+	width:27px ;
+	margin-left: 0px ;
+}
+.tzCBPart{
+	height: 18px ;
+	width:18px ;
+	left:5px ;
+	transition: left 0.2s ease-in 0s;
+	-webkit-transition: left 0.2s ease-in 0s;
+	-moz-transition: left 0.2s ease-in 0s;
+}
+.tzCheckBox.checked .tzCBPart{
+	left:38px ;
+}
+.tzCheckBox .tzCBContent{
+	color: #666 ;
+	line-height: 19px ;
+	padding-left:35px ;
+	font-size:12px ;
+	display:block;
+	
+}
+.tzCheckBox.checked{
+	margin-right:0px ;
+}
+.tzCheckBox.checked .tzCBContent{
+	color: #FFF ;
+	padding-left:14px ;
+}

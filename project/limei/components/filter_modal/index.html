@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Limei Demand Side Platform - 中国第一家专业移动DSP</title>
+		<!-- desktop -->
+		<link rel="stylesheet" href="../../common_assets/css/bootstrap.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<a href="#myModal" role="button" class="btn" data-toggle="modal">弹出窗口</a>
+	   
+		<div class="modal filter-modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-header">
+			    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			    <h3>筛选条件</h3>
+		    </div>
+		    <div class="modal-body">
+		    	<form class="form-horizontal">
+		    		<div class="control-group">
+				    	<label class="control-label">操作者</label>
+					    <div class="controls">
+					    	<input type="text" placeholder="操作者…">
+					    </div>
+				    </div>
+				    <div class="control-group">
+				    	<label class="control-label">操作</label>
+					    <div class="controls">
+					    	    <label class="checkbox inline">
+							   		<input type="checkbox" id="inlineCheckbox1" value="option1"> 批准
+							    </label>
+							    <label class="checkbox inline">
+							    	<input type="checkbox" id="inlineCheckbox2" value="option2"> 拒绝
+							    </label>
+					    </div>
+				    </div>
+				     <div class="control-group">
+				    	<label class="control-label">对象类型</label>
+					    <div class="controls">
+					    	    <label class="checkbox inline">
+							   		<input type="checkbox" id="inlineCheckbox1" value="option1"> 公司
+							    </label>
+							    <label class="checkbox inline">
+							    	<input type="checkbox" id="inlineCheckbox2" value="option2"> 创意
+							    </label>
+					    </div>
+				    </div>
+				     <div class="control-group">
+				    	<label class="control-label">对象名称</label>
+					    <div class="controls">
+					    	    <input type="text" placeholder="对象名称…">
+					    </div>
+				    </div>
+				    <div class="control-group">
+				    	<label class="control-label">时间</label>
+					    <div class="controls">
+					    	    <div class="date-picker inline">
+						    	 	<i class="glyphicon glyphicon-calendar icon-calendar icon-large"></i>	
+						    	 	<input type="text" data-date-format="yyyy-mm-dd" class="end-date-picker">
+						    	 </div>
+					    </div>
+				    </div>
+		    	</form>
+		    </div>
+		    <div class="modal-footer">
+			    <a href="#" class="btn btn-primary">确定</a>
+			    <a href="#" class="btn btn-cancel" data-dismiss="modal" aria-hidden="true">取消</a>
+		    </div>
+	    </div>
+	   
+	    <script type="text/javascript" src="../../common_assets/js/lib/jquery.1.10.1.min.js"></script>
+	    <script type="text/javascript" src="../../common_assets/js/lib/bootstrap.js"></script>
+	    <script>
+	    $(function(){
+	    	$(".btn").click(function(){
+	    		$(".confirm-modal").modal("show"); 
+	    	})
+	    }) 
+	    </script>
+	</body>
+</html>

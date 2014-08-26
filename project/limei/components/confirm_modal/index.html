@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Limei Demand Side Platform - 中国第一家专业移动DSP</title>
+		<!-- desktop -->
+		<link rel="stylesheet" href="../../common_assets/css/bootstrap.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<a href="#myModal" role="button" class="btn" data-toggle="modal">弹出窗口</a>
+	    <!--确认对话框，有取消按钮-->
+		<div class="modal confirm-modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-header">
+			    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			    <h3>确认</h3>
+		    </div>
+		    <div class="modal-body">
+		    	<i></i><span>确认删除吗？</span>
+		    </div>
+		    <div class="modal-footer">
+			    <a href="#" class="btn btn-primary">确定</a>
+			    <a href="#" class="btn btn-cancel" data-dismiss="modal" aria-hidden="true">取消</a>
+		    </div>
+	    </div>
+	    <!--确认对话框,无取消按钮-->
+		<div class="modal confirm-modal-2 hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-header">
+			    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			    <h3>确认</h3>
+		    </div>
+		    <div class="modal-body">
+		    	<i></i><span>确认删除吗？</span>
+		    </div>
+		    <div class="modal-footer">
+			    <a href="#" class="btn btn-primary">确定</a>
+		    </div>
+	    </div>
+	    <script type="text/javascript" src="../../common_assets/js/lib/jquery.1.10.1.min.js"></script>
+	    <script type="text/javascript" src="../../common_assets/js/lib/bootstrap.js"></script>
+	    <script>
+	    $(function(){
+	    	$(".btn").click(function(){
+	    		$("#mymodal").modal("show"); 
+	    	})
+	    }) 
+	    </script>
+	</body>
+</html>

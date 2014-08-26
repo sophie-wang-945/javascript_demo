@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Limei Demand Side Platform - 中国第一家专业移动DSP</title>
+		<!-- desktop -->
+		<link rel="stylesheet" href="../../common_assets/css/bootstrap.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<a href="#myModal" role="button" class="btn" data-toggle="modal">弹出窗口</a>
+	    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-header">
+			    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			    <h3>历史创意</h3>
+		    </div>
+		    <div class="modal-body">
+		    	<div class="clearfix">
+		    		<ul class="adgroup-list">
+		                <li class="nav-header">广告组列表</li>
+		                <li class="active"><a href="#">首页</a></li>
+		                <li><a href="#">Library</a></li>
+		                <li><a href="#">Applications</a></li>
+		              </ul>
+		    		<table class="table table-striped">
+		              <thead>
+		                <tr>
+		                  <th><input type="checkbox" name=""/></th>
+		                  <th>创意</th>
+		                  <th>尺寸</th>
+		                </tr>
+		              </thead>
+		              <tbody>
+		                <tr>
+		                  <td><input type="checkbox" name=""/></td>
+		                  <td><img src="tmp-1.png" alt="" /></td>
+		                  <td>640&times;100</td>
+		                </tr>
+		                <tr>
+		                  <td><input type="checkbox" name=""/></td>
+		                  <td><img src="tmp-2.png" alt="" /></td>
+		                  <td>640&times;150</td>
+		                </tr>
+		                <tr>
+		                  <td><input type="checkbox" name=""/></td>
+		                  <td><img src="tmp-3.png" alt="" /></td>
+		                  <td>320&times;50</td>
+		                </tr>
+		                <tr>
+		                  <td><input type="checkbox" name=""/></td>
+		                  <td><img src="tmp-4.png" alt="" /></td>
+		                  <td>320&times;80</td>
+		                </tr>
+		                <tr>
+		                  <td><input type="checkbox" name=""/></td>
+		                  <td><img src="tmp-5.png" alt="" /></td>
+		                  <td>750&times;100</td>
+		                </tr>
+		              </tbody>
+		            </table>
+		    	</div>
+		    	
+		    	    <div class="pagination pagination-right">
+					    <ul>
+						    <li><a href="#">&laquo;</a></li>
+						    <li><a href="#">1</a></li>
+						    <li><a href="#">2</a></li>
+						    <li><a href="#">3</a></li>
+						    <li><a href="#">4</a></li>
+						    <li><a href="#">5</a></li>
+						    <li><a href="#">&raquo;</a></li>
+					    </ul>
+				    </div>
+		    </div>
+		    <div class="modal-footer">
+			    <a href="#" class="btn btn-primary">确定</a>
+			    <a href="#" class="btn btn-cancel" data-dismiss="modal" aria-hidden="true">取消</a>
+		    </div>
+	    </div>
+	    <script type="text/javascript" src="../../common_assets/js/lib/jquery.1.10.1.min.js"></script>
+	    <script type="text/javascript" src="../../common_assets/js/lib/bootstrap.js"></script>
+	    <script>
+	    $(function(){
+	    	$(".btn").click(function(){
+	    		$("#mymodal").modal("show"); 
+	    	})
+	    }) 
+	    </script>
+	</body>
+</html>

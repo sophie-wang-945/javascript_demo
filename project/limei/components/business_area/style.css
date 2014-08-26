@@ -1,0 +1,78 @@
+.modal-header h3{
+	color: #666666;
+    font-size: 14px;
+}
+.modal-body{
+	font-size:13px;
+}
+.btn-cancel{
+	background: none;
+	border:none;
+	box-shadow:none;
+	color: #0055CC;
+	font-size: 12px;
+}
+.btn-cancel:hover{
+	background: none;
+}
+.left{
+	float:left;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after,.campaign-diagram .diagram:after {
+  display: block;
+  height: 0;
+  content: "";
+  clear:both;
+}
+
+/*business_area_modal*/
+.modal.business_area_modal{
+	width:800px;
+	margin-left: -399px;
+}
+
+.hot_circle_list{
+	 width: 300px;
+	 height:300px;
+	 overflow-y: auto;
+}
+.slider-container,.selected-circles .title{
+	background-color: #F1F1F1;
+	border-bottom:1px solid #D5D5D5;
+	height: 40px;
+}
+.slider-container{
+	height:60px;
+}
+.business_area_modal .modal-body{
+	padding:0px;
+	max-height: 1000px;
+}
+.selected-circles-list-container{
+	height:100px;
+	overflow-y: auto; 
+}
+.selected-circles-list-container ul{
+	margin-left:10px;
+	margin-top:5px;
+}
+.selected-circles-list-container ul li{
+	 background-color: #FBFBFB;
+    border: 1px solid #CCCCCC;
+    margin: 2px 0;
+    overflow: hidden;
+    padding: 0 5px;
+    float:left;
+    width: 360px;
+    margin-left:10px;
+}
+.slider.slider-horizontal{
+	margin:10px 0 0 20px;
+}
+
+#LayerControl img{
+	max-width:210px;
+}
