@@ -1,0 +1,10 @@
+.icon-qa{
+	background: url("icon.png") no-repeat scroll -7px -823px transparent;
+	width:14px;
+	height:14px;
+}
+.icon-qa:hover{
+	background: url("icon.png") no-repeat scroll -31px -823px transparent;
+	width:14px;
+	height:14px;
+}

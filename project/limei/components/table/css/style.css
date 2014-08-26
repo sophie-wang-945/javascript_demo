@@ -1,0 +1,120 @@
+/*table*/
+table {
+	border: 1px solid #EEE;
+}
+.campaign-table-header {
+	margin-bottom: 5px;
+}
+table.customrize thead th {
+	height: 20px;
+    line-height: 20px;
+	background-color: #67C1EF;
+	color: #fff;
+	font-size: 14px;
+	vertical-align: middle;
+}
+table.customrize thead th:hover {
+	background-color: #45b1e7;
+}
+.campaign-table-footer{
+	padding:10px 0;
+}
+.campaign-table-footer .btn-group{
+	margin-right:20px;
+}
+.campaign-table-footer .dropdown-menu {
+	min-width: 67px;
+}
+.campaign-table-footer div.illustrate{
+	color:#999;
+}
+.table-striped tbody > tr:nth-child(2n+1) > td, .table-striped tbody > tr:nth-child(2n+1) > th {
+	background-color: #fff;
+}
+.table-striped tbody > tr:nth-child(2n) > td, .table-striped tbody > tr:nth-child(2n) > th {
+	background-color: #FAFAFA;
+}
+
+
+.table th, .table td{
+	text-align: center;
+	 border-top: none;
+}
+.table th.number_row, .table td.number_row{
+	text-align: right;
+}
+
+.campaign-table-header .customrize {
+	/*background: none;
+	 border:none;*/
+	box-shadow: none;
+	text-shadow: none;
+}
+.campaign-table-header .btn.add-adgroup {
+	height: 31px;
+	
+}
+.campaign-table-header .btn.add-adgroup i {
+	margin-right: 5px;
+}
+.campaign-table-header .btn-group.customrize {
+	/*border:1px solid #D6D6D6;*/
+	margin-left: 30px;
+	border-radius: 4px;
+}
+.campaign-table-header .btn-group.customrize i {
+	margin-right: 5px;
+}
+.campaign-table-header .btn-group.customrize .btn {
+	border-right: 1px solid #D6D6D6;
+}
+
+
+/**其他地方也会用到的公共css**/
+.icon-export{
+	background: url("../img/icon.png") no-repeat scroll -7px -502px transparent;
+	width: 15px;
+	margin-right:8px;
+	height: 15px;
+}
+.right{
+	float:right;
+}
+.left{
+	float:left;
+}
+.pagination{
+	margin:0;
+}
+.pagination ul{
+	box-shadow:none;
+}
+.pagination ul > li > a{
+	color:#333;
+	background-image: linear-gradient(to bottom, #FFFFFF, #E6E6E6);
+}
+.pagination ul > li.selected > a{
+	background-color: #0086c9;
+	background-image: -webkit-linear-gradient(top, #2bb6f1, #048acd);
+	background-image: -moz-linear-gradient(top, #2bb6f1, #048acd);
+	background-image: -o-linear-gradient(top, #2bb6f1, #048acd);
+	background-image: linear-gradient(to bottom, #2bb6f1, #048acd);
+	border-color:#67C1EF;
+	color:#fff;
+}
+.btn-info,.btn-danger,.btn-edit{
+	background-image:none;
+}
+.btn-edit{
+	background-color:#8fd23f;
+}
+.btn-edit:hover{
+	background-color:#73af2c;
+}
+.btn-primary-customize, .btn-primary-customize:hover {
+    background-color: #0086C9;
+    background-image: linear-gradient(to bottom, #2BB6F1, #048ACD);
+    border: medium none;
+    color: #FFFFFF;
+    text-shadow: none;
+}

@@ -1,0 +1,166 @@
+/**不需要加入的**/
+ul,ol{
+	list-style: none;
+	
+}
+.btn-cancel{
+	background: none;
+	border:none;
+	box-shadow:none;
+	color: #0055CC;
+	font-size: 12px;
+}
+.btn-cancel:hover{
+	background: none;
+}	
+/**********modal****************/
+.modal-header h3{
+	color: #666666;
+    font-size: 14px;
+}
+.modal-body{
+	font-size:13px;
+	max-height: 258px;
+
+}
+.modal-footer a{
+	display:inline-block;
+
+
+
+
+/****creative modal  two column*********/
+.two-column.modal{
+	width:760px;
+	margin-left: -320px;
+}
+.two-column .modal-body>div,.two-column .modal-sub-header>div{
+	width: 356px;
+	overflow-y: auto;
+	float:left;
+}
+.two-column .modal-sub-header>div{
+	padding:0 5px 0 13px;
+	width: 335px;
+}
+.two-column .modal-body>div{
+	max-height: 258px;
+}
+.customrize-modal .list-level2 a,.two-column .list-level2 a{
+	color:#333;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.customrize-modal .list-level2>li,.two-column .list-level2>li{
+	margin-bottom: 6px;
+}
+.two-column .list-level2 input{
+	display:inline-block;
+	vertical-align: 8px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0){ 
+	.creative-modal .list-level2 input{
+		vertical-align: -1px;
+	}
+}
+.two-column .creative-list{
+	margin-left: 45px;
+}
+.two-column .selected-creative-list{
+	margin-left:10px;
+}
+.two-column .selected-creative-list li{
+	background-color: #FBFBFB;
+    border: 1px solid #CCCCCC;
+    margin: 2px 0;
+    overflow: hidden;
+    padding: 0 5px;
+}
+.two-column .modal-sub-header div a{
+	float:right;
+}
+.two-column .modal-body div.search{
+	width: 312px;
+	border: 1px solid #CCCCCC;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-raidus:4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+	padding-left:10px;
+}
+.two-column .modal-body div.search i{
+	vertical-align: -3px;
+}
+.two-column .modal-body div.search input{
+	margin:0px;
+	border:none;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	width: 274px;
+	line-height: 14px;
+}
+/**customrize-modal
+ * 
+ */
+.customrize-modal{
+	width:360px;
+}
+.modal-sub-header{
+	background-color: #F5F5F5;
+	padding:10px 15px;
+}
+/*人群定向*/
+.two-column-relations.modal{
+	width:760px;
+}
+.two-column-relations .modal-body > div{
+    float: left;
+    height: 258px;
+    overflow-y: auto;
+    width: 360px;
+}
+.two-column-relations .modal-body  div.right-part{
+	 margin-left:10px;
+}
+.two-column-relations .modal-body > div:nth-child(2) ul{
+	margin:0;
+}
+.two-column-relations .modal-body > div:nth-child(2) ul li{
+	margin:10px 0;
+}
+.two-column-relations .modal-body > div:nth-child(2) ul li.condition{
+	position: relative;
+	padding:5px 10px;
+	margin-right: 10px;
+	background-color: #F5F5F5;
+	border-radius:5px;
+}
+.two-column-relations .modal-body > div:nth-child(2) ul li.condition ul{
+	float:left;
+	width:300px;
+}
+.two-column-relations .modal-body > div:nth-child(2) ul li.condition div{
+	float:left;
+	position: absolute;
+    right: 13px;
+    top: 40%;
+    font-size:18px;
+    color:#656565;
+}
+.two-column-relations .modal-body > div:nth-child(2) ul li.condition ul li{
+	 background-color: #FBFBFB;
+    border: 1px solid #CCCCCC;
+    margin: 4px 0;
+    overflow: hidden;
+    padding: 0 5px;
+     width: 265px;
+}
+.sum-num{
+	border-bottom: 1px solid #999999;
+}
+.sum-num span{
+	color:#0085C9;
+	font-size:18px;
+}

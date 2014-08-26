@@ -1,0 +1,81 @@
+
+/**********modal****************/
+
+.modal-header h3{
+	color: #666666;
+    font-size: 14px;
+}
+.modal-body{
+	font-size:13px;
+}
+.btn-cancel{
+	background: none;
+	border:none;
+	box-shadow:none;
+	color: #0055CC;
+	font-size: 12px;
+}
+.btn-cancel:hover{
+	background: none;
+}
+/*time-period-modal*/
+.time-period-modal{
+	width:900px;
+	margin-left: -437px;
+}
+.timeZone {
+  font-size: 12px;
+  color: #999999;
+  width: 900px;
+}
+.timeZone th {
+  text-align: left;
+  font-weight: normal;
+  border-bottom: 1px dashed #cccccc;
+}
+.timeZone th span,
+.timeZone th input {
+  display: inline-block;
+  float: left;
+}
+.timeZone th input {
+  margin-top: 3px;
+  margin-right: 4px;
+}
+.timeZone input {
+  margin: 0;
+  padding: 0;
+}
+.timeZone th,
+.timeZone td {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.timeZone td {
+  border-bottom: 1px dashed #cccccc;
+}
+.timeZone tr:last-child td{
+	border:none;
+}
+.timeZone td span {
+  width: 18px;
+  height: 23px;
+  line-height: 23px;
+  background-color: #ffffff;
+  display: inline-block;
+  margin-right: 5px;
+  border: 1px solid #eeeeee;
+  text-align: center;
+  cursor: pointer;
+}
+.timeZone td span.selected {
+  background-color: #0055cc;
+  border: 1px solid #0055cc;
+  color: #FFF;
+}
+.timeZone td.hover {
+  background-color: #dff0d8;
+}
+
+
+
