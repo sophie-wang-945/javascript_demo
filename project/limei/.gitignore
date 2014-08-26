@@ -1,0 +1,9 @@
+#################
+## Eclipse
+#################
+
+*.pydevproject
+.project
+.metadata
+.txt
+.xmind
