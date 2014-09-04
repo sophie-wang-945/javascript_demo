@@ -1,1 +1,1 @@
-jqueryÔ´Âë·ÖÎö
+jQueryæºç åˆ†æž
