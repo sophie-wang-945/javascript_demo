@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title></title>
+		<meta name="description" content="" />
+		<meta name="author" content="Administrator" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="resources/css/reset.css" />
+		<link type="text/css" href="resources/css/jquery-ui/jquery-ui-1.8.23.custom.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="resources/css/common.css" />
+        
+		
+		<script type="text/javascript" src="javascript/lib/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="javascript/lib/jquery-ui-1.8.23.custom.min.js"></script>
+		<script src="javascript/index.js"></script>
+	</head>
+
+	<body>
+		<div class="title-bar">
+			<h1>
+				项目开发计划
+			</h1>
+			<ul class="title-bar-btn">
+				<li><a class="btn btn-grey" href="#">高级搜索</a></li>
+				<li><a class="btn btn-blue" href="#">配置业态</a></li>
+				<li><a class="btn btn-green" href="#">导出</a></li>
+				<li><a class="btn btn-green" href="#">全屏</a></li>
+			</ul>
+			
+		</div>
+		<div class="clear">
+			</div>
+		<div class="main-content">
+			<ul class="filter-bar">
+				<li class="primary-filter-btn">
+					<a href="#"><span>郑州地产公司</span><span class="arrow-btn"></span></a>
+					<ul class="company-list">
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+						<li>郑州地产公司</li>
+					</ul>
+				</li>
+				<li class="secondary-filter-btn">
+					<a href="#"><span>三级计划</span><span class="arrow-btn"></span></a>
+					<ul>
+						<li>三级计划</li>
+						<li>三级计划</li>
+						<li>三级计划</li>
+						<li>三级计划</li>
+					</ul>
+				</li>
+				<li class="secondary-filter-btn">
+					<a href="#">完整模式<span class="arrow-btn"></span></a>
+					<ul>
+						<li>完整模式</li>
+						<li>完整模式</li>
+						<li>完整模式</li>
+						<li>完整模式</li>
+					</ul>
+				</li>
+				<li class="secondary-filter-btn">
+					<a href="#">查看关注</a>
+				</li>
+				<li class="secondary-filter-btn">
+					<a href="#">查看异常</a>
+				</li>
+		    </ul>
+		    <div class="clear">
+			</div>
+			<ul class="category-1-bar">
+				<li class="category-1-btn">
+					<a class="btn click" href="#">高层办公楼(3#楼...</a>
+				</li>
+				<li class="category-1-btn-nodata">
+					<a class="btn" href="#">高层办公楼(无数据)</a>
+				</li>
+				<li class="category-1-btn">
+					<a class="btn" href="#">酒店式公寓(1#楼...</a>
+				</li>
+				<li class="category-1-btn">
+					<a class="btn" href="#">裙楼MALL(20地块...</a>
+				</li>
+				<li class="category-1-btn">
+					<a class="btn" href="#">酒店式公寓(2#楼)</a>
+				</li>
+			</ul>
+			<div class="clear">
+			</div>
+			
+			<table class="table-style-1">
+			  <colgroup>
+			      <col id="guanzhu">
+			      <col id="jiedian">
+			      <col id="zhuzefang">
+			      <col id="project-start-time">
+			      <col id="project-end-time">
+			      <col id="finish-time">
+			      <col id="status">
+			      <col id="attach">
+			  </colgroup>
+			  <thead>
+			      <tr>
+			         <th scope="">关注</th>
+			         <th scope="col" class="th-jiedian">节点</th>
+			         <th scope="col" class="th-zhuzefang can_be_chosen">
+			         	<a href="#" class="blue-font">主责方</a>
+			         	<ul class="table-th-menu-zhuzefang">
+							<li>行政人事部</li>
+							<li>营运中心</li>
+							<li>商业公司</li>
+							<li>财务部</li>
+							<li>总工办</li>
+							<li>招商中心</li>
+							<li class="btn-list"><a href="#" id="select-all" class="btn btn-green">全选</a><a href="#" class="btn btn-green">确定</a></li>
+						</ul>
+			         	
+			         	
+			         </th>
+			         <th scope="col">计划开始时间</th>
+			         <th scope="col">计划完成时间</th>
+			         <th scope="col">实际完成时间</th>
+			         <th scope="col">状态</th>
+			         <th scope="col">附件</th>
+			     </tr>
+			  </thead>
+			  <tbody>
+			     <tr>
+			         <td><a href="#" class="attention"></a></td>
+			         <td class="align_left_td">39.地勘正式报告</td>
+			         <td class="align_left_td">地产公司</td>
+			         <td>2011-03-06</td>
+			         <td>2011-03-06</td>
+			         <td>2011-03-06</td>
+			         <td><a href="#" class="process"></a></td>
+			         <td><a href="#" class="attach"></a></td>
+			     </tr>
+			     <!--detail_tr start-->
+			     <tr class="detail_tr">
+			     	<td colspan="8">
+			     		<div>
+			     			<h1>高层办公楼（3#楼+22地块裙楼）- 地产公司</h1>
+			     			<div class="detail_tr_outer_left">
+		     					<ul class="detail_tr_time">
+		     						<li><span>计划开始时间：</span><input type="text" class="datepicker" size="30"></li>
+		     						<li><span>计划完成时间：</span><input type="text" class="datepicker" size="30"></li>
+		     						<li><span>实际完成时间：</span><input type="text" class="datepicker" size="30"></li>
+		     						<li>
+		     							<span>是否可用：</span>
+		     							<input type="radio" name="abled" value="abled">可用
+		     							<input type="radio" name="abled" value="unabled">不可用
+		     						</li>
+		     					</ul>
+		     					<div class="clear"></div>
+			     				<div class="status_section">
+			     					<span class="right-text">操作：</span>
+			     					<ul>
+			     						<li><a class="btn btn-blue" href="#">确认</a></li>
+			     						<li><a class="btn btn-blue" href="#">预完成</a></li>
+			     						<li><a class="btn btn-blue" href="#">完成</a></li>
+			     						<li><a class="btn btn-green" href="#">保存</a></li>
+			     						<li><a class="btn btn-green close-tr" href="#">收起</a></li>
+			     						<li><a class="btn btn-red" href="#">驳回</a></li>
+			     					</ul>
+			     					<div class="clear"></div>
+			     				</div>
+			     				<div class="attach_section">
+			     					<span class="right-text">附件：</span>
+			     					<div>
+			     						<p><a href="#">上传成果</a>| 请提交《商业集团项目工作计划书》</p>
+			     						<ul class="attach-list">
+			     							<li><a href="#" class="doc-name">宝龙商业招商五级计划-新乡MALL-20120213.xlsx</a>杨某<a class="red-font" href="#">删除</a></li>
+			     							<li><a href="#" class="doc-name">宝龙商业招商五级计划-新乡MALL-20120213.xlsx</a>杨某<a class="red-font" href="#">删除</a></li>
+			     							<li><a href="#" class="doc-name">宝龙商业招商五级计划-新乡MALL-20120213.xlsx</a>杨某<a class="red-font" href="#">删除</a></li>
+			     							<li><a href="#" class="doc-name">宝龙商业招商五级计划-新乡MALL-20120213.xlsx</a>杨某<a class="red-font" href="#">删除</a></li>
+			     						</ul>
+			     					</div>
+			     					
+			     				</div>
+			     				<div class="clear"></div>
+			     				<div class="message_section">
+			     					<span class="right-text">留言：</span>
+			     					<div>
+			     						<ul>
+			     							<li><a href="#">杨某</a>（04-11 10：49）:[修改]状态被更新为'预完成";</li>
+			     							<li><a href="#">杨某</a>（04-11 10：49）:[修改]状态被更新为'预完成";</li>
+			     							<li><a href="#">杨某</a>（04-11 10：49）:[修改]状态被更新为'预完成";</li>
+			     							<li><a href="#">杨某</a>（04-11 10：49）:[修改]状态被更新为'预完成";</li>
+			     							<li><a href="#">杨某</a>（04-11 10：49）:[修改]状态被更新为'预完成";</li>
+			     						</ul>
+			     						
+			     						<a href="#" class="btn btn-blue read-more-message">查看更多留言</a>
+			     						<textarea cols="33" rows="2"></textarea>
+			     						<a href="#" class="btn btn-blue leave-message-btn">留言</a>
+			     						<a href="#" class="btn btn-blue leave-message-btn">用戶留言</a>
+			     					</div>
+			     				</div>
+			     				
+			     			</div>
+			     			<div class="detail_tr_outer_right">
+			     				<ul class="sign-table-title">
+			     					<li><span>主力店签约情况：</span></li>
+			     					<li><a href="#" class="btn btn-blue" id="add-sign">新增</a></li>
+			     					<div class="clear"></div>
+			     				</ul>
+			     				<ul class="sign-table">
+			     					<li class="table-header no-edit">
+			     						<span class="shop-name">商家名称</span>
+			     						<span class="planed-sign-date">计划签约时间</span>
+			     						<span class="status">状态</span>
+			     						<span class="actural-sign-date">实际签约时间</span>
+			     					</li>
+			     					<li class="add-tr no-edit">
+			     						<div>
+				     						<input type="text" size="15" >
+				     						<input type="text" class="datepicker" size="10">
+				     						<span class="status">新增</span>
+				     						<input type="text" class="datepicker" size="10">
+				     					</div>
+				     					<ul>
+				     						<li><a href="#" class="btn btn-green">保存</a></li>
+				     						<li><a href="#" class="btn btn-green close-add-tr">取消</a></li>
+				     					</ul>
+				     					<div class="clear"></div>
+			     					</li>
+			     					<div class="clear"></div>
+			     					<li>
+			     						<span class="shop-name">ZARA</span>
+			     						<span class="planed-sign-date">2011-03-06</span>
+			     						<span class="status">完成</span>
+			     						<span class="actural-sign-date">2011-03-06</span>
+			     					</li>
+			     					<li>
+			     						<span class="shop-name">ZARA</span>
+			     						<span class="planed-sign-date">2011-03-06</span>
+			     						<span class="status">完成</span>
+			     						<span class="actural-sign-date">2011-03-06</span>
+			     					</li>
+			     					<li>
+			     						<span class="shop-name">ZARA</span>
+			     						<span class="planed-sign-date">2011-03-06</span>
+			     						<span class="status">完成</span>
+			     						<span class="actural-sign-date">2011-03-06</span>
+			     					</li>
+			     					<li>
+			     						<span class="shop-name">ZARA</span>
+			     						<span class="planed-sign-date">2011-03-06</span>
+			     						<span class="status">完成</span>
+			     						<span class="actural-sign-date">2011-03-06</span>
+			     					</li>
+			     					<li>
+			     						<span class="shop-name">ZARA</span>
+			     						<span class="planed-sign-date">2011-03-06</span>
+			     						<span class="status">完成</span>
+			     						<span class="actural-sign-date">2011-03-06</span>
+			     					</li>
+			     					<li>
+			     						<span class="shop-name">ZARA</span>
+			     						<span class="planed-sign-date">2011-03-06</span>
+			     						<span class="status">完成</span>
+			     						<span class="actural-sign-date">2011-03-06</span>
+			     					</li>
+			     					<li>
+			     						<span class="shop-name">ZARA</span>
+			     						<span class="planed-sign-date">2011-03-06</span>
+			     						<span class="status">完成</span>
+			     						<span class="actural-sign-date">2011-03-06</span>
+			     					</li>
+			     					<li>
+			     						<span class="shop-name">ZARA</span>
+			     						<span class="planed-sign-date">2011-03-06</span>
+			     						<span class="status">完成</span>
+			     						<span class="actural-sign-date">2011-03-06</span>
+			     					</li>
+			     					<li>
+			     						<span class="shop-name">ZARA</span>
+			     						<span class="planed-sign-date">2011-03-06</span>
+			     						<span class="status">完成</span>
+			     						<span class="actural-sign-date">2011-03-06</span>
+			     					</li>
+			     					<li>
+			     						<span class="shop-name">ZARA</span>
+			     						<span class="planed-sign-date">2011-03-06</span>
+			     						<span class="status">完成</span>
+			     						<span class="actural-sign-date">2011-03-06</span>
+			     					</li>
+			     					<li>
+			     						<span class="shop-name">ZARA</span>
+			     						<span class="planed-sign-date">2011-03-06</span>
+			     						<span class="status">完成</span>
+			     						<span class="actural-sign-date">2011-03-06</span>
+			     					</li>
+			     					<li>
+			     						<span class="shop-name">ZARA</span>
+			     						<span class="planed-sign-date">2011-03-06</span>
+			     						<span class="status">完成</span>
+			     						<span class="actural-sign-date">2011-03-06</span>
+			     					</li>
+			     					<li>
+			     						<span class="shop-name">ZARA</span>
+			     						<span class="planed-sign-date">2011-03-06</span>
+			     						<span class="status">完成</span>
+			     						<span class="actural-sign-date">2011-03-06</span>
+			     					</li>
+			     					<li>
+			     						<span class="shop-name">ZARA</span>
+			     						<span class="planed-sign-date">2011-03-06</span>
+			     						<span class="status">完成</span>
+			     						<span class="actural-sign-date">2011-03-06</span>
+			     					</li>
+			     					<li>
+			     						<span class="shop-name">ZARA</span>
+			     						<span class="planed-sign-date">2011-03-06</span>
+			     						<span class="status">完成</span>
+			     						<span class="actural-sign-date">2011-03-06</span>
+			     					</li>
+			     					<li>
+			     						<span class="shop-name">ZARA</span>
+			     						<span class="planed-sign-date">2011-03-06</span>
+			     						<span class="status">完成</span>
+			     						<span class="actural-sign-date">2011-03-06</span>
+			     					</li>
+			     					<li>
+			     						<span class="shop-name">ZARA</span>
+			     						<span class="planed-sign-date">2011-03-06</span>
+			     						<span class="status">完成</span>
+			     						<span class="actural-sign-date">2011-03-06</span>
+			     					</li>
+			     					<li>
+			     						<span class="shop-name">ZARA</span>
+			     						<span class="planed-sign-date">2011-03-06</span>
+			     						<span class="status">完成</span>
+			     						<span class="actural-sign-date">2011-03-06</span>
+			     					</li>
+			     					<li>
+			     						<span class="shop-name">ZARA</span>
+			     						<span class="planed-sign-date">2011-03-06</span>
+			     						<span class="status">完成</span>
+			     						<span class="actural-sign-date">2011-03-06</span>
+			     					</li>
+			     					<li>
+			     						<span class="shop-name">ZARA</span>
+			     						<span class="planed-sign-date">2011-03-06</span>
+			     						<span class="status">完成</span>
+			     						<span class="actural-sign-date">2011-03-06</span>
+			     					</li>
+			     				</ul>
+			     				<div class="edit-tr">
+			     					<div>
+			     						<input type="text" size="15">
+			     						<input type="text" class="datepicker" size="10">
+			     						<span class="status">完成</span>
+			     						<input type="text" class="datepicker" size="10">
+			     						
+			     					</div>
+			     					<ul>
+			     						<li><a href="#" class="btn btn-blue">预完成</a></li>
+			     						<li><a href="#" class="btn btn-blue">完成</a></li>
+			     						<li><a href="#" class="btn btn-green">保存</a></li>
+			     						<li><a href="#" class="btn btn-green close-edit-tr">收起</a></li>
+			     						<li><a href="#" class="btn btn-red">删除</a></li>
+			     					</ul>
+			     					<div class="clear"></div>
+			     				</div>
+			     				
+			     			</div>
+			     		</div>
+			     	</td>
+			     </tr>
+			     <!--detail_tr end-->
+			     <tr>
+			         <td><a href="#" class="attention"></a></td>
+			         <td class="align_left_td">39.地勘正式报告</td>
+			         <td class="align_left_td">地产公司</td>
+			         <td>2011-03-06</td>
+			         <td>2011-03-06</td>
+			         <td>2011-03-06</td>
+			         <td><a href="#" class="prefinish"></a></td>
+			         <td><a href="#" class="attach"></a></td>
+			     </tr>	
+			           
+			     <tr>
+			         <td><a href="#" class="attention"></a></td>
+			         <td class="align_left_td">39.地勘正式报告</td>
+			         <td class="align_left_td">地产公司</td>
+			         <td>2011-03-06</td>
+			         <td>2011-03-06</td>
+			         <td>2011-03-06</td>
+			         <td><a href="#" class="unmonth"></a></td>
+			         <td><a href="#" class="attach"></a></td>
+			     </tr>
+			     <tr>
+			         <td><a href="#" class="attention"></a></td>
+			         <td class="align_left_td">39.地勘正式报告</td>
+			         <td class="align_left_td">地产公司</td>
+			         <td>2011-03-06</td>
+			         <td>2011-03-06</td>
+			         <td>2011-03-06</td>
+			         <td><a href="#" class="complete-dely"></a></td>
+			         <td><a href="#" class="attach"></a></td>
+			     </tr>
+			     <tr>
+			         <td><a href="#" class="attention"></a></td>
+			         <td class="align_left_td">39.地勘正式报告</td>
+			         <td class="align_left_td">地产公司</td>
+			         <td>2011-03-06</td>
+			         <td>2011-03-06</td>
+			         <td>2011-03-06</td>
+			         <td><a href="#" class="suspend"></a></td>
+			         <td><a href="#" class="attach"></a></td>
+			     </tr>
+			     <tr>
+			         <td><a href="#" class="attention"></a></td>
+			         <td class="align_left_td">39.地勘正式报告</td>
+			         <td class="align_left_td">地产公司</td>
+			         <td>2011-03-06</td>
+			         <td>2011-03-06</td>
+			         <td>2011-03-06</td>
+			         <td><a href="#" class="delay"></a></td>
+			         <td><a href="#" class="attach"></a></td>
+			     </tr>
+			     <tr>
+			         <td><a href="#" class="attention"></a></td>
+			         <td class="align_left_td">39.地勘正式报告</td>
+			         <td class="align_left_td">地产公司</td>
+			         <td>2011-03-06</td>
+			         <td>2011-03-06</td>
+			         <td>2011-03-06</td>
+			         <td><a href="#" class="del"></a></td>
+			         <td><a href="#" class="attach"></a></td>
+			     </tr>
+			     <tr>
+			         <td><a href="#" class="attention"></a></td>
+			         <td class="align_left_td">39.地勘正式报告</td>
+			         <td class="align_left_td">地产公司</td>
+			         <td>2011-03-06</td>
+			         <td>2011-03-06</td>
+			         <td>2011-03-06</td>
+			         <td><a href="#" class="finish"></a></td>
+			         <td><a href="#" class="attach"></a></td>
+			     </tr>
+			     <tr>
+			         <td><a href="#" class="attention"></a></td>
+			         <td class="align_left_td">39.地勘正式报告</td>
+			         <td class="align_left_td">地产公司</td>
+			         <td>2011-03-06</td>
+			         <td>2011-03-06</td>
+			         <td>2011-03-06</td>
+			         <td><a href="#" class="predel"></a></td>
+			         <td><a href="#" class="attach"></a></td>
+			     </tr>
+			     <tr>
+			         <td><a href="#" class="attention"></a></td>
+			         <td class="align_left_td">39.地勘正式报告</td>
+			         <td class="align_left_td">地产公司</td>
+			         <td>2011-03-06</td>
+			         <td>2011-03-06</td>
+			         <td>2011-03-06</td>
+			         <td><a href="#" class="unconfirm"></a></td>
+			         <td><a href="#" class="attach"></a></td>
+			     </tr>
+			     <tr>
+			         <td><a href="#" class="attention"></a></td>
+			         <td class="align_left_td">39.地勘正式报告</td>
+			         <td class="align_left_td">地产公司</td>
+			         <td>2011-03-06</td>
+			         <td>2011-03-06</td>
+			         <td>2011-03-06</td>
+			         <td><a href="#" class="back"></a></td>
+			         <td><a href="#" class="attach"></a></td>
+			     </tr>
+			  </tbody> 
+			</table>
+
+			
+		</div>
+		
+	</body>
+</html>
