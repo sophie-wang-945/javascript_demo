@@ -1,0 +1,48 @@
+html{
+	min-width: 1680px;
+}
+.inner {
+	width: 1212px;
+}
+.header .inner ul.icon-list{
+	padding-top:6px;
+	margin-right:60px;
+}
+.header .inner ul.icon-list li{
+	width:34px;
+	height:34px;
+	margin:0 5px;
+}
+.header .inner ul.icon-list li a{
+	line-height: 16px;
+	display: block;
+	float: none;
+	width:34px;
+	height:34px;
+	padding:0px;
+	text-decoration: none;
+}
+.header .inner ul li.title {
+	margin-right: 10px;
+}
+.content .top-container .games-list{
+	width:306px;
+	margin-bottom: 10px;
+}
+.content .top-container .games-list li{
+	float: left;
+}
+.more-game{
+	width:306px;
+	height:45px;
+	background: url(../images/button-bg.png) left top no-repeat;
+	color:#9BD3F2;
+	line-height: 45px;
+	text-decoration: none;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 12px;
+}
+.content .bottom-container{
+	 padding-left: 315px;
+}

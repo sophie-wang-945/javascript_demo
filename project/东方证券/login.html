@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+    
+    <link type="text/css" href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet" media="all"/>
+
+    <link type="text/css" href="css/global.css" rel="stylesheet" media="all" />
+    <!--<link type="text/css" href="css/main.css" rel="stylesheet" media="screen and (min-width:1000px)" />-->
+
+    <script type="text/javascript" src="js/jquery-1.11.1.js" ></script>
+    <script type="text/javascript" src="bootstrap-3.2.0-dist/js/bootstrap.min.js" ></script>
+    <title></title>
+    <style type="text/css">
+        .form-control {
+            border-radius: 0px;
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="switch_user">切换账户</div>
+        <div class="login_logo"></div>
+        <div class="center-block login_block">
+
+            <form class="form-signin" role="form">
+                <div class="user_bg">
+                    <div class="input-group">
+                      <div class="input-group-addon user_icon">
+                          <img src="images/user_name.png"/>
+                      </div>
+                      <input class="form-control user_name" type="text" placeholder="Enter UserName"  required autofocus/>
+                    </div>
+                </div>
+                <div class="user_bg">
+                    <div class="input-group">
+                  <div class="input-group-addon user_icon">
+                      <img src="images/user_pw.png"/>
+                  </div>
+                  <input class="form-control user_pw" type="password" placeholder="Enter PassWord" required />
+                </div>
+                </div>
+                <!--<button class="btn btn-lg btn-primary btn-block" type="submit">登 录</button>-->
+                <a class="btn btn-lg btn-primary btn-block" type="submit" href="index.html">登 录</a>
+            </form>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox1" value="option1"/> 记住密码
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox2" value="option2"/> 自动登录
+            </label>
+        </div>
+        <div class="footer"><span>版本Beta1.0</span></div>
+    </div>
+</body>
+</html>

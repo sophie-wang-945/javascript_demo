@@ -1,0 +1,225 @@
+html {
+	width: 100%;
+	background-color: #044678;
+	height: 100%;
+	font-size: 12px;
+	font-family: Arial, Verdana, sans serif;
+}
+.header {
+	background: url(../images/nav-bg.png) 0 80px  repeat-x #0885b7;
+}
+.inner {
+	min-width: 1008px;
+	max-width: 1584px;
+	width: 94.2%;
+	margin: 0 auto;
+}
+.content {
+	width: 100%;
+	padding: 20px 0;
+}
+.details .content{
+	padding:15px 0;
+}
+.footer {
+	background-color: #002e50;
+	height: 20px;
+	padding: 40px 0;
+}
+/*header*/
+.header .inner ul li {
+	float: left;
+	line-height: 45px;
+	color: #005179;
+}
+.header .inner ul li.title {
+	margin-right: 60px;
+}
+.header .inner ul li.title .logo{
+	margin-top:7px;
+}
+.header .inner ul li a {
+	line-height: 16px;
+	display: block;
+	color: #fff;
+	float: none;
+	padding: 15px 22px;
+	text-decoration: none;
+	font-weight:bold;
+	font-size:13px;
+	background: url(../images/nav-border.png) left top no-repeat;
+}
+.details .header .inner ul li a {
+	padding:12px 22px;
+}
+.header .inner ul li a:hover, .header .inner ul li.active a {
+	background-color: #0772a6;
+}
+.logo-bar {
+	height: 30px;
+	padding: 25px 0;
+}
+.logo {
+	width: 250px;
+	height: 25px;
+	float:left;
+	background: url(../images/sprites.png) 0 0 no-repeat;
+}
+.logo-bar input {
+	margin-left:20px;
+	height: 35px;
+	float: left;
+	display: block;
+	border: 0;
+	width: 270px;
+	padding-left:20px;
+	background: url(../images/sprites.png) no-repeat 0 -152px;
+	color: #666666;
+}
+.logo-bar ul{
+	width:260px;
+	height:35px;
+	background: url(../images/sprites.png) no-repeat 0 -65px;
+	float:right;
+	
+}
+.header .inner .logo-bar ul li{
+	height:35px;
+	line-height: 35px;
+	width:130px;
+}
+.header .inner .logo-bar ul li a{
+	padding:0px;
+	height:35px;
+	line-height:35px;
+	width:130px;
+	display:inline-block;
+	background:none;
+	text-indent: -9999px;
+}
+.logo-bar ul li#top-game.active{
+	background: url(../images/sprites.png) no-repeat -4px -110px;
+}
+.logo-bar ul li#new-game.active{
+	background: url(../images/sprites.png) no-repeat -147px -110px;
+}
+/*content*/
+.content .inner ul li {
+	width: 134px;
+	height: 134px;
+	margin: 5px 10px 5px 0;
+	float: left;
+}
+.content .top-container{
+	
+}
+.content .top-container  div{
+	float: left;
+}
+.content .bottom-container{
+	 padding-left: 110px;
+}
+.content .inner .top-container .icon-list{
+	padding-left:5px;
+	width:88px;
+}
+.content .inner .top-container .icon-list li{
+	width:34px;
+	height:34px;
+	margin:0 5px;
+}
+.content .inner .top-container .icon-list li a{
+	line-height: 16px;
+	display: block;
+	float: none;
+	width:34px;
+	height:34px;
+	text-decoration: none;
+}
+.icon-list #home{
+	background: url(../images/icons.png) no-repeat left -38px;
+}
+.icon-list #back{
+	background: url(../images/icons.png) no-repeat left top;
+}
+.content .top-container .games-list li{
+	float: none;
+	width:97px;
+	height:97px;
+	margin-right:5px;
+}
+.content .top-container .middle-content{
+	width:711px;
+	height:635px;
+	margin-right:5px;
+	padding:15px;
+	background: url(../images/middle-content-bg.png) no-repeat left top;
+}
+.content .top-container .middle-content .social-list{
+	margin-left:30px;
+	float: left;
+}
+.content .top-container .middle-content .social-list li span{
+	display: inline-block;
+}
+.content .top-container .middle-content .social-list li span.social-icon{
+	background: url(../images/social_icon.png) no-repeat left top;
+	width:60px;
+	height:22px;
+	vertical-align: 4px;
+}
+.content .top-container .middle-content .social-list li span.social-num{
+	background: url(../images/social-num-bg.png) no-repeat left top;
+	width:30px;
+	height:17px;
+	padding:5px 0 0 15px ;
+	vertical-align: 10px;
+}
+.content .top-container .middle-content .social-list li.tw span.social-icon{
+	background-position: left -24px;
+}
+.content .top-container .middle-content h1{
+	font-size: 24px;
+	font-weight: bold;
+	color:#fff;
+	padding:0px 70px 10px 10px;
+	float:left;
+	background:url(../images/icon_1.png) no-repeat right top;
+}
+.content .top-container .middle-content ul li{
+	width: auto;
+	height:auto;
+}
+.content .top-container .middle-content div{
+	float: none;
+}
+.content .top-container .middle-content p{
+	color:#fff;
+	margin-bottom:18px;
+	padding:5px 10px 0 ;
+}
+
+/*footer*/
+.footer-logo {
+	vertical-align: middle;
+	width: 255px;
+	height: 30px;
+	float: left;
+	background: url(../images/sprites.png) -3px -27px no-repeat;
+}
+/*tool*/
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+.clearfix:after {
+	clear: both;
+}
+.footer .inner {
+	line-height: 30px;
+	text-align: right;
+	font-size: 12px;
+	color: #599dd1;
+	vertical-align: middle;
+}

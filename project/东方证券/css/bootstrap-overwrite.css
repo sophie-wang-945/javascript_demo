@@ -1,0 +1,9 @@
+﻿.advice .row {
+    padding-left:15px;line-height:40px;
+}
+a:hover, a:focus {
+    color:#fff;
+}
+.bs .row {
+    text-align:center;margin-top:50px;
+}
